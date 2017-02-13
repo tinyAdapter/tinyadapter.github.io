@@ -61,6 +61,7 @@ fieldset, img {
 
 /* 块/段落引用 */
 blockquote {
+  font-size: 15px;
   position: relative;
   color: #999;
   font-weight: 400;
@@ -666,7 +667,7 @@ h6 {
 .post-tags,
 .post-info {
   font-size: 0.875rem;
-  font-style: italic;
+  font-style: normal;
   text-align: center;
 }
 .post-info {
@@ -684,7 +685,7 @@ h6 {
   border-radius: 0.125rem;
 }
 .post-tags {
-  font-style: italic;
+  font-style: normal;
 }
 .post-tags > a {
   display: inline-block;
