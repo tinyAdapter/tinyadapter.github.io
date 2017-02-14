@@ -454,11 +454,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
 }
 code {
-  color: #1999ec;
+  color: #f7d117;
   padding: 0 0.125rem;
   margin: 0 0.125rem;
   border-radius: 0.0625rem;
-  background-color: #f0e8df;
+  background-color: #272727;
 }
 @media only screen and (max-width: 414px) {
   .highlight pre {
