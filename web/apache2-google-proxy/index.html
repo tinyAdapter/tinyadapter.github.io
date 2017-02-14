@@ -109,7 +109,7 @@
           <!-- Date -->
           <span class="date-time info">On
             <span class="date">2017-02-08</span>
-            <span class="time">15:43:12</span>
+            <span class="time">15:49:12</span>
           </span>
           
           <!--  Categories  -->
@@ -127,7 +127,7 @@
 <p>整天踩坑，说的就是我¬_¬</p>
 <p>个人站后台用的Debian+Apache2, 用的apt安装，因此配置是按照默认情况来的</p>
 <p>而Apache2默认没有包含mod_proxy<br><a id="more"></a><br>因此在使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost _default_:443&gt;</div><div class="line">ServerAdmin mail@localhost</div><div class="line">DocumentRoot “&#123;目录&#125;”</div><div class="line">ServerName &#123;域名&#125;:443</div><div class="line">SSLEngine On</div><div class="line">SSLProtocol all -SSLv2</div><div class="line">SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM</div><div class="line">SSLCertificateFile crt文件路径</div><div class="line">SSLCertificateKeyFile key文件路径</div><div class="line">SetEnvIf User-Agent “.*MSIE.*” nokeepalive ssl-unclean-shutdown owngrade-1.0 force-response-1.0</div><div class="line">SSLProxyEngine On</div><div class="line">RequestHeader set Front-End-Https “On”</div><div class="line">ProxyPass / https://www.google.com/</div><div class="line">ProxyPassReverse / https://www.google.com/</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure></p>
-<p>以上conf文件时，会出现[Invalid command ‘ProxyPass’]的情况</p>
+<p>以上conf文件时，会出现<strong>Invalid command ‘ProxyPass’</strong>的情况</p>
 <p>于是各种爬搜索引擎，在这里：</p>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension</a></p>
 <p>有详细的解决方案，简单说就是如下几条命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apt install -y libapache2-mod-proxy-html libxml2-dev</div><div class="line">a2enmod</div><div class="line">proxy proxy_ajp proxy_http rewrite deflate headers proxy_balancer proxy_connect proxy_html</div></pre></td></tr></table></figure></p>
