@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-02-14T07:33:21.030Z</updated>
+  <updated>2017-02-14T16:54:14.851Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="https://tinyadapter.ga/galgame-review/rendezvous/"/>
     <id>https://tinyadapter.ga/galgame-review/rendezvous/</id>
     <published>2017-02-08T16:17:18.000Z</published>
-    <updated>2017-02-14T07:33:21.030Z</updated>
+    <updated>2017-02-14T16:54:14.851Z</updated>
     
-    <content type="html"><![CDATA[<p>早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。  </p>
+    <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/fuuka.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<p>早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。  </p>
 <p>（默哀一秒钟😔）  </p>
 <p>好了继续。这次推的《罪之光Rendezvous》，总体而言还是不错的，不论是从整体剧情的把控还是氛围的营造，都能够让人唯美地享受其中。BGM加分颇多，和整体稍显平缓的叙事相辅相成，共同展现了一幅世外桃源般的古镇画卷。<br><a id="more"></a><br>。。。。。。</p>
 <p>我承认，单就一开始的剧情，我的确是抱着上面的心态在推的。</p>
@@ -95,7 +96,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。  &lt;/p&gt;
+      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;/images/fuuka.png&quot; class=&quot;full-image&quot; /&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;p&gt;早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。  &lt;/p&gt;
 &lt;p&gt;（默哀一秒钟😔）  &lt;/p&gt;
 &lt;p&gt;好了继续。这次推的《罪之光Rendezvous》，总体而言还是不错的，不论是从整体剧情的把控还是氛围的营造，都能够让人唯美地享受其中。BGM加分颇多，和整体稍显平缓的叙事相辅相成，共同展现了一幅世外桃源般的古镇画卷。&lt;br&gt;
     
@@ -111,7 +113,7 @@
     <link href="https://tinyadapter.ga/galgame-review/galgame-review-block-opened/"/>
     <id>https://tinyadapter.ga/galgame-review/galgame-review-block-opened/</id>
     <published>2017-02-08T15:32:55.000Z</published>
-    <updated>2017-02-14T07:38:12.000Z</updated>
+    <updated>2017-02-14T16:54:12.152Z</updated>
     
     <content type="html"><![CDATA[<h3 id="说在前面的话"><a href="#说在前面的话" class="headerlink" title="说在前面的话"></a>说在前面的话</h3><p>时隔四年，终于又开了这个“Galgame小评”板块。</p>
 <p>为什么要说又呢，是因为四年前断断续续地写（chao）过一些Galgame评测的文章，至今依旧躺在QQ空间里。</p>
@@ -147,7 +149,7 @@
     <link href="https://tinyadapter.ga/web/apache2-google-proxy/"/>
     <id>https://tinyadapter.ga/web/apache2-google-proxy/</id>
     <published>2017-02-08T11:58:05.000Z</published>
-    <updated>2017-02-14T07:51:59.297Z</updated>
+    <updated>2017-02-14T16:54:13.000Z</updated>
     
     <content type="html"><![CDATA[<p>（首先说好了，本人完全不懂网络相关，因此一切产生的问题都是靠搜索+领悟人生解决的-_-）</p>
 <p>整天踩坑，说的就是我¬_¬</p>
@@ -179,10 +181,11 @@
     <link href="https://tinyadapter.ga/helloworld/"/>
     <id>https://tinyadapter.ga/helloworld/</id>
     <published>2017-02-06T13:32:42.000Z</published>
-    <updated>2017-02-14T13:18:15.943Z</updated>
+    <updated>2017-02-14T16:53:54.089Z</updated>
     
-    <content type="html"><![CDATA[<p>这里是tinyAdapter，微博同名IDです</p>
-<p>本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者Emailto: tinyadapter@outlook.com</p>
+    <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/hw1.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<p>这里是tinyAdapter，微博同名IDです</p>
+<p>本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者<strong>mailto: tinyadapter@outlook.com</strong></p>
 <p>四川某知名医科大学软件专业在校生（笑）</p>
 <p>死软狗，业余果黑</p>
 <p>Windows10 + Office365全家桶使用者<br><a id="more"></a><br>主攻C#，辅修C + Python</p>
@@ -196,8 +199,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;这里是tinyAdapter，微博同名IDです&lt;/p&gt;
-&lt;p&gt;本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者Emailto: tinyadapter@outlook.com&lt;/p&gt;
+      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;/images/hw1.png&quot; class=&quot;full-image&quot; /&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;p&gt;这里是tinyAdapter，微博同名IDです&lt;/p&gt;
+&lt;p&gt;本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者&lt;strong&gt;mailto: tinyadapter@outlook.com&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;四川某知名医科大学软件专业在校生（笑）&lt;/p&gt;
 &lt;p&gt;死软狗，业余果黑&lt;/p&gt;
 &lt;p&gt;Windows10 + Office365全家桶使用者&lt;br&gt;
