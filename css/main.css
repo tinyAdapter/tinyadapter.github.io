@@ -188,7 +188,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
-  color: #555;
+  color: #000;
   background: #f5f7f9;
 }
 @media (max-width: 767px) {
@@ -277,7 +277,7 @@ p {
   margin: 0 0 25px 0;
 }
 a {
-  color: #555;
+  color: #000;
   text-decoration: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
@@ -300,16 +300,15 @@ img {
   height: auto;
 }
 hr {
-  margin: 40px 0;
+  margin: 20px 0;
   height: 3px;
   border: none;
-  background-color: #ddd;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+  background-color: #03a9f4;
 }
 blockquote {
   padding: 0 15px;
-  color: #666;
-  border-left: 4px solid #ddd;
+  color: #000;
+  border-left: 4px solid #d32;
 }
 blockquote cite::before {
   content: "-";
@@ -837,7 +836,7 @@ pre .javascript .function {
   font-size: 14px;
   color: #fff;
   background: #222;
-  border: 2px solid #555;
+  border: 2px solid #000;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -855,7 +854,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: #555;
+  background: #000;
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -1207,6 +1206,9 @@ pre .javascript .function {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
+  .post-letters-count {
+    display: none;
+  }
   .posts-collapse {
     margin: 0 20px;
   }
@@ -1288,7 +1290,7 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
-  border-bottom-color: #666;
+  border-bottom-color: #000;
 }
 .posts-collapse .post-header:hover::before {
   background: #222;
@@ -1313,7 +1315,7 @@ pre .javascript .function {
   opacity: 0.6;
 }
 .posts-collapse .post-title a {
-  color: #666;
+  color: #000;
   border-bottom: none;
 }
 .page-home .post-type-quote .post-header,
@@ -1336,7 +1338,7 @@ pre .javascript .function {
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #000;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1444,7 +1446,7 @@ pre .javascript .function {
   margin-top: 50px;
 }
 .post-button .btn {
-  color: #555;
+  color: #000;
   font-size: 14px;
   background: #fff;
   border-radius: 2px;
@@ -1485,7 +1487,7 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #555;
+  color: #000;
   border-bottom: none;
 }
 .post-nav-item a:hover {
@@ -1562,7 +1564,7 @@ pre .javascript .function {
 }
 .sidebar a {
   color: #999;
-  border-bottom-color: #555;
+  border-bottom-color: #000;
 }
 .sidebar a:hover {
   color: #eee;
@@ -1695,7 +1697,7 @@ pre .javascript .function {
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
-  border-bottom-color: #555;
+  border-bottom-color: #000;
   font-size: 13px;
 }
 .links-of-author a:before {
@@ -1706,7 +1708,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #448820;
+  background: #62f481;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1732,7 +1734,7 @@ pre .javascript .function {
   cursor: pointer;
   border-bottom: 1px solid transparent;
   font-size: 14px;
-  color: #555;
+  color: #000;
 }
 .sidebar-nav li:hover {
   color: #fc6423;
@@ -1758,7 +1760,7 @@ pre .javascript .function {
 }
 .post-toc-empty {
   font-size: 14px;
-  color: #666;
+  color: #000;
 }
 .post-toc-wrap {
   overflow: hidden;
@@ -1781,7 +1783,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #666;
+  color: #000;
   border-bottom-color: #ccc;
 }
 .post-toc ol a:hover {
@@ -1818,7 +1820,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #000;
 }
 .footer img {
   border: none;
@@ -2270,7 +2272,7 @@ a.search-result {
   width: 10px;
   height: 10px;
   opacity: 0.5;
-  background: #555;
+  background: #000;
   border: 1px solid #fff;
   border-radius: 50%;
 }
@@ -2743,7 +2745,7 @@ a.search-result {
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
-  color: #555;
+  color: #000;
   background: rgba(255,255,255,0.85);
   box-shadow: initial;
   border-radius: initial;
@@ -2765,7 +2767,7 @@ a.search-result {
   clear: both;
 }
 .sidebar a {
-  color: #555;
+  color: #000;
 }
 .sidebar a:hover {
   color: #222;
