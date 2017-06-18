@@ -91,23 +91,20 @@
 
 <meta name="description" content="昨晚（准确说应该是今早？）遇到了win10一个十分神奇的bug。
 大家都知道，自从win8开始微软就在文件管理器里加了一个”快速访问“的默认文件夹。这东西还是比较方便的。
-然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！
-两个分组的东西混在了一起（简单说就是没有开分组依据的普">
+然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Win10“快速访问”内容合并的解决方案">
 <meta property="og:url" content="https://tinyadapter.ga/win10/win10-quickaccess-bug/index.html">
 <meta property="og:site_name" content="斑桜の桜海~">
 <meta property="og:description" content="昨晚（准确说应该是今早？）遇到了win10一个十分神奇的bug。
 大家都知道，自从win8开始微软就在文件管理器里加了一个”快速访问“的默认文件夹。这东西还是比较方便的。
-然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！
-两个分组的东西混在了一起（简单说就是没有开分组依据的普">
-<meta property="og:updated_time" content="2017-06-18T14:11:14.106Z">
+然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！">
+<meta property="og:updated_time" content="2017-06-18T14:14:18.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Win10“快速访问”内容合并的解决方案">
 <meta name="twitter:description" content="昨晚（准确说应该是今早？）遇到了win10一个十分神奇的bug。
 大家都知道，自从win8开始微软就在文件管理器里加了一个”快速访问“的默认文件夹。这东西还是比较方便的。
-然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！
-两个分组的东西混在了一起（简单说就是没有开分组依据的普">
+然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！">
 
 
 
@@ -397,8 +394,7 @@ background-attachment: fixed; background-size: cover">
       
         <p>昨晚（准确说应该是今早？）遇到了win10一个十分神奇的bug。</p>
 <p>大家都知道，自从win8开始微软就在文件管理器里加了一个”快速访问“的默认文件夹。这东西还是比较方便的。</p>
-<p>然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！</p>
-<p>两个分组的东西混在了一起（简单说就是没有开分组依据的普通文件夹的样子）。</p>
+<p>然后昨晚我开了一下家庭组（别问我为啥还要用这个马上要被微软砍掉的功能），之后再注意到的时候，“快速访问”里的”常用文件夹“和”最近使用的文件“这两个分开的组……居然合并了！<br><a id="more"></a><br>两个分组的东西混在了一起（简单说就是没有开分组依据的普通文件夹的样子）。</p>
 <p>虽说没啥大的变化吧，但这样总归是没法用的。</p>
 <p>于是各种爬搜索，终于让我找到了这个脚本：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">@echo off</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Microsoft\Windows\Shell\BagMRU&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Microsoft\Windows\Shell\Bags&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Microsoft\Windows\ShellNoRoam\Bags&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Microsoft\Windows\ShellNoRoam\BagMRU&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Classes\Wow6432Node\Local Settings\Software\Microsoft\Windows\Shell\Bags&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Classes\Wow6432Node\Local Settings\Software\Microsoft\Windows\Shell\BagMRU&quot; /F</div><div class="line">Reg Delete &quot;HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Modules\GlobalSettings\Sizer&quot; /F</div><div class="line">taskkill /f /im explorer.exe</div><div class="line">start explorer.exe</div></pre></td></tr></table></figure>
