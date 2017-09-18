@@ -391,49 +391,16 @@ background-attachment: fixed; background-size: cover">
 
       
         
-          
-            <p>相信每个使用科学上网的人对自己的vps都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的vps不让墙发现，就变成了一门艺术。</p>
+          <p>相信每个使用科学上网的人对自己的vps都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的vps不让墙发现，就变成了一门艺术。</p>
 <p>尤其是在普通的ss协议本身存在缺陷的情况下，我们仍不能保证万全。</p>
-<p>v2ray是个好项目，在这里着重感谢一下。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>众所周知，一个保护自己vps的方法就是为它加上CDN，这样墙就没办法ban掉vps的ip了。</p>
-<p>但是问题来了，CDN一般都是只代理80/443端口的，80端口直接免谈，而我们在vps上搭个站啊写个博客啊什么的需求又导致了我不能把443端口拱手让给科学上网</p>
-<p>（当然了你要是财大气粗再买一个vps那当我没说）</p>
-<p>而且如果有一个普通的网站（贴上社会主义核心价值观就更好了【逃）能够让人正常访问，那么我再在相同的端口搭上科学上网服务就显得更加的隐蔽了。</p>
-<p>那么如何实现呢？这其实是个很大的问题。</p>
-<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>首先我们一定需要一个前置web服务器进行流量转发（如apache或nginx），我自己用的是apache。</p>
-<p>而apache在2.x（具体版本号记不住了）之后支持了WebSocket协议的转发，只需要直接写ws://就可以实现。</p>
-<p>而v2ray在某个版本之后（还是记不住orz）也支持了完整的WebSocket协议实现，并且还能使用标准TLS加密流量。</p>
-<p>这就很有意思了。如果我们使用WebSocket协议，在外面套上TLS后以某个域名A送给服务器，而apache接到这个请求并解密后能够直接通过WebSocket协议头将这个请求转发给v2ray的监听端口，由v2ray拿着数据按照原路返回，就能够实现这样的功能。</p>
-<p>而当我们用浏览器以https访问域名A时，apache接到请求，解密后发现是http协议，就返回网站内容。</p>
-<p>这样就保证了极高的隐蔽性（因为有加密的存在，所以外人只能看到你在访问一个没什么大碍内容的网站）。</p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>首先服务器端的apache要配置好，能够通过https直接访问你的网站。</p>
-<p>然后在VirtualHost配置最后加入这么一段：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">RewriteEngine On</div><div class="line">RewriteCond %&#123;HTTP:Connection&#125; Upgrade [NC]</div><div class="line">RewriteCond %&#123;HTTP:Upgrade&#125; websocket [NC]</div><div class="line">RewriteRule /(.*) ws://127.0.0.1:10000/$1 [P,L]</div></pre></td></tr></table></figure>
-<p>这段的意思是把所有的WebSocket协议内容转发到本机的10000端口上。</p>
-<p>接下来配置v2ray相关，说几个要注意的地方：</p>
-<ol>
-<li>network填ws（客户端和服务器都是）</li>
-<li><strong>服务器端不要开启tls！</strong>（因为服务器内部转发的流量已经被apache解密，之前在这里被坑了很久）</li>
-<li>客户端要开启tls</li>
-<li>服务器端端口和apache转发的端口要一致（比如这里就是10000端口）</li>
-<li>建议使用防火墙将向除常用端口以外的其他端口的外部访问全部drop掉，防止被发现</li>
-</ol>
-<h2 id="不放心？再套个CDN"><a href="#不放心？再套个CDN" class="headerlink" title="不放心？再套个CDN"></a>不放心？再套个CDN</h2><p>到目前为止其实已经做到了相当高的隐蔽性，但是如果你还是不放心，可以使用CDN再把实际的ip隐藏起来，这样墙就只能看见你访问某个CDN的ip，而至于CDN把请求转发给了谁，抱歉，纵使它有天大的本事也找不到了（笑）</p>
-<p>而CDN服务我个人推荐Cloudflare，首先一个就是免费，再就是它跟百度云加速有合作（虽然我个人不待见百度，但还是谢了啊），起码有理由相信它目前不会挂掉。</p>
-<p>（当然速度这个我就没办法了，但是重在安全）</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>自此，我们实现科学上网的方式如下：</p>
-<pre><code>客户端--(TLS+WS)-&gt;CDN--(TLS+WS)-&gt;服务器apache--(WS)-&gt;v2ray
-</code></pre><p>返回结果同理。</p>
-<p>这样的好处在于：</p>
-<ol>
-<li>墙只能知道你在访问CDN，由于TLS的存在不知道内容</li>
-<li>如果墙也来访问相同的域名，那么得到的是一个普通的网站</li>
-<li>由于vmess加密的存在，CDN也不知道你访问的内容（百度是个什么样的公司，你懂的）</li>
-<li>只有v2ray知道你在科学上网</li>
-</ol>
-<p>当然啦，具体的内容没有经过实证（我怎么实证），我本身也没啥网络知识，只是单凭想象搞的，如果有什么错误的地方烦请指正，谢谢！（比心）</p>
-
-          
+<p>v2ray是个好项目，在这里着重感谢一下。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/web/ultimate-cross/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
