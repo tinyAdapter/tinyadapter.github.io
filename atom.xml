@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-09-19T03:59:56.131Z</updated>
+  <updated>2017-09-19T04:14:09.198Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="https://tinyadapter.ga/web/might-and-magic/"/>
     <id>https://tinyadapter.ga/web/might-and-magic/</id>
     <published>2017-09-18T14:14:45.000Z</published>
-    <updated>2017-09-19T03:59:56.131Z</updated>
+    <updated>2017-09-19T04:14:09.198Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
-<p>相信每个使用魔法的人对自己的指挥棒都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的指挥棒不让恶龙发现，就变成了一门艺术。</p>
+    <content type="html"><![CDATA[<p>emmm<br><a id="more"></a><br>相信每个使用魔法的人对自己的指挥棒都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的指挥棒不让恶龙发现，就变成了一门艺术。</p>
 <p>尤其是在普通的ss协议本身存在缺陷的情况下，我们仍不能保证万全。</p>
 <p>v2是个好项目，在这里着重感谢一下。</p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>众所周知，一个保护自己指挥棒的方法就是为它加上咒语分发，这样恶龙就没办法偷走指挥棒的编号了。</p>
@@ -67,10 +66,7 @@
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;相信每个使用魔法的人对自己的指挥棒都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的指挥棒不让恶龙发现，就变成了一门艺术。&lt;/p&gt;
-&lt;p&gt;尤其是在普通的ss协议本身存在缺陷的情况下，我们仍不能保证万全。&lt;/p&gt;
-&lt;p&gt;
+      &lt;p&gt;emmm&lt;br&gt;
     
     </summary>
     
