@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-09-27T09:57:59.392Z</updated>
+  <updated>2017-09-27T13:48:29.135Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Pixiv hosts</title>
+    <title>Pixiv魔法</title>
     <link href="https://tinyadapter.ga/web/pixiv-hosts/"/>
     <id>https://tinyadapter.ga/web/pixiv-hosts/</id>
     <published>2017-09-27T09:55:19.000Z</published>
-    <updated>2017-09-27T09:57:59.392Z</updated>
+    <updated>2017-09-27T13:48:29.135Z</updated>
     
     <content type="html"><![CDATA[<p>不解释。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">#Pixiv</div><div class="line">210.129.120.41  pixiv.net </div><div class="line">210.129.120.41  www.pixiv.net </div><div class="line">210.129.120.41  accounts.pixiv.net </div><div class="line">210.129.120.41  touch.pixiv.net </div><div class="line">210.129.120.43  www.pixiv.net </div><div class="line">210.129.120.43  accounts.pixiv.net </div><div class="line">210.129.120.43  touch.pixiv.net </div><div class="line">210.129.120.44  www.pixiv.net </div><div class="line">210.129.120.44  accounts.pixiv.net </div><div class="line">210.129.120.44  touch.pixiv.net </div><div class="line">210.140.131.147 source.pixiv.net </div><div class="line">210.140.131.147 imgaz.pixiv.net </div><div class="line">210.129.120.44  app-api.pixiv.net </div><div class="line">210.129.120.48  oauth.secure.pixiv.net </div><div class="line">210.129.120.41  dic.pixiv.net </div><div class="line">210.140.131.153 comic.pixiv.net </div><div class="line">210.129.120.43  factory.pixiv.net  </div><div class="line">74.120.148.207  g-client-proxy.pixiv.net </div><div class="line">210.140.170.179 sketch.pixiv.net </div><div class="line">210.129.120.43  payment.pixiv.net </div><div class="line">210.129.120.41  sensei.pixiv.net </div><div class="line">210.140.131.144 novel.pixiv.net </div><div class="line">210.129.120.44  en-dic.pixiv.net </div><div class="line">210.140.131.145 i1.pixiv.net </div><div class="line">210.140.131.145 i2.pixiv.net </div><div class="line">210.140.131.145 i3.pixiv.net </div><div class="line">210.140.131.145 i4.pixiv.net </div><div class="line">210.140.131.159 d.pixiv.org </div><div class="line">210.140.92.135  pixiv.pximg.net </div><div class="line">210.140.92.136  i.pximg.net </div><div class="line">#Pixiv End</div></pre></td></tr></table></figure></p>
 <p>感谢Mashiro<br>原文地址：<a href="https://2heng.xin/2017/09/19/pixiv/" target="_blank" rel="external">PIXIV访问恢复方法（网页版及客户端）</a></p>
