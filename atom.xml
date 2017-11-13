@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-10-08T02:53:48.688Z</updated>
+  <updated>2017-11-13T15:57:55.469Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -16,11 +16,164 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>“次元连线”设计思路</title>
+    <link href="https://tinyadapter.ga/web/jigenconnection/"/>
+    <id>https://tinyadapter.ga/web/jigenconnection/</id>
+    <published>2017-11-13T15:55:52.000Z</published>
+    <updated>2017-11-13T15:57:55.469Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
+<p>于是首先应该做件事——起个中二的名字。</p>
+<p>想来想去，就叫“次元连线”好了（笑）</p>
+<p>一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（</p>
+<hr>
+<p>论述一下思路。</p>
+<p>首先说明两个基本的大原则：</p>
+<ol>
+<li>用户的文本在本地端加密后再送上服务器；</li>
+<li>服务器是要存储数据的，而不是单纯做转发。</li>
+</ol>
+<p>这套体系决定了其可以胜任从数据时间跨度最低的阅后即焚式即时通讯到最高的论坛。</p>
+<p>为了叙述省事，先拿论坛举例。</p>
+<hr>
+<p>这里把每台服务器（也就是结点）分为三种类型：public, protected和private</p>
+<p>（对没错，我就是要强行OOP）</p>
+<h2 id="private结点"><a href="#private结点" class="headerlink" title="private结点"></a>private结点</h2><p>private最简单，就是不跟其他任何结点相连的单台服务器，自己负责所有的用户注册和数据发送，跟传统的单服务器网站/聊天室本质上没有什么区别。可供私人及小团体使用。</p>
+<p>用户请求private服务器后，会得到一个<em>次元群</em>列表。</p>
+<p>（次元群：即论坛板块的概念，每个次元群拥有单独的访问密码。对应即时通讯中的群组）</p>
+<p>每个结点维护的用户表：</p>
+<table>
+<thead>
+<tr>
+<th>次元群hash</th>
+<th>用户id</th>
+<th>用户密码hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>每个结点维护的次元群表：</p>
+<table>
+<thead>
+<tr>
+<th>次元群hash</th>
+<th>群名</th>
+<th>介绍</th>
+<th>(群主id+密码hash)的hash【提权】</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>每个次元群内帖子的信息：</p>
+<table>
+<thead>
+<tr>
+<th>帖子id</th>
+<th>标题（使用访问密码加密）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>每条跟帖的格式：</p>
+<table>
+<thead>
+<tr>
+<th>次元群hash</th>
+<th>帖子id</th>
+<th>发表时间</th>
+<th>内容（加密）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>理论上，每条数据都允许被所有人访问到，但如果不知道密码的话便无法解密（强行访问只会得到一堆乱码）</p>
+<p>发表帖子/跟帖时向服务器发送的数据格式：<br>|次元群hash|帖子id|访问密码hash|用户id|用户密码hash|内容（加密）|<br>|-|-|-|-|-|-|</p>
+<h2 id="protected-public结点"><a href="#protected-public结点" class="headerlink" title="protected/public结点"></a>protected/public结点</h2><p>protected和public结点类似，都属于内容备份机制，只不过protected结点在信任的若干结点中选取几个做备份，而public选取随机的public结点做备份，同时接受来自任意结点的数据。</p>
+<p>而在服务器的组织上，使用Kademlia算法（即DHT）。</p>
+<p>每个public结点随机选取3台public结点并作为数据备份结点。</p>
+<p>每台public结点维护一个与private结点类似的用户表，其中有本结点内所有次元群的用户id（不同的次元群间允许存在相同的id，以密码hash作为校验手段）</p>
+<p>假设某public结点A选择X、Y、Z作为数据备份，则任意结点的更新（某次元群新加入用户、帖子/跟帖）会传播到其余的三个结点。</p>
+<p>结点A在建立新的次元群时随机生成一个infohash，按得到的值跳跃到距离hash最近的public结点B，并将infohash，A、X、Y、Z的ip和port存过去。结点B接受结点A的信息后，将其由近及远地广播给附近的public结点。</p>
+<p>（完）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近受Mastodon的启发，有个分布式社交网络的实现想法。&lt;/p&gt;
+&lt;p&gt;于是首先应该做件事——起个中二的名字。&lt;/p&gt;
+&lt;p&gt;想来想去，就叫“次元连线”好了（笑）&lt;/p&gt;
+&lt;p&gt;一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;论
+    
+    </summary>
+    
+      <category term="Web" scheme="https://tinyadapter.ga/categories/Web/"/>
+    
+    
+      <category term="分布式" scheme="https://tinyadapter.ga/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+      <category term="社交网络" scheme="https://tinyadapter.ga/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>逃离互联网</title>
+    <link href="https://tinyadapter.ga/society/escape-from-internet/"/>
+    <id>https://tinyadapter.ga/society/escape-from-internet/</id>
+    <published>2017-10-29T14:26:24.000Z</published>
+    <updated>2017-11-13T12:28:19.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>前几年有个比较热的词，叫做“逃离北上广”，大概意思是说北上广的压力过大导致很多年轻人选择了离开。</p>
+<p>今天借用一下这个词，来说一说“逃离互联网”。</p>
+<p>有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波又一波的新高，后有国内的“互联网+”、“996”等被创造出的“亚文化”领衔。如今这样一片大好形势，怎么可能会想着离开呢？</p>
+<p>别误会，我本人也算是半只脚踏进互联网行业的人（当然了，随时间推移可能会把脚收回来踏进硬件领域），但是也正因为如此，我会比其他不了解这个行业的人看到得更多，因此也大概会预测到那把悬在互联网头顶上的达摩克利斯之剑什么时候会落下。</p>
+<p>毫不避讳地说，互联网依旧是如今最有可能创业成功的行业——也许已经没有了之一——<strong>只要你心中的成功是被某个现在股价窜天的企业收购的话。</strong></p>
+<h2 id="Fed的哲学"><a href="#Fed的哲学" class="headerlink" title="Fed的哲学"></a>Fed的哲学</h2><p>最近华尔街那边出了个小新闻：几个分析师拿着纳斯达克100指数近几年的走势和美联储手里的美元利率一对比，发现了一个“冲击的事实”：从美联储宣布QE开始，美国的科技股就迎来了迄今为止最大的一波涨幅。</p>
+<p>好吧，其实也没什么值得大惊小怪的。本来嘛，QE的目的就是让更多的人不要把钱放在银行而是拿出来投资，可是我要投什么好呢？感觉目前最有活力的应该就是FAAMA(Facebook, Apple, Alphabet, Microsoft, Amazon)了，行吧那我就投这些。</p>
+<p>什么意思？也就是说，这些早就被美国投资者捧上天了的科技类企业，其实不是因为自己的业绩真的支撑了股价，而是单纯（或者说绝大多数）因为投资人手里的钱太多了。</p>
+<h2 id="千禧年的噩梦"><a href="#千禧年的噩梦" class="headerlink" title="千禧年的噩梦"></a>千禧年的噩梦</h2><p>（未完待续）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前几年有个比较热的词，叫做“逃离北上广”，大概意思是说北上广的压力过大导致很多年轻人选择了离开。&lt;/p&gt;
+&lt;p&gt;今天借用一下这个词，来说一说“逃离互联网”。&lt;/p&gt;
+&lt;p&gt;有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波
+    
+    </summary>
+    
+      <category term="社会" scheme="https://tinyadapter.ga/categories/%E7%A4%BE%E4%BC%9A/"/>
+    
+    
+      <category term="互联网" scheme="https://tinyadapter.ga/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+      <category term="泡沫" scheme="https://tinyadapter.ga/tags/%E6%B3%A1%E6%B2%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pixiv魔法</title>
     <link href="https://tinyadapter.ga/web/pixiv-magic/"/>
     <id>https://tinyadapter.ga/web/pixiv-magic/</id>
     <published>2017-09-27T09:55:19.000Z</published>
-    <updated>2017-10-08T02:53:48.688Z</updated>
+    <updated>2017-10-08T02:53:48.000Z</updated>
     
     <content type="html"><![CDATA[<p>不解释。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">#Pixiv</div><div class="line">210.129.120.41  pixiv.net </div><div class="line">210.129.120.41  www.pixiv.net </div><div class="line">210.129.120.41  accounts.pixiv.net </div><div class="line">210.129.120.41  touch.pixiv.net </div><div class="line">210.129.120.43  www.pixiv.net </div><div class="line">210.129.120.43  accounts.pixiv.net </div><div class="line">210.129.120.43  touch.pixiv.net </div><div class="line">210.129.120.44  www.pixiv.net </div><div class="line">210.129.120.44  accounts.pixiv.net </div><div class="line">210.129.120.44  touch.pixiv.net </div><div class="line">210.140.131.146 source.pixiv.net </div><div class="line">210.140.131.147 imgaz.pixiv.net </div><div class="line">210.129.120.44  app-api.pixiv.net </div><div class="line">210.129.120.48  oauth.secure.pixiv.net </div><div class="line">210.129.120.41  dic.pixiv.net </div><div class="line">210.140.131.153 comic.pixiv.net </div><div class="line">210.129.120.43  factory.pixiv.net  </div><div class="line">74.120.148.207  g-client-proxy.pixiv.net </div><div class="line">210.140.170.179 sketch.pixiv.net </div><div class="line">210.129.120.43  payment.pixiv.net </div><div class="line">210.129.120.41  sensei.pixiv.net </div><div class="line">210.140.131.144 novel.pixiv.net </div><div class="line">210.129.120.44  en-dic.pixiv.net </div><div class="line">210.140.131.145 i1.pixiv.net </div><div class="line">210.140.131.145 i2.pixiv.net </div><div class="line">210.140.131.145 i3.pixiv.net </div><div class="line">210.140.131.145 i4.pixiv.net </div><div class="line">210.140.131.159 d.pixiv.org </div><div class="line">210.140.92.135  pixiv.pximg.net </div><div class="line">210.140.92.136  i.pximg.net </div><div class="line">#Pixiv End</div></pre></td></tr></table></figure></p>
 <p>感谢Mashiro</p>
@@ -48,7 +201,7 @@
     <link href="https://tinyadapter.ga/lightnovel-review/jyosou-kaseikyoushi/"/>
     <id>https://tinyadapter.ga/lightnovel-review/jyosou-kaseikyoushi/</id>
     <published>2017-09-23T05:36:08.000Z</published>
-    <updated>2017-09-23T07:20:14.559Z</updated>
+    <updated>2017-09-23T07:20:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>啊，感觉好久都没有写小评了呢。大概有两个月了？</p>
 <p>其实也不是说最近没有在玩Galgame，上个月推了两个，一个是ISLAND，一个是千恋万花。<br><a id="more"></a><br>但是这俩一点也不像什么能够写出小评的作品……ISLAND本来一开始也是在正经地做笔记想要写点什么的，但是后来随着夏篇的结束感觉剧情变得愈发复杂了起来，于是也就没有去继续做笔记，而是一口气推到了结局。</p>
@@ -137,7 +290,7 @@
     <link href="https://tinyadapter.ga/web/might-and-magic/"/>
     <id>https://tinyadapter.ga/web/might-and-magic/</id>
     <published>2017-09-18T14:14:00.000Z</published>
-    <updated>2017-09-20T14:12:32.142Z</updated>
+    <updated>2017-09-20T14:12:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>emmm<br><a id="more"></a><br>相信每个使用魔法的人对自己的指挥棒都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的指挥棒不让恶龙发现，就变成了一门艺术。</p>
 <p>尤其是在普通的ss协议本身存在缺陷的情况下，我们仍不能保证万全。</p>
@@ -197,7 +350,7 @@
     <link href="https://tinyadapter.ga/touhou/doujin-music-elect/"/>
     <id>https://tinyadapter.ga/touhou/doujin-music-elect/</id>
     <published>2017-08-09T13:12:24.000Z</published>
-    <updated>2017-08-09T14:59:38.925Z</updated>
+    <updated>2017-08-09T14:59:38.000Z</updated>
     
     <content type="html"><![CDATA[<p>前两天跟某同学讨论了件不那么有趣的事。</p>
 <p>事件的起因是他在沈阳的某展子上给别人看摊，偶遇了yv在那里的摊子。</p>
@@ -270,7 +423,7 @@
     <link href="https://tinyadapter.ga/win10/win10-quickaccess-bug/"/>
     <id>https://tinyadapter.ga/win10/win10-quickaccess-bug/</id>
     <published>2017-06-18T13:54:23.000Z</published>
-    <updated>2017-06-18T14:14:18.923Z</updated>
+    <updated>2017-06-18T14:14:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>昨晚（准确说应该是今早？）遇到了win10一个十分神奇的bug。</p>
 <p>大家都知道，自从win8开始微软就在文件管理器里加了一个”快速访问“的默认文件夹。这东西还是比较方便的。</p>
@@ -305,7 +458,7 @@
     <link href="https://tinyadapter.ga/galgame-review/sakurano/"/>
     <id>https://tinyadapter.ga/galgame-review/sakurano/</id>
     <published>2017-06-09T04:24:27.000Z</published>
-    <updated>2017-07-01T05:03:58.757Z</updated>
+    <updated>2017-07-01T05:03:58.000Z</updated>
     
     <content type="html"><![CDATA[<p>其实我一直很纠结究竟要不要推这部来自propeller的作品。</p>
 <p>第一次接触到这部作品是在初中，当时打到序章后到达樱花庄的那部分的时候感觉不是很对胃口，于是就弃了。现在看来真是一大损失。</p>
@@ -518,7 +671,7 @@
     <link href="https://tinyadapter.ga/galgame-review/fortune-arterial/"/>
     <id>https://tinyadapter.ga/galgame-review/fortune-arterial/</id>
     <published>2017-02-20T05:46:10.000Z</published>
-    <updated>2017-05-21T13:30:55.807Z</updated>
+    <updated>2017-05-21T13:30:55.000Z</updated>
     
     <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/erika.jpg" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <p>说起来，自开始推Galgame起，我就没有做过二刷这种事情。</p>
@@ -587,7 +740,7 @@
     <link href="https://tinyadapter.ga/galgame-review/rendezvous/"/>
     <id>https://tinyadapter.ga/galgame-review/rendezvous/</id>
     <published>2017-02-08T16:17:18.000Z</published>
-    <updated>2017-05-21T13:32:04.184Z</updated>
+    <updated>2017-05-21T13:32:04.000Z</updated>
     
     <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/fuuka.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <p>早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。  </p>

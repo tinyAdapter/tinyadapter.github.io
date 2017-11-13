@@ -15,35 +15,42 @@
 
     <url>
         <loc>https://tinyadapter.ga/categories/Win10/</loc>
-        <lastmod>2017-06-18T14:14:18.923Z</lastmod>
+        <lastmod>2017-06-18T14:14:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/</loc>
-        <lastmod>2017-07-01T05:03:58.757Z</lastmod>
+        <lastmod>2017-07-01T05:03:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.ga/categories/%E4%B8%9C%E6%96%B9Project/</loc>
-        <lastmod>2017-08-09T14:59:38.925Z</lastmod>
+        <lastmod>2017-08-09T14:59:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.ga/categories/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E5%B0%8F%E8%AF%84/</loc>
-        <lastmod>2017-09-23T07:20:14.559Z</lastmod>
+        <lastmod>2017-09-23T07:20:14.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.ga/categories/%E7%A4%BE%E4%BC%9A/</loc>
+        <lastmod>2017-11-13T12:28:19.968Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.ga/categories/Web/</loc>
-        <lastmod>2017-10-08T02:53:48.688Z</lastmod>
+        <lastmod>2017-11-13T15:57:55.469Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
