@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-11-13T15:57:55.469Z</updated>
+  <updated>2017-11-15T05:16:25.000Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -20,14 +20,13 @@
     <link href="https://tinyadapter.ga/web/jigenconnection/"/>
     <id>https://tinyadapter.ga/web/jigenconnection/</id>
     <published>2017-11-13T15:55:52.000Z</published>
-    <updated>2017-11-13T15:57:55.469Z</updated>
+    <updated>2017-11-15T05:16:25.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
 <p>于是首先应该做件事——起个中二的名字。</p>
 <p>想来想去，就叫“次元连线”好了（笑）</p>
 <p>一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（</p>
-<hr>
-<p>论述一下思路。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p>论述一下思路。</p>
 <p>首先说明两个基本的大原则：</p>
 <ol>
 <li>用户的文本在本地端加密后再送上服务器；</li>
@@ -119,8 +118,7 @@
 &lt;p&gt;于是首先应该做件事——起个中二的名字。&lt;/p&gt;
 &lt;p&gt;想来想去，就叫“次元连线”好了（笑）&lt;/p&gt;
 &lt;p&gt;一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;论
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
     
     </summary>
     
@@ -138,11 +136,10 @@
     <link href="https://tinyadapter.ga/society/escape-from-internet/"/>
     <id>https://tinyadapter.ga/society/escape-from-internet/</id>
     <published>2017-10-29T14:26:24.000Z</published>
-    <updated>2017-11-13T12:28:19.968Z</updated>
+    <updated>2017-11-15T05:16:30.006Z</updated>
     
     <content type="html"><![CDATA[<p>前几年有个比较热的词，叫做“逃离北上广”，大概意思是说北上广的压力过大导致很多年轻人选择了离开。</p>
-<p>今天借用一下这个词，来说一说“逃离互联网”。</p>
-<p>有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波又一波的新高，后有国内的“互联网+”、“996”等被创造出的“亚文化”领衔。如今这样一片大好形势，怎么可能会想着离开呢？</p>
+<p>今天借用一下这个词，来说一说“逃离互联网”。<br><a id="more"></a><br>有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波又一波的新高，后有国内的“互联网+”、“996”等被创造出的“亚文化”领衔。如今这样一片大好形势，怎么可能会想着离开呢？</p>
 <p>别误会，我本人也算是半只脚踏进互联网行业的人（当然了，随时间推移可能会把脚收回来踏进硬件领域），但是也正因为如此，我会比其他不了解这个行业的人看到得更多，因此也大概会预测到那把悬在互联网头顶上的达摩克利斯之剑什么时候会落下。</p>
 <p>毫不避讳地说，互联网依旧是如今最有可能创业成功的行业——也许已经没有了之一——<strong>只要你心中的成功是被某个现在股价窜天的企业收购的话。</strong></p>
 <h2 id="Fed的哲学"><a href="#Fed的哲学" class="headerlink" title="Fed的哲学"></a>Fed的哲学</h2><p>最近华尔街那边出了个小新闻：几个分析师拿着纳斯达克100指数近几年的走势和美联储手里的美元利率一对比，发现了一个“冲击的事实”：从美联储宣布QE开始，美国的科技股就迎来了迄今为止最大的一波涨幅。</p>
@@ -154,8 +151,7 @@
     <summary type="html">
     
       &lt;p&gt;前几年有个比较热的词，叫做“逃离北上广”，大概意思是说北上广的压力过大导致很多年轻人选择了离开。&lt;/p&gt;
-&lt;p&gt;今天借用一下这个词，来说一说“逃离互联网”。&lt;/p&gt;
-&lt;p&gt;有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波
+&lt;p&gt;今天借用一下这个词，来说一说“逃离互联网”。&lt;br&gt;
     
     </summary>
     
