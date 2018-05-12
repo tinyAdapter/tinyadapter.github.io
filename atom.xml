@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2018-05-12T03:14:34.195Z</updated>
+  <updated>2018-05-12T03:19:41.068Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="https://tinyadapter.ga/web/jigenconnection/"/>
     <id>https://tinyadapter.ga/web/jigenconnection/</id>
     <published>2017-11-13T15:55:00.000Z</published>
-    <updated>2018-05-12T03:14:34.195Z</updated>
+    <updated>2018-05-12T03:19:41.068Z</updated>
     
     <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
 <p>于是首先应该做件事——起个中二的名字。</p>
 <p>想来想去，就叫“次元连线”好了（笑）</p>
-<p>一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p>论述一下思路。</p>
+<p>一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（<br><a id="more"></a></p>
+<p>论述一下思路。</p>
 <p>首先说明两个基本的大原则：</p>
 <ol>
 <li>用户的文本在本地端加密后再送上服务器；</li>
@@ -134,8 +134,7 @@
       &lt;p&gt;最近受Mastodon的启发，有个分布式社交网络的实现想法。&lt;/p&gt;
 &lt;p&gt;于是首先应该做件事——起个中二的名字。&lt;/p&gt;
 &lt;p&gt;想来想去，就叫“次元连线”好了（笑）&lt;/p&gt;
-&lt;p&gt;一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（&lt;/p&gt;
-&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
+&lt;p&gt;一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（&lt;br&gt;
     
     </summary>
     
