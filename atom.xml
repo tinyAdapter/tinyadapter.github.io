@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.ga/"/>
-  <updated>2017-11-15T05:16:25.000Z</updated>
+  <updated>2018-05-12T03:14:34.195Z</updated>
   <id>https://tinyadapter.ga/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>“次元连线”设计思路</title>
     <link href="https://tinyadapter.ga/web/jigenconnection/"/>
     <id>https://tinyadapter.ga/web/jigenconnection/</id>
-    <published>2017-11-13T15:55:52.000Z</published>
-    <updated>2017-11-15T05:16:25.000Z</updated>
+    <published>2017-11-13T15:55:00.000Z</published>
+    <updated>2018-05-12T03:14:34.195Z</updated>
     
     <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
 <p>于是首先应该做件事——起个中二的名字。</p>
@@ -76,7 +76,7 @@
 <thead>
 <tr>
 <th>帖子id</th>
-<th>标题（使用访问密码加密）</th>
+<th>标题(使用访问密码加密)</th>
 </tr>
 </thead>
 <tbody>
@@ -92,7 +92,7 @@
 <th>次元群hash</th>
 <th>帖子id</th>
 <th>发表时间</th>
-<th>内容（加密）</th>
+<th>内容(加密)</th>
 </tr>
 </thead>
 <tbody>
@@ -102,7 +102,24 @@
 </tbody>
 </table>
 <p>理论上，每条数据都允许被所有人访问到，但如果不知道密码的话便无法解密（强行访问只会得到一堆乱码）</p>
-<p>发表帖子/跟帖时向服务器发送的数据格式：<br>|次元群hash|帖子id|访问密码hash|用户id|用户密码hash|内容（加密）|<br>|-|-|-|-|-|-|</p>
+<p>发表帖子/跟帖时向服务器发送的数据格式：</p>
+<table>
+<thead>
+<tr>
+<th>次元群hash</th>
+<th>帖子id</th>
+<th>访问密码hash</th>
+<th>用户id</th>
+<th>用户密码hash</th>
+<th>内容(加密)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="protected-public结点"><a href="#protected-public结点" class="headerlink" title="protected/public结点"></a>protected/public结点</h2><p>protected和public结点类似，都属于内容备份机制，只不过protected结点在信任的若干结点中选取几个做备份，而public选取随机的public结点做备份，同时接受来自任意结点的数据。</p>
 <p>而在服务器的组织上，使用Kademlia算法（即DHT）。</p>
 <p>每个public结点随机选取3台public结点并作为数据备份结点。</p>
