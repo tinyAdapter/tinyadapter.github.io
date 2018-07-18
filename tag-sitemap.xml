@@ -30,13 +30,6 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/tags/galgame/</loc>
-        <lastmod>2017-07-01T05:03:58.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://tinyadapter.ga/tags/propeller/</loc>
         <lastmod>2017-07-01T05:03:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -87,14 +80,14 @@
 
     <url>
         <loc>https://tinyadapter.ga/tags/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
-        <lastmod>2017-12-01T03:34:56.742Z</lastmod>
+        <lastmod>2017-12-01T03:34:56.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.ga/tags/%E6%B3%A1%E6%B2%AB/</loc>
-        <lastmod>2017-12-01T03:34:56.742Z</lastmod>
+        <lastmod>2017-12-01T03:34:56.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -109,6 +102,20 @@
     <url>
         <loc>https://tinyadapter.ga/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/</loc>
         <lastmod>2018-05-12T03:19:41.068Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.ga/tags/galgame/</loc>
+        <lastmod>2018-07-18T13:44:17.816Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.ga/tags/HARUKAZE/</loc>
+        <lastmod>2018-07-18T13:44:17.816Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
