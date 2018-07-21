@@ -361,7 +361,7 @@ background-attachment: fixed; background-size: cover">
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/galgame-review/sakurano/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="galgame-review/sakurano/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="galgame-review/sakurano/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -659,8 +659,11 @@ background-attachment: fixed; background-size: cover">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="galgame-review/sakurano/"
-           data-title="《隙间樱花与谎言都市》小评" data-url="https://tinyadapter.ga/galgame-review/sakurano/">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     
   </div>
@@ -707,7 +710,7 @@ background-attachment: fixed; background-size: cover">
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -844,7 +847,7 @@ background-attachment: fixed; background-size: cover">
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">共19.7k字</span>
+  <span class="post-count">共19.8k字</span>
 </div>
 
 
@@ -933,32 +936,38 @@ background-attachment: fixed; background-size: cover">
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"tinyadapter"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'tinyadapter';
+      var disqus_identifier = 'galgame-review/sakurano/';
+
+      var disqus_title = "《隙间樱花与谎言都市》小评";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+
+    </script>
   
-
-
-
 
 
 
