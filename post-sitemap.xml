@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://tinyadapter.ga</loc>
+        <loc>https://tinyadapter.nl</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/society/martin-niemoller/</loc>
-        <lastmod>2018-07-21T06:26:29.714Z</lastmod>
+        <loc>https://tinyadapter.nl/society/martin-niemoller/</loc>
+        <lastmod>2018-07-21T06:26:29.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/galgame-review/noraneko/</loc>
-        <lastmod>2018-07-18T13:46:52.086Z</lastmod>
+        <loc>https://tinyadapter.nl/galgame-review/noraneko/</loc>
+        <lastmod>2018-07-18T13:46:52.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/web/jigenconnection/</loc>
-        <lastmod>2018-05-12T03:19:41.068Z</lastmod>
+        <loc>https://tinyadapter.nl/web/jigenconnection/</loc>
+        <lastmod>2018-05-12T03:19:41.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/society/escape-from-internet/</loc>
-        <lastmod>2017-12-01T03:34:56.743Z</lastmod>
+        <loc>https://tinyadapter.nl/society/escape-from-internet/</loc>
+        <lastmod>2017-12-01T03:34:56.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/web/pixiv-magic/</loc>
+        <loc>https://tinyadapter.nl/web/pixiv-magic/</loc>
         <lastmod>2017-10-08T02:53:48.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,7 +47,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/lightnovel-review/jyosou-kaseikyoushi/</loc>
+        <loc>https://tinyadapter.nl/lightnovel-review/jyosou-kaseikyoushi/</loc>
         <lastmod>2017-09-23T07:20:14.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +55,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/web/might-and-magic/</loc>
+        <loc>https://tinyadapter.nl/web/might-and-magic/</loc>
         <lastmod>2017-09-20T14:12:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -63,7 +63,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/touhou/doujin-music-elect/</loc>
+        <loc>https://tinyadapter.nl/touhou/doujin-music-elect/</loc>
         <lastmod>2017-08-09T14:59:38.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -71,7 +71,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/galgame-review/sakurano/</loc>
+        <loc>https://tinyadapter.nl/galgame-review/sakurano/</loc>
         <lastmod>2017-07-01T05:03:58.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -79,7 +79,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/win10/win10-quickaccess-bug/</loc>
+        <loc>https://tinyadapter.nl/win10/win10-quickaccess-bug/</loc>
         <lastmod>2017-06-18T14:14:18.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -87,7 +87,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/galgame-review/rendezvous/</loc>
+        <loc>https://tinyadapter.nl/galgame-review/rendezvous/</loc>
         <lastmod>2017-05-21T13:32:04.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -95,7 +95,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/galgame-review/fortune-arterial/</loc>
+        <loc>https://tinyadapter.nl/galgame-review/fortune-arterial/</loc>
         <lastmod>2017-05-21T13:30:55.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -103,7 +103,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/web/apache2-google-proxy/</loc>
+        <loc>https://tinyadapter.nl/web/apache2-google-proxy/</loc>
         <lastmod>2017-03-21T07:52:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -111,7 +111,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/galgame-review/galgame-review-block-opened/</loc>
+        <loc>https://tinyadapter.nl/galgame-review/galgame-review-block-opened/</loc>
         <lastmod>2017-02-14T16:54:12.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -119,7 +119,7 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.ga/helloworld/</loc>
+        <loc>https://tinyadapter.nl/helloworld/</loc>
         <lastmod>2017-02-14T16:53:54.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

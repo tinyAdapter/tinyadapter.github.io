@@ -4,9 +4,9 @@
   <subtitle>砕くる月と酔ふ梦の集结</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://tinyadapter.ga/"/>
-  <updated>2018-07-21T06:26:29.714Z</updated>
-  <id>https://tinyadapter.ga/</id>
+  <link href="https://tinyadapter.nl/"/>
+  <updated>2018-07-21T06:26:29.000Z</updated>
+  <id>https://tinyadapter.nl/</id>
   
   <author>
     <name>tinyAdapter</name>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Als die Nazis die Kommunisten holten</title>
-    <link href="https://tinyadapter.ga/society/martin-niemoller/"/>
-    <id>https://tinyadapter.ga/society/martin-niemoller/</id>
+    <link href="https://tinyadapter.nl/society/martin-niemoller/"/>
+    <id>https://tinyadapter.nl/society/martin-niemoller/</id>
     <published>2018-07-21T06:21:55.000Z</published>
-    <updated>2018-07-21T06:26:29.714Z</updated>
+    <updated>2018-07-21T06:26:29.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>Als die Nazis die Kommunisten holten,<br>habe ich geschwiegen;<br>ich war ja kein Kommunist.</p>
@@ -40,17 +40,17 @@
     
     </summary>
     
-      <category term="社会" scheme="https://tinyadapter.ga/categories/%E7%A4%BE%E4%BC%9A/"/>
+      <category term="社会" scheme="https://tinyadapter.nl/categories/%E7%A4%BE%E4%BC%9A/"/>
     
     
   </entry>
   
   <entry>
     <title>《ノラと皇女と野良猫ハート》小评</title>
-    <link href="https://tinyadapter.ga/galgame-review/noraneko/"/>
-    <id>https://tinyadapter.ga/galgame-review/noraneko/</id>
+    <link href="https://tinyadapter.nl/galgame-review/noraneko/"/>
+    <id>https://tinyadapter.nl/galgame-review/noraneko/</id>
     <published>2018-07-18T10:52:26.000Z</published>
-    <updated>2018-07-18T13:46:52.086Z</updated>
+    <updated>2018-07-18T13:46:52.000Z</updated>
     
     <content type="html"><![CDATA[<p>啊啊，好久不见。</p>
 <p>没更新blog的这接近一年的时间里，本人过得简直焦头烂额，经历了各种诸如「24小时精通软件工程」、「16小时精通操作系统」、「48小时精通数据库系统」之类的不堪回首的往事。</p>
@@ -139,21 +139,21 @@
     
     </summary>
     
-      <category term="Galgame小评" scheme="https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
+      <category term="Galgame小评" scheme="https://tinyadapter.nl/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
     
     
-      <category term="galgame" scheme="https://tinyadapter.ga/tags/galgame/"/>
+      <category term="galgame" scheme="https://tinyadapter.nl/tags/galgame/"/>
     
-      <category term="HARUKAZE" scheme="https://tinyadapter.ga/tags/HARUKAZE/"/>
+      <category term="HARUKAZE" scheme="https://tinyadapter.nl/tags/HARUKAZE/"/>
     
   </entry>
   
   <entry>
     <title>“次元连线”设计思路</title>
-    <link href="https://tinyadapter.ga/web/jigenconnection/"/>
-    <id>https://tinyadapter.ga/web/jigenconnection/</id>
+    <link href="https://tinyadapter.nl/web/jigenconnection/"/>
+    <id>https://tinyadapter.nl/web/jigenconnection/</id>
     <published>2017-11-13T15:55:00.000Z</published>
-    <updated>2018-05-12T03:19:41.068Z</updated>
+    <updated>2018-05-12T03:19:41.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
 <p>于是首先应该做件事——起个中二的名字。</p>
@@ -271,21 +271,21 @@
     
     </summary>
     
-      <category term="Web" scheme="https://tinyadapter.ga/categories/Web/"/>
+      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
     
     
-      <category term="分布式" scheme="https://tinyadapter.ga/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+      <category term="分布式" scheme="https://tinyadapter.nl/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
     
-      <category term="社交网络" scheme="https://tinyadapter.ga/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/"/>
+      <category term="社交网络" scheme="https://tinyadapter.nl/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>逃离互联网</title>
-    <link href="https://tinyadapter.ga/society/escape-from-internet/"/>
-    <id>https://tinyadapter.ga/society/escape-from-internet/</id>
+    <link href="https://tinyadapter.nl/society/escape-from-internet/"/>
+    <id>https://tinyadapter.nl/society/escape-from-internet/</id>
     <published>2017-10-29T14:26:24.000Z</published>
-    <updated>2017-12-01T03:34:56.743Z</updated>
+    <updated>2017-12-01T03:34:56.000Z</updated>
     
     <content type="html"><![CDATA[<p>前几年有个比较热的词，叫做“逃离北上广”，大概意思是说北上广的压力过大导致很多年轻人选择了离开。</p>
 <p>今天借用一下这个词，来说一说“逃离互联网”。<br><a id="more"></a><br>有人看到这个词，可能会觉得我一定是疯了，这前有美国纳斯达克指数被科技股尤其是互联网相关的大企业带动一波又一波的新高，后有国内的“互联网+”、“996”等被创造出的“亚文化”领衔。如今这样一片大好形势，怎么可能会想着离开呢？</p>
@@ -304,19 +304,19 @@
     
     </summary>
     
-      <category term="社会" scheme="https://tinyadapter.ga/categories/%E7%A4%BE%E4%BC%9A/"/>
+      <category term="社会" scheme="https://tinyadapter.nl/categories/%E7%A4%BE%E4%BC%9A/"/>
     
     
-      <category term="互联网" scheme="https://tinyadapter.ga/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+      <category term="互联网" scheme="https://tinyadapter.nl/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
     
-      <category term="泡沫" scheme="https://tinyadapter.ga/tags/%E6%B3%A1%E6%B2%AB/"/>
+      <category term="泡沫" scheme="https://tinyadapter.nl/tags/%E6%B3%A1%E6%B2%AB/"/>
     
   </entry>
   
   <entry>
     <title>Pixiv魔法</title>
-    <link href="https://tinyadapter.ga/web/pixiv-magic/"/>
-    <id>https://tinyadapter.ga/web/pixiv-magic/</id>
+    <link href="https://tinyadapter.nl/web/pixiv-magic/"/>
+    <id>https://tinyadapter.nl/web/pixiv-magic/</id>
     <published>2017-09-27T09:55:19.000Z</published>
     <updated>2017-10-08T02:53:48.000Z</updated>
     
@@ -332,19 +332,19 @@
     
     </summary>
     
-      <category term="Web" scheme="https://tinyadapter.ga/categories/Web/"/>
+      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
     
     
-      <category term="Pixiv" scheme="https://tinyadapter.ga/tags/Pixiv/"/>
+      <category term="Pixiv" scheme="https://tinyadapter.nl/tags/Pixiv/"/>
     
-      <category term="hosts" scheme="https://tinyadapter.ga/tags/hosts/"/>
+      <category term="hosts" scheme="https://tinyadapter.nl/tags/hosts/"/>
     
   </entry>
   
   <entry>
     <title>《女装家教》小评</title>
-    <link href="https://tinyadapter.ga/lightnovel-review/jyosou-kaseikyoushi/"/>
-    <id>https://tinyadapter.ga/lightnovel-review/jyosou-kaseikyoushi/</id>
+    <link href="https://tinyadapter.nl/lightnovel-review/jyosou-kaseikyoushi/"/>
+    <id>https://tinyadapter.nl/lightnovel-review/jyosou-kaseikyoushi/</id>
     <published>2017-09-23T05:36:08.000Z</published>
     <updated>2017-09-23T07:20:14.000Z</updated>
     
@@ -421,19 +421,19 @@
     
     </summary>
     
-      <category term="轻小说小评" scheme="https://tinyadapter.ga/categories/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E5%B0%8F%E8%AF%84/"/>
+      <category term="轻小说小评" scheme="https://tinyadapter.nl/categories/%E8%BD%BB%E5%B0%8F%E8%AF%B4%E5%B0%8F%E8%AF%84/"/>
     
     
-      <category term="轻小说" scheme="https://tinyadapter.ga/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/"/>
+      <category term="轻小说" scheme="https://tinyadapter.nl/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/"/>
     
-      <category term="野村美月" scheme="https://tinyadapter.ga/tags/%E9%87%8E%E6%9D%91%E7%BE%8E%E6%9C%88/"/>
+      <category term="野村美月" scheme="https://tinyadapter.nl/tags/%E9%87%8E%E6%9D%91%E7%BE%8E%E6%9C%88/"/>
     
   </entry>
   
   <entry>
     <title>将魔法隐藏在任意门后</title>
-    <link href="https://tinyadapter.ga/web/might-and-magic/"/>
-    <id>https://tinyadapter.ga/web/might-and-magic/</id>
+    <link href="https://tinyadapter.nl/web/might-and-magic/"/>
+    <id>https://tinyadapter.nl/web/might-and-magic/</id>
     <published>2017-09-18T14:14:00.000Z</published>
     <updated>2017-09-20T14:12:32.000Z</updated>
     
@@ -485,15 +485,15 @@
     
     </summary>
     
-      <category term="Web" scheme="https://tinyadapter.ga/categories/Web/"/>
+      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
     
     
   </entry>
   
   <entry>
     <title>同人音乐、CD与电子正版</title>
-    <link href="https://tinyadapter.ga/touhou/doujin-music-elect/"/>
-    <id>https://tinyadapter.ga/touhou/doujin-music-elect/</id>
+    <link href="https://tinyadapter.nl/touhou/doujin-music-elect/"/>
+    <id>https://tinyadapter.nl/touhou/doujin-music-elect/</id>
     <published>2017-08-09T13:12:24.000Z</published>
     <updated>2017-08-09T14:59:38.000Z</updated>
     
@@ -554,19 +554,19 @@
     
     </summary>
     
-      <category term="东方Project" scheme="https://tinyadapter.ga/categories/%E4%B8%9C%E6%96%B9Project/"/>
+      <category term="东方Project" scheme="https://tinyadapter.nl/categories/%E4%B8%9C%E6%96%B9Project/"/>
     
     
-      <category term="touhou" scheme="https://tinyadapter.ga/tags/touhou/"/>
+      <category term="touhou" scheme="https://tinyadapter.nl/tags/touhou/"/>
     
-      <category term="doujinmusic" scheme="https://tinyadapter.ga/tags/doujinmusic/"/>
+      <category term="doujinmusic" scheme="https://tinyadapter.nl/tags/doujinmusic/"/>
     
   </entry>
   
   <entry>
     <title>Win10“快速访问”内容合并的解决方案</title>
-    <link href="https://tinyadapter.ga/win10/win10-quickaccess-bug/"/>
-    <id>https://tinyadapter.ga/win10/win10-quickaccess-bug/</id>
+    <link href="https://tinyadapter.nl/win10/win10-quickaccess-bug/"/>
+    <id>https://tinyadapter.nl/win10/win10-quickaccess-bug/</id>
     <published>2017-06-18T13:54:23.000Z</published>
     <updated>2017-06-18T14:14:18.000Z</updated>
     
@@ -589,19 +589,19 @@
     
     </summary>
     
-      <category term="Win10" scheme="https://tinyadapter.ga/categories/Win10/"/>
+      <category term="Win10" scheme="https://tinyadapter.nl/categories/Win10/"/>
     
     
-      <category term="win10" scheme="https://tinyadapter.ga/tags/win10/"/>
+      <category term="win10" scheme="https://tinyadapter.nl/tags/win10/"/>
     
-      <category term="快速访问" scheme="https://tinyadapter.ga/tags/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE/"/>
+      <category term="快速访问" scheme="https://tinyadapter.nl/tags/%E5%BF%AB%E9%80%9F%E8%AE%BF%E9%97%AE/"/>
     
   </entry>
   
   <entry>
     <title>《隙间樱花与谎言都市》小评</title>
-    <link href="https://tinyadapter.ga/galgame-review/sakurano/"/>
-    <id>https://tinyadapter.ga/galgame-review/sakurano/</id>
+    <link href="https://tinyadapter.nl/galgame-review/sakurano/"/>
+    <id>https://tinyadapter.nl/galgame-review/sakurano/</id>
     <published>2017-06-09T04:24:27.000Z</published>
     <updated>2017-07-01T05:03:58.000Z</updated>
     
@@ -802,19 +802,19 @@
     
     </summary>
     
-      <category term="Galgame小评" scheme="https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
+      <category term="Galgame小评" scheme="https://tinyadapter.nl/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
     
     
-      <category term="galgame" scheme="https://tinyadapter.ga/tags/galgame/"/>
+      <category term="galgame" scheme="https://tinyadapter.nl/tags/galgame/"/>
     
-      <category term="propeller" scheme="https://tinyadapter.ga/tags/propeller/"/>
+      <category term="propeller" scheme="https://tinyadapter.nl/tags/propeller/"/>
     
   </entry>
   
   <entry>
     <title>《FORTUNE ARTERIAL》小评</title>
-    <link href="https://tinyadapter.ga/galgame-review/fortune-arterial/"/>
-    <id>https://tinyadapter.ga/galgame-review/fortune-arterial/</id>
+    <link href="https://tinyadapter.nl/galgame-review/fortune-arterial/"/>
+    <id>https://tinyadapter.nl/galgame-review/fortune-arterial/</id>
     <published>2017-02-20T05:46:10.000Z</published>
     <updated>2017-05-21T13:30:55.000Z</updated>
     
@@ -871,19 +871,19 @@
     
     </summary>
     
-      <category term="Galgame小评" scheme="https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
+      <category term="Galgame小评" scheme="https://tinyadapter.nl/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
     
     
-      <category term="galgame" scheme="https://tinyadapter.ga/tags/galgame/"/>
+      <category term="galgame" scheme="https://tinyadapter.nl/tags/galgame/"/>
     
-      <category term="august" scheme="https://tinyadapter.ga/tags/august/"/>
+      <category term="august" scheme="https://tinyadapter.nl/tags/august/"/>
     
   </entry>
   
   <entry>
     <title>《罪之光Rendezvous》小评</title>
-    <link href="https://tinyadapter.ga/galgame-review/rendezvous/"/>
-    <id>https://tinyadapter.ga/galgame-review/rendezvous/</id>
+    <link href="https://tinyadapter.nl/galgame-review/rendezvous/"/>
+    <id>https://tinyadapter.nl/galgame-review/rendezvous/</id>
     <published>2017-02-08T16:17:18.000Z</published>
     <updated>2017-05-21T13:32:04.000Z</updated>
     
@@ -1057,19 +1057,19 @@
     
     </summary>
     
-      <category term="Galgame小评" scheme="https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
+      <category term="Galgame小评" scheme="https://tinyadapter.nl/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
     
     
-      <category term="galgame" scheme="https://tinyadapter.ga/tags/galgame/"/>
+      <category term="galgame" scheme="https://tinyadapter.nl/tags/galgame/"/>
     
-      <category term="minori" scheme="https://tinyadapter.ga/tags/minori/"/>
+      <category term="minori" scheme="https://tinyadapter.nl/tags/minori/"/>
     
   </entry>
   
   <entry>
     <title>“Galgame小评”板块开启</title>
-    <link href="https://tinyadapter.ga/galgame-review/galgame-review-block-opened/"/>
-    <id>https://tinyadapter.ga/galgame-review/galgame-review-block-opened/</id>
+    <link href="https://tinyadapter.nl/galgame-review/galgame-review-block-opened/"/>
+    <id>https://tinyadapter.nl/galgame-review/galgame-review-block-opened/</id>
     <published>2017-02-08T15:32:55.000Z</published>
     <updated>2017-02-14T16:54:12.000Z</updated>
     
@@ -1097,15 +1097,15 @@
     
     </summary>
     
-      <category term="Galgame小评" scheme="https://tinyadapter.ga/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
+      <category term="Galgame小评" scheme="https://tinyadapter.nl/categories/Galgame%E5%B0%8F%E8%AF%84/"/>
     
     
   </entry>
   
   <entry>
     <title>Apache2 反向代理Google时踩的坑 – 模块加载</title>
-    <link href="https://tinyadapter.ga/web/apache2-google-proxy/"/>
-    <id>https://tinyadapter.ga/web/apache2-google-proxy/</id>
+    <link href="https://tinyadapter.nl/web/apache2-google-proxy/"/>
+    <id>https://tinyadapter.nl/web/apache2-google-proxy/</id>
     <published>2017-02-08T11:58:05.000Z</published>
     <updated>2017-03-21T07:52:08.000Z</updated>
     
@@ -1129,15 +1129,15 @@
     
     </summary>
     
-      <category term="Web" scheme="https://tinyadapter.ga/categories/Web/"/>
+      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
     
     
   </entry>
   
   <entry>
     <title>どうも、世界！</title>
-    <link href="https://tinyadapter.ga/helloworld/"/>
-    <id>https://tinyadapter.ga/helloworld/</id>
+    <link href="https://tinyadapter.nl/helloworld/"/>
+    <id>https://tinyadapter.nl/helloworld/</id>
     <published>2017-02-06T13:32:42.000Z</published>
     <updated>2017-02-14T16:53:54.000Z</updated>
     
@@ -1166,7 +1166,7 @@
     
     </summary>
     
-      <category term="Hello" scheme="https://tinyadapter.ga/categories/Hello/"/>
+      <category term="Hello" scheme="https://tinyadapter.nl/categories/Hello/"/>
     
     
   </entry>
