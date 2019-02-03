@@ -107,15 +107,22 @@
     </url>
 
     <url>
-        <loc>https://tinyadapter.nl/tags/galgame/</loc>
+        <loc>https://tinyadapter.nl/tags/HARUKAZE/</loc>
         <lastmod>2018-07-18T13:46:52.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://tinyadapter.nl/tags/HARUKAZE/</loc>
-        <lastmod>2018-07-18T13:46:52.000Z</lastmod>
+        <loc>https://tinyadapter.nl/tags/galgame/</loc>
+        <lastmod>2019-02-03T16:17:30.605Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.nl/tags/ALcot/</loc>
+        <lastmod>2019-02-03T16:17:30.605Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
