@@ -115,14 +115,28 @@
 
     <url>
         <loc>https://tinyadapter.nl/tags/galgame/</loc>
-        <lastmod>2019-02-03T16:17:30.605Z</lastmod>
+        <lastmod>2019-02-06T14:56:08.132Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/ALcot/</loc>
-        <lastmod>2019-02-03T16:17:30.605Z</lastmod>
+        <lastmod>2019-02-06T14:56:08.132Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.nl/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+        <lastmod>2019-03-05T13:13:09.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.nl/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</loc>
+        <lastmod>2019-03-05T13:13:09.557Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
