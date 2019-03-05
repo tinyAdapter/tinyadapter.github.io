@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.nl/"/>
-  <updated>2019-03-05T13:13:09.557Z</updated>
+  <updated>2019-03-05T13:19:32.373Z</updated>
   <id>https://tinyadapter.nl/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="https://tinyadapter.nl/code/di-to-overcome-drawbacks-of-singleton/"/>
     <id>https://tinyadapter.nl/code/di-to-overcome-drawbacks-of-singleton/</id>
     <published>2019-03-15T11:33:28.000Z</published>
-    <updated>2019-03-05T13:13:09.557Z</updated>
+    <updated>2019-03-05T13:19:32.373Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。</p>
 <p>不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。</p>
 <p>这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了<strong>全局可修改性</strong>。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个<code>XXXClass.getInstance()</code>与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。</p>
 <p>在这种错误的应用方式下，单例模式逐渐向着<strong>那个恶魔</strong>靠近。没错，充其量，不过是<strong>比全局变量好了一点点而已</strong>。</p>
+<a id="more"></a>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>可能有人要问了，既然你把单例模式说得那么坏，那么如果我确实需要全局唯一性怎么办呢？</p>
 <p>这个问题比较好回答。其实单例模式也不是不可以用，只是不能滥用，不能我随便在任何一个地方想调用它就调用它。</p>
 <ol>
@@ -60,7 +61,10 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。&lt;/p&gt;
+&lt;p&gt;不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。&lt;/p&gt;
+&lt;p&gt;这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了&lt;strong&gt;全局可修改性&lt;/strong&gt;。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个&lt;code&gt;XXXClass.getInstance()&lt;/code&gt;与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。&lt;/p&gt;
+&lt;p&gt;在这种错误的应用方式下，单例模式逐渐向着&lt;strong&gt;那个恶魔&lt;/strong&gt;靠近。没错，充其量，不过是&lt;strong&gt;比全局变量好了一点点而已&lt;/strong&gt;。&lt;/p&gt;
     
     </summary>
     
