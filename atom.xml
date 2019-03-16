@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.nl/"/>
-  <updated>2019-03-05T13:19:32.373Z</updated>
+  <updated>2019-03-16T04:24:02.973Z</updated>
   <id>https://tinyadapter.nl/</id>
   
   <author>
@@ -14,6 +14,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TypeScript + Vue, 防止 TSLint, Vetur, Prettier 打架的 VSCode 配置方式</title>
+    <link href="https://tinyadapter.nl/code/typescript-vue-linters-formatters-settings/"/>
+    <id>https://tinyadapter.nl/code/typescript-vue-linters-formatters-settings/</id>
+    <published>2019-03-16T02:22:02.000Z</published>
+    <updated>2019-03-16T04:24:02.973Z</updated>
+    
+    <content type="html"><![CDATA[<p>注：大忙人请直接跳到最后一节哦~</p>
+<p>最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：</p>
+<p><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" alt="JavaScript Style Guide"></p>
+<p>讲真，这个图标还是有点好看的。</p>
+<p>不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。</p>
+<p>没办法，只好先关了 Prettier，把 TSLint 装了起来。</p>
+<a id="more"></a>
+<p>顺带说一句，大概也就前两个月，TypeScript 团队<a href="https://github.com/Microsoft/TypeScript/issues/29288" target="_blank" rel="external">宣布使用 ESLint 作为 TypeScript 和 VSCode 仓库的 Linter</a>，ESLint 那边也表示欢迎，当天就放出了新的 <a href="https://github.com/typescript-eslint/typescript-eslint" target="_blank" rel="external">typescript-eslint</a> 项目。但是两个月后的现在，我在使用 ESLint 检查 TypeScript 代码时依然会遇到一些 BUG，因此这里就暂时依旧用着 TSLint 了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yarn add -D tslint tslint-config-standard</div></pre></td></tr></table></figure>
+<p>再配置一下 tslint.json 和 tsconfig.json：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//tslint.json</div><div class="line">&#123;</div><div class="line">  "extends": ["tslint:recommended", "tslint-config-standard"],</div><div class="line">  "rules": &#123;</div><div class="line">    "max-line-length": [true, 80],</div><div class="line">    //有些规则限制太死，先关一关</div><div class="line">    "no-var-requires": false,</div><div class="line">    "object-literal-sort-keys": false,</div><div class="line">    "no-floating-promises": false,</div><div class="line">    "forin": false</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//tsconfig.json</div><div class="line">&#123;</div><div class="line">  "compilerOptions": &#123;</div><div class="line">    "plugins": [</div><div class="line">      &#123;</div><div class="line">        "name": "typescript-tslint-plugin",</div><div class="line">        "configFile": "tslint.json",</div><div class="line">        "alwaysShowRuleFailuresAsWarnings": true</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>装好之后，确实出现了不少的警告信息，并且自动修复也能正常工作。但是用着用着，突然发现了一个问题，就是 TSLint 在一行代码超过 80 字符时并不会自动帮你把代码分行（当然，如果 TSLint 抑或是 ESLint 真的能做到这点的话，就不会有 Prettier 这个东西存在了「误」），虽然确实是个小问题，不过对于我这种习惯了什么格式化任务都一个 Ctrl-S 全权交给 Prettier 处理的人来说，确实有点不爽。</p>
+<p>这好办，把 Prettier 装回来不就好了……吗？</p>
+<p>从这里起，事情就开始向着不可控的方向发展了……</p>
+<h2 id="TSLint-Prettier"><a href="#TSLint-Prettier" class="headerlink" title="TSLint + Prettier"></a>TSLint + Prettier</h2><p>启动 Prettier，开启<code>editor.formatOnSave</code>，然后……</p>
+<p>这不对啊教练，怎么一按 Ctrl-S Prettier 就无视 TSLint 规则把分号又加回去了！</p>
+<p>……哦抱歉，因为 Prettier 是一个「武断」的格式化工具。它才不管你 TSLint 啥规则呢。</p>
+<p>这怎么办呢？</p>
+<p>还好，虽说 Prettier 配置项少得可怜，但是起码还给你了集成 ESLint 和 TSLint 的方式，就是<code>prettier.eslintIntegration</code>和<code>prettier.tslintIntegration</code>。</p>
+<p>看来它们还是有一丝良知的嘛，感心感心（佩服佩服）。</p>
+<p>在 VSCode 配置文件里把 Prettier 的 TSLint 集成打开：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">"prettier.tslintIntegration": true</div><div class="line">//启用下面这个VSCode默认的保存时格式化选项，Prettier会覆盖VSCode默认的规则</div><div class="line">"editor.formatOnSave": true</div></pre></td></tr></table></figure>
+<p>现在的情况是：</p>
+<ul>
+<li>VSCode::formatOnSave -&gt; Prettier 的格式化器 -&gt; TSLint 的规则</li>
+</ul>
+<p>Ctrl-S 一下，emmm，看起来不错，除了需要多按几次保存之外没啥缺点了。</p>
+<p>打开 Vue 文件，保存一下。</p>
+<p>……</p>
+<p>怎么没反应？</p>
+<p>You gotta be kidding me，原来 TSLint 插件根本没办法访问到 Vue 文件里的<code>&lt;script&gt;</code>块。</p>
+<h2 id="TSLint-TSLint-Vue-Prettier"><a href="#TSLint-TSLint-Vue-Prettier" class="headerlink" title="TSLint + TSLint Vue + Prettier"></a>TSLint + TSLint Vue + Prettier</h2><p>行行行，访问不到也正常，谁让 Vue 单文件组件这么特殊呢。</p>
+<p>商店里搜一波，找到了 TSLint Vue 插件，号称能帮助 lint .vue 文件。</p>
+<p>装上装上。Ctrl-S，┏ (゜ ω ゜)=☞！</p>
+<p>……</p>
+<p>怎么还是没反应？</p>
+<p>难道说不是 TSLint 的问题，而是 Prettier 访问不到.vue？</p>
+<p>好吧，直接说结论。其实不是因为 Prettier 对.vue 失效，Prettier 自身确实无法获取.vue 里的<code>&lt;script&gt;</code>块，但是 vetur 插件帮我们解决了这个问题。但是 vetur 调用 Prettier 并没有关注它是否继承 TSLint 配置，因此实际上还是 Prettier 默认的规则！</p>
+<h2 id="TSLint-TSLint-Vue-Vetur-Prettier"><a href="#TSLint-TSLint-Vue-Vetur-Prettier" class="headerlink" title="TSLint + TSLint Vue + Vetur + Prettier"></a>TSLint + TSLint Vue + Vetur + Prettier</h2><p>……有点糟糕。这样我们就只能启用<code>tslint.autoFixOnSave</code>，让 tslint 也参与到保存时的格式化过程中。但是，现在的情况就变成了：</p>
+<ul>
+<li>TSLint::autoFixOnSave -&gt; TSLint 的规则（无格式化）</li>
+<li>Vetur::format.defaultFormatter.ts -&gt; Prettier -&gt; Prettier 默认规则（带格式化）</li>
+</ul>
+<p>两个格式化过程之间规则的冲突导致了一个奇葩现象：</p>
+<p>保存 - 分号被加上 - 保存 - 分号被去掉 - 保存 - 分号被加上 ……</p>
+<p>因此最终，只能去掉第三条，也就是在配置文件里加上</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">"vetur.format.defaultFormatter.ts": "none"</div></pre></td></tr></table></figure>
+<p>来禁用掉 Vetur 对代码的格式化。</p>
+<p>这样，我们还是失去了.vue 文件里代码的自动格式化。不过其实，由于 TSLint 本身也能处理一部分代码不规范的问题，因此只剩下自动换行这件事没有被实现。</p>
+<p>那么问题来了，自动换行究竟是好还是坏呢？因为我目前已经遇到不少案例，Prettier 自动换行将我本就调好的格式给破坏掉了，而我又没办法修正，因为下次保存时又会被改回去。</p>
+<p>但是，自动换行又可以节省人工调整格式的麻烦。毕竟，能自动化的东西为什么还要人手动来搞呢？</p>
+<h2 id="最终的配置文件"><a href="#最终的配置文件" class="headerlink" title="最终的配置文件"></a>最终的配置文件</h2><p>废话不多说。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//settings.json - VSCode配置文件</div><div class="line">&#123;</div><div class="line">  ...</div><div class="line">  "editor.formatOnSave": true,</div><div class="line">  "prettier.tslintIntegration": true,</div><div class="line">  "tslint.autoFixOnSave": true,</div><div class="line">  "typescript.format.enable": false,</div><div class="line">  "vetur.format.defaultFormatter.ts": "none"</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">//tslint.json - 自己想要啥就配啥</div><div class="line">&#123;</div><div class="line">  "extends": ["tslint:recommended", "tslint-config-standard"],</div><div class="line">  "rules": &#123;</div><div class="line">    "max-line-length": [true, 80],</div><div class="line">    "no-var-requires": false,</div><div class="line">    "object-literal-sort-keys": false,</div><div class="line">    "no-floating-promises": false,</div><div class="line">    "forin": false</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//tsconfig.json</div><div class="line">&#123;</div><div class="line">  "compilerOptions": &#123;</div><div class="line">    ...</div><div class="line">    "plugins": [</div><div class="line">      &#123;</div><div class="line">        "name": "typescript-tslint-plugin",</div><div class="line">        "configFile": "tslint.json",</div><div class="line">        "alwaysShowRuleFailuresAsWarnings": true</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;注：大忙人请直接跳到最后一节哦~&lt;/p&gt;
+&lt;p&gt;最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.rawgit.com/standard/standard/master/badge.svg&quot; alt=&quot;JavaScript Style Guide&quot;&gt;&lt;/p&gt;
+&lt;p&gt;讲真，这个图标还是有点好看的。&lt;/p&gt;
+&lt;p&gt;不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。&lt;/p&gt;
+&lt;p&gt;没办法，只好先关了 Prettier，把 TSLint 装了起来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="代码" scheme="https://tinyadapter.nl/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="VSCode" scheme="https://tinyadapter.nl/tags/VSCode/"/>
+    
+      <category term="配置" scheme="https://tinyadapter.nl/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>使用依赖注入，「消灭」单例模式</title>
