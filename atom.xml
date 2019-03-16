@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.nl/"/>
-  <updated>2019-03-16T04:24:02.973Z</updated>
+  <updated>2019-03-16T05:07:44.988Z</updated>
   <id>https://tinyadapter.nl/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="https://tinyadapter.nl/code/typescript-vue-linters-formatters-settings/"/>
     <id>https://tinyadapter.nl/code/typescript-vue-linters-formatters-settings/</id>
     <published>2019-03-16T02:22:02.000Z</published>
-    <updated>2019-03-16T04:24:02.973Z</updated>
+    <updated>2019-03-16T05:07:44.988Z</updated>
     
     <content type="html"><![CDATA[<p>注：大忙人请直接跳到最后一节哦~</p>
 <p>最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：</p>
-<p><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" alt="JavaScript Style Guide"></p>
+<p><img src="https://camo.githubusercontent.com/ac8a70bd5fdbcef7bfc0f1095e276471765435d3/68747470733a2f2f63646e2e7261776769742e636f6d2f7374616e646172642f7374616e646172642f6d61737465722f62616467652e737667" alt="JavaScript Style Guide"></p>
 <p>讲真，这个图标还是有点好看的。</p>
 <p>不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。</p>
 <p>没办法，只好先关了 Prettier，把 TSLint 装了起来。</p>
@@ -85,7 +85,7 @@
     
       &lt;p&gt;注：大忙人请直接跳到最后一节哦~&lt;/p&gt;
 &lt;p&gt;最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.rawgit.com/standard/standard/master/badge.svg&quot; alt=&quot;JavaScript Style Guide&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/ac8a70bd5fdbcef7bfc0f1095e276471765435d3/68747470733a2f2f63646e2e7261776769742e636f6d2f7374616e646172642f7374616e646172642f6d61737465722f62616467652e737667&quot; alt=&quot;JavaScript Style Guide&quot;&gt;&lt;/p&gt;
 &lt;p&gt;讲真，这个图标还是有点好看的。&lt;/p&gt;
 &lt;p&gt;不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。&lt;/p&gt;
 &lt;p&gt;没办法，只好先关了 Prettier，把 TSLint 装了起来。&lt;/p&gt;
