@@ -115,42 +115,56 @@
 
     <url>
         <loc>https://tinyadapter.nl/tags/galgame/</loc>
-        <lastmod>2019-02-06T14:56:08.132Z</lastmod>
+        <lastmod>2019-02-06T14:56:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/ALcot/</loc>
-        <lastmod>2019-02-06T14:56:08.132Z</lastmod>
+        <lastmod>2019-02-06T14:56:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-        <lastmod>2019-03-05T13:19:32.373Z</lastmod>
+        <lastmod>2019-03-05T13:19:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/</loc>
-        <lastmod>2019-03-05T13:19:32.373Z</lastmod>
+        <lastmod>2019-03-05T13:19:32.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/VSCode/</loc>
-        <lastmod>2019-03-16T05:07:44.988Z</lastmod>
+        <lastmod>2019-03-16T05:07:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://tinyadapter.nl/tags/%E9%85%8D%E7%BD%AE/</loc>
-        <lastmod>2019-03-16T05:07:44.988Z</lastmod>
+        <lastmod>2019-03-16T05:07:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.nl/tags/VTubers/</loc>
+        <lastmod>2020-04-15T15:20:06.010Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://tinyadapter.nl/tags/%E5%85%8E%E7%94%B0%E3%81%BA%E3%81%93%E3%82%89/</loc>
+        <lastmod>2020-04-15T15:20:06.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
