@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tinyadapter.nl/"/>
-  <updated>2020-04-15T15:20:51.492Z</updated>
+  <updated>2020-04-15T15:21:24.632Z</updated>
   <id>https://tinyadapter.nl/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://tinyadapter.nl/vtubers/pr-thinking-from-pekora-incident/"/>
     <id>https://tinyadapter.nl/vtubers/pr-thinking-from-pekora-incident/</id>
     <published>2020-04-15T15:20:01.000Z</published>
-    <updated>2020-04-15T15:20:51.492Z</updated>
+    <updated>2020-04-15T15:21:24.632Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>说真的，我是没想到时隔一年多的博客更新居然会是以这种神奇的方式展开。</p>
 <p>说起来也许是一种巧合吧，刚好论文在距离 deadline 还剩几天的前夕完成了第三版，刚通过邮件发给教授，想着趁没回复之前休息一下刷刷 V，结果就让我顺着ぺこら最新的熟肉刷到了这起事件。</p>
@@ -34,15 +34,17 @@
 <p>但直到目前这又是一个很棘手的问题，也是我为「意外情况」这四个字打了引号的原因。事件后续的讨论的内容其实根本就不是什么意外，而是早就成为一个个虽困难但又亟待解决的老大难问题。过去观众可以假装这些问题不存在，字幕组可以假装这些问题不存在，hololive 本社亦可以假装这些问题不存在。但现在由于一系列各种各样的导火索，观众率先打破沉默对这些问题发难，作为这三角关系中的另外两者如果不能及时回应，后续必然会发生许多更加难以解决的问题。</p>
 <p>对于一个日本的 V 而言，想要在中国市场进行发展，字幕组显然是绕不开的话题。这点个人势面对着没有形象包袱的平台和直接利益相关的观众，尚且可以做出理解与平衡；但企业势是商业机构，旗下 VTuber 成员事实上涉及会社本身的形象，做得不好的话很难说不被扩大化到机构问题（事实上讨论中早已出现了这种势头）。当然，COVER 的特点导致其并不类似一个中国语境下的「直播公会」，但是这并不妨碍不了解运营，只看 V 本身的一般观众联想。</p>
 <h2 id="思考：一个好公关的特性"><a href="#思考：一个好公关的特性" class="headerlink" title="思考：一个好公关的特性"></a>思考：一个好公关的特性</h2><p>公共关系是一个古老的存在，其最早可以追溯到 20 世纪早期：</p>
-<pre><code>Public relations is a management function, which tabulates public attitudes, defines the policies, procedures and interests of an organization...followed by executing a program of action to earn public understanding and acceptance. [1]
-
-公共关系是一种管理职能，它搜集公众的态度，规定一个组织的政策、程序和利益……然后执行一项行动计划，以赢得公众的理解和接受。
-</code></pre><p>不过，身处互联网时代 &amp; 社交媒体时代的我们这群人，显然对公关这件事有着自己不同的看法，而这点从目前各种针对年轻人的公关翻车事件中可见一斑。</p>
+<blockquote>
+<p>Public relations is a management function, which tabulates public attitudes, defines the policies, procedures and interests of an organization…followed by executing a program of action to earn public understanding and acceptance. [1]</p>
+<p>公共关系是一种管理职能，它搜集公众的态度，规定一个组织的政策、程序和利益……然后执行一项行动计划，以赢得公众的理解和接受。</p>
+</blockquote>
+<p>不过，身处互联网时代 &amp; 社交媒体时代的我们这群人，显然对公关这件事有着自己不同的看法，而这点从目前各种针对年轻人的公关翻车事件中可见一斑。</p>
 <p>这不是我瞎编的，随便在图书馆搜了一本书，导言部分就列举了一些社交媒体语境下错误的公关做法：</p>
-<pre><code>It also examines the key transgressions committed by practitioners: the paucity of digital literacy, a widespread lack of understanding of the norms of social media, a naivety about the corporate identity risks, and a prevalent emphasis on spin and persuasion rather than on authentic engagement. [2]
-
-它还考察了从业人员的主要过错行为：缺乏数字素养，普遍缺乏对社交媒体规范的理解，对企业身份风险的天真，以及对宣传和说服而非真实参与的普遍强调。
-</code></pre><p>窃以为，对新生代群体而言，其中影响最大的部分恰恰在于最后一点，即「对宣传和说服而非真实参与的普遍强调」。</p>
+<blockquote>
+<p>It also examines the key transgressions committed by practitioners: the paucity of digital literacy, a widespread lack of understanding of the norms of social media, a naivety about the corporate identity risks, and a prevalent emphasis on spin and persuasion rather than on authentic engagement. [2]</p>
+<p>它还考察了从业人员的主要过错行为：缺乏数字素养，普遍缺乏对社交媒体规范的理解，对企业身份风险的天真，以及对宣传和说服而非真实参与的普遍强调。</p>
+</blockquote>
+<p>窃以为，对新生代群体而言，其中影响最大的部分恰恰在于最后一点，即「对宣传和说服而非真实参与的普遍强调」。</p>
 <p>什么是一个好的公关？这里仅仅表达我思考后的结果。一个好的公关，无外乎</p>
 <ul>
 <li>公开。这对应上文「非宣传和说服」的部分。针对声量大、关注度高的质疑，一定要做出回应，哪怕是说明因自身的困难导致问题无法解决。公开且真诚的回应尤其会增加路人的好感度。</li>
