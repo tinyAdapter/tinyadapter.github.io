@@ -752,138 +752,6 @@
   </entry>
   
   <entry>
-    <title>“次元连线”设计思路</title>
-    <link href="https://tinyadapter.nl/web/jigenconnection/"/>
-    <id>https://tinyadapter.nl/web/jigenconnection/</id>
-    <published>2017-11-13T15:55:00.000Z</published>
-    <updated>2018-05-12T03:19:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近受Mastodon的启发，有个分布式社交网络的实现想法。</p>
-<p>于是首先应该做件事——起个中二的名字。</p>
-<p>想来想去，就叫“次元连线”好了（笑）</p>
-<p>一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（<br><a id="more"></a></p>
-<p>论述一下思路。</p>
-<p>首先说明两个基本的大原则：</p>
-<ol>
-<li>用户的文本在本地端加密后再送上服务器；</li>
-<li>服务器是要存储数据的，而不是单纯做转发。</li>
-</ol>
-<p>这套体系决定了其可以胜任从数据时间跨度最低的阅后即焚式即时通讯到最高的论坛。</p>
-<p>为了叙述省事，先拿论坛举例。</p>
-<hr>
-<p>这里把每台服务器（也就是结点）分为三种类型：public, protected和private</p>
-<p>（对没错，我就是要强行OOP）</p>
-<h2 id="private结点"><a href="#private结点" class="headerlink" title="private结点"></a>private结点</h2><p>private最简单，就是不跟其他任何结点相连的单台服务器，自己负责所有的用户注册和数据发送，跟传统的单服务器网站/聊天室本质上没有什么区别。可供私人及小团体使用。</p>
-<p>用户请求private服务器后，会得到一个<em>次元群</em>列表。</p>
-<p>（次元群：即论坛板块的概念，每个次元群拥有单独的访问密码。对应即时通讯中的群组）</p>
-<p>每个结点维护的用户表：</p>
-<table>
-<thead>
-<tr>
-<th>次元群hash</th>
-<th>用户id</th>
-<th>用户密码hash</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>每个结点维护的次元群表：</p>
-<table>
-<thead>
-<tr>
-<th>次元群hash</th>
-<th>群名</th>
-<th>介绍</th>
-<th>(群主id+密码hash)的hash【提权】</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>每个次元群内帖子的信息：</p>
-<table>
-<thead>
-<tr>
-<th>帖子id</th>
-<th>标题(使用访问密码加密)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>每条跟帖的格式：</p>
-<table>
-<thead>
-<tr>
-<th>次元群hash</th>
-<th>帖子id</th>
-<th>发表时间</th>
-<th>内容(加密)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>理论上，每条数据都允许被所有人访问到，但如果不知道密码的话便无法解密（强行访问只会得到一堆乱码）</p>
-<p>发表帖子/跟帖时向服务器发送的数据格式：</p>
-<table>
-<thead>
-<tr>
-<th>次元群hash</th>
-<th>帖子id</th>
-<th>访问密码hash</th>
-<th>用户id</th>
-<th>用户密码hash</th>
-<th>内容(加密)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="protected-public结点"><a href="#protected-public结点" class="headerlink" title="protected/public结点"></a>protected/public结点</h2><p>protected和public结点类似，都属于内容备份机制，只不过protected结点在信任的若干结点中选取几个做备份，而public选取随机的public结点做备份，同时接受来自任意结点的数据。</p>
-<p>而在服务器的组织上，使用Kademlia算法（即DHT）。</p>
-<p>每个public结点随机选取3台public结点并作为数据备份结点。</p>
-<p>每台public结点维护一个与private结点类似的用户表，其中有本结点内所有次元群的用户id（不同的次元群间允许存在相同的id，以密码hash作为校验手段）</p>
-<p>假设某public结点A选择X、Y、Z作为数据备份，则任意结点的更新（某次元群新加入用户、帖子/跟帖）会传播到其余的三个结点。</p>
-<p>结点A在建立新的次元群时随机生成一个infohash，按得到的值跳跃到距离hash最近的public结点B，并将infohash，A、X、Y、Z的ip和port存过去。结点B接受结点A的信息后，将其由近及远地广播给附近的public结点。</p>
-<p>（完）</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近受Mastodon的启发，有个分布式社交网络的实现想法。&lt;/p&gt;
-&lt;p&gt;于是首先应该做件事——起个中二的名字。&lt;/p&gt;
-&lt;p&gt;想来想去，就叫“次元连线”好了（笑）&lt;/p&gt;
-&lt;p&gt;一个打着泛二次元（二不起，二不起.jpg）幌子的…服务器集群？（&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
-    
-    
-      <category term="分布式" scheme="https://tinyadapter.nl/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
-    
-      <category term="社交网络" scheme="https://tinyadapter.nl/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>逃离互联网</title>
     <link href="https://tinyadapter.nl/society/escape-from-internet/"/>
     <id>https://tinyadapter.nl/society/escape-from-internet/</id>
@@ -913,34 +781,6 @@
       <category term="互联网" scheme="https://tinyadapter.nl/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
     
       <category term="泡沫" scheme="https://tinyadapter.nl/tags/%E6%B3%A1%E6%B2%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pixiv魔法</title>
-    <link href="https://tinyadapter.nl/web/pixiv-magic/"/>
-    <id>https://tinyadapter.nl/web/pixiv-magic/</id>
-    <published>2017-09-27T09:55:19.000Z</published>
-    <updated>2017-10-08T02:53:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>不解释。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">#Pixiv</div><div class="line">210.129.120.41  pixiv.net </div><div class="line">210.129.120.41  www.pixiv.net </div><div class="line">210.129.120.41  accounts.pixiv.net </div><div class="line">210.129.120.41  touch.pixiv.net </div><div class="line">210.129.120.43  www.pixiv.net </div><div class="line">210.129.120.43  accounts.pixiv.net </div><div class="line">210.129.120.43  touch.pixiv.net </div><div class="line">210.129.120.44  www.pixiv.net </div><div class="line">210.129.120.44  accounts.pixiv.net </div><div class="line">210.129.120.44  touch.pixiv.net </div><div class="line">210.140.131.146 source.pixiv.net </div><div class="line">210.140.131.147 imgaz.pixiv.net </div><div class="line">210.129.120.44  app-api.pixiv.net </div><div class="line">210.129.120.48  oauth.secure.pixiv.net </div><div class="line">210.129.120.41  dic.pixiv.net </div><div class="line">210.140.131.153 comic.pixiv.net </div><div class="line">210.129.120.43  factory.pixiv.net  </div><div class="line">74.120.148.207  g-client-proxy.pixiv.net </div><div class="line">210.140.170.179 sketch.pixiv.net </div><div class="line">210.129.120.43  payment.pixiv.net </div><div class="line">210.129.120.41  sensei.pixiv.net </div><div class="line">210.140.131.144 novel.pixiv.net </div><div class="line">210.129.120.44  en-dic.pixiv.net </div><div class="line">210.140.131.145 i1.pixiv.net </div><div class="line">210.140.131.145 i2.pixiv.net </div><div class="line">210.140.131.145 i3.pixiv.net </div><div class="line">210.140.131.145 i4.pixiv.net </div><div class="line">210.140.131.159 d.pixiv.org </div><div class="line">210.140.92.135  pixiv.pximg.net </div><div class="line">210.140.92.136  i.pximg.net </div><div class="line">#Pixiv End</div></pre></td></tr></table></figure></p>
-<p>感谢Mashiro</p>
-<p>原文地址：<a href="https://2heng.xin/2017/09/19/pixiv/" target="_blank" rel="external">PIXIV访问恢复方法（网页版及客户端）</a></p>
-<p><strong>10.8更新：更换source.pixiv.net为210.140.131.146</strong></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;不解释。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
-    
-    
-      <category term="Pixiv" scheme="https://tinyadapter.nl/tags/Pixiv/"/>
-    
-      <category term="hosts" scheme="https://tinyadapter.nl/tags/hosts/"/>
     
   </entry>
   
@@ -1030,66 +870,6 @@
       <category term="轻小说" scheme="https://tinyadapter.nl/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4/"/>
     
       <category term="野村美月" scheme="https://tinyadapter.nl/tags/%E9%87%8E%E6%9D%91%E7%BE%8E%E6%9C%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>将魔法隐藏在任意门后</title>
-    <link href="https://tinyadapter.nl/web/might-and-magic/"/>
-    <id>https://tinyadapter.nl/web/might-and-magic/</id>
-    <published>2017-09-18T14:14:00.000Z</published>
-    <updated>2017-09-20T14:12:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>emmm<br><a id="more"></a><br>相信每个使用魔法的人对自己的指挥棒都是很看重的（毕竟没有人会想隔三差五来个大搬家），因此怎样保护好自己的指挥棒不让恶龙发现，就变成了一门艺术。</p>
-<p>尤其是在普通的ss协议本身存在缺陷的情况下，我们仍不能保证万全。</p>
-<p>v2是个好项目，在这里着重感谢一下。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>众所周知，一个保护自己指挥棒的方法就是为它加上咒语分发，这样恶龙就没办法偷走指挥棒的编号了。</p>
-<p>但是问题来了，咒语分发一般都是只管80/443端口的，80端口直接免谈，而我们在指挥棒上搭个站啊写个博客啊什么的需求又导致了我不能把443端口拱手让给魔法</p>
-<p>（当然了你要是财大气粗再买一个指挥棒那当我没说）</p>
-<p>而且如果有一个普通的网站（贴上社会主义核心价值观就更好了【逃）能够让人正常访问，那么我再在相同的端口搭上魔法服务就显得更加的隐蔽了。</p>
-<p>那么如何实现呢？这其实是个很大的问题。</p>
-<h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>首先我们一定需要一个前置咒语服务器进行流量转发（如apache或nginx），我自己用的是apache。</p>
-<p>而apache在2.x（具体版本号记不住了）之后支持了WebSocket协议的转发，只需要直接写ws://就可以实现。</p>
-<p>而v2在某个版本之后（还是记不住orz）也支持了完整的WebSocket协议实现，并且还能使用标准TLS加密流量。</p>
-<p>这就<strong>很有意思了</strong>。如果我们使用WebSocket协议，在外面套上TLS后以某个域名A送给服务器，而apache接到这个请求并解密后能够直接通过WebSocket协议头将这个请求转发给v2的监听端口，由v2拿着数据按照原路返回，就能够实现这样的功能。</p>
-<p>而当我们用浏览器以https访问域名A时，apache接到请求，解密后发现是http协议，就返回网站内容。</p>
-<p>这样就保证了极高的隐蔽性（因为有加密的存在，所以外人只能看到你在访问一个没什么大碍内容的网站）。</p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>首先服务器端的apache要配置好，能够通过https直接访问你的网站。</p>
-<p>然后在VirtualHost配置最后加入这么一段：</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute"><span class="nomarkup">RewriteEngine</span></span> <span class="literal">On</span></div><div class="line"><span class="attribute"><span class="nomarkup">RewriteCond</span></span> <span class="variable">%&#123;HTTP:Connection&#125;</span> Upgrade<span class="meta"> [NC]</span></div><div class="line"><span class="attribute"><span class="nomarkup">RewriteCond</span></span> <span class="variable">%&#123;HTTP:Upgrade&#125;</span> websocket<span class="meta"> [NC]</span></div><div class="line"><span class="attribute"><span class="nomarkup">RewriteRule</span></span> /(.*) ws://127.0.0.1:10000/<span class="number">$1</span><span class="meta"> [P,L]</span></div></pre></td></tr></table></figure>
-<p>这段的意思是把所有的WebSocket协议内容转发到本机的10000端口上。</p>
-<p>接下来配置v2相关，说几个要注意的地方：</p>
-<ol>
-<li>network填ws（客户端和服务器都是）</li>
-<li><strong>服务器端不要开启tls！</strong>（因为服务器内部转发的流量已经被apache解密，之前在这里被坑了很久）</li>
-<li>客户端要开启tls</li>
-<li>服务器端端口和apache转发的端口要一致（比如这里就是10000端口）</li>
-<li>建议将向除常用端口以外的其他端口的外部访问全部drop掉，防止被恶龙发现</li>
-</ol>
-<h2 id="不放心？再套个咒语分发"><a href="#不放心？再套个咒语分发" class="headerlink" title="不放心？再套个咒语分发"></a>不放心？再套个咒语分发</h2><p>到目前为止其实已经做到了相当高的隐蔽性，但是如果你还是不放心，可以使用咒语分发再把实际的编号隐藏起来，这样恶龙就只能看见你访问某个咒语分发的编号，而至于咒语分发把请求转发给了谁，抱歉，纵使它有天大的本事也找不到了（笑）</p>
-<p>而咒语分发服务我个人推荐Cloudflare，首先一个就是免费，再就是它跟百度云加速有合作（虽然我个人不待见百度，但还是谢了啊），起码有理由相信它目前不会挂掉。</p>
-<p>（当然速度这个我就没办法了，但是重在安全）</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>自此，我们实现魔法的方式如下：</p>
-<pre><code>客户端--(TLS+WS)-&gt;咒语分发--(TLS+WS)-&gt;服务器apache--(WS)-&gt;v2
-</code></pre><p>返回结果同理。</p>
-<p>这样的好处在于：</p>
-<ol>
-<li>恶龙只能知道你在访问咒语分发，由于TLS的存在不知道内容</li>
-<li>如果恶龙也来访问相同的域名，那么得到的是一个普通的网站</li>
-<li>由于vmess加密的存在，咒语分发也不知道你访问的内容（百度是个什么样的公司，你懂的）</li>
-<li>只有v2知道你在使用魔法</li>
-</ol>
-<p>当然啦，具体的内容没有经过实证（我怎么实证），我本身也没啥魔法知识，只是单凭想象搞的，如果有什么错误的地方烦请指正，谢谢！（比心）</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;emmm&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
-    
     
   </entry>
   
@@ -1706,33 +1486,38 @@
   </entry>
   
   <entry>
-    <title>Apache2 反向代理Google时踩的坑 – 模块加载</title>
-    <link href="https://tinyadapter.nl/web/apache2-google-proxy/"/>
-    <id>https://tinyadapter.nl/web/apache2-google-proxy/</id>
-    <published>2017-02-08T11:58:05.000Z</published>
-    <updated>2017-03-21T07:52:08.000Z</updated>
+    <title>どうも、世界！</title>
+    <link href="https://tinyadapter.nl/helloworld/"/>
+    <id>https://tinyadapter.nl/helloworld/</id>
+    <published>2017-02-06T13:32:42.000Z</published>
+    <updated>2017-02-14T16:53:54.000Z</updated>
     
-    <content type="html"><![CDATA[<p>（首先说好了，本人完全不懂网络相关，因此一切产生的问题都是靠搜索+领悟人生解决的-_-）</p>
-<p>整天踩坑，说的就是我¬_¬</p>
-<p>个人站后台用的Debian+Apache2, 用的apt安装，因此配置是按照默认情况来的</p>
-<p>而Apache2默认没有包含mod_proxy<br><a id="more"></a><br>因此在使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost _default_:443&gt;</div><div class="line">ServerAdmin mail@localhost</div><div class="line">DocumentRoot “&#123;目录&#125;”</div><div class="line">ServerName &#123;域名&#125;:443</div><div class="line">SSLEngine On</div><div class="line">SSLProtocol all -SSLv2</div><div class="line">SSLCipherSuite ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM</div><div class="line">SSLCertificateFile crt文件路径</div><div class="line">SSLCertificateKeyFile key文件路径</div><div class="line">SetEnvIf User-Agent “.*MSIE.*” nokeepalive ssl-unclean-shutdown owngrade-1.0 force-response-1.0</div><div class="line">SSLProxyEngine On</div><div class="line">RequestHeader set Front-End-Https “On”</div><div class="line">ProxyPass / https://www.google.com/</div><div class="line">ProxyPassReverse / https://www.google.com/</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure></p>
-<p>以上conf文件时，会出现<code>Invalid command &#39;ProxyPass&#39;</code>的情况</p>
-<p>于是各种爬搜索引擎，在这里：</p>
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension</a></p>
-<p>有详细的解决方案，简单说就是如下几条命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apt install -y libapache2-mod-proxy-html libxml2-dev</div><div class="line">a2enmod</div><div class="line">proxy proxy_ajp proxy_http rewrite deflate headers proxy_balancer proxy_connect proxy_html</div></pre></td></tr></table></figure></p>
-<p>这样就解决了问题</p>
+    <content type="html"><![CDATA[<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/hw1.png" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<p>这里是tinyAdapter，微博同名IDです</p>
+<p>本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者<strong>mailto: tinyadapter@outlook.com</strong></p>
+<p>四川某知名医科大学软件专业在校生（笑）</p>
+<p>死软狗，业余果黑</p>
+<p>Windows10 + Office365全家桶使用者<br><a id="more"></a><br>主攻C#，辅修C + Python</p>
+<p>（Java是什么辣鸡语言（逃</p>
+<p>如你所見，完全不擅长网络相关…尤其前端，嗯</p>
+<p>有发现美的眼睛 + 沒有创造美的技能 = 整天说三道四</p>
+<p>业余时间有一半献给Galgame</p>
+<p>没什么别的了</p>
+<p>最后祝你，身体健康</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;（首先说好了，本人完全不懂网络相关，因此一切产生的问题都是靠搜索+领悟人生解决的-_-）&lt;/p&gt;
-&lt;p&gt;整天踩坑，说的就是我¬_¬&lt;/p&gt;
-&lt;p&gt;个人站后台用的Debian+Apache2, 用的apt安装，因此配置是按照默认情况来的&lt;/p&gt;
-&lt;p&gt;而Apache2默认没有包含mod_proxy&lt;br&gt;
+      &lt;span itemprop=&quot;image&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;&lt;img itemprop=&quot;url image&quot; src=&quot;/images/hw1.png&quot; class=&quot;full-image&quot; /&gt;&lt;meta itemprop=&quot;width&quot; content=&quot;auto&quot;&gt;&lt;meta itemprop=&quot;height&quot; content=&quot;auto&quot;&gt;&lt;/span&gt;
+&lt;p&gt;这里是tinyAdapter，微博同名IDです&lt;/p&gt;
+&lt;p&gt;本人平常在QQ和微博上活动，Twitter比较少用，有事可以微博@我或者&lt;strong&gt;mailto: tinyadapter@outlook.com&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;四川某知名医科大学软件专业在校生（笑）&lt;/p&gt;
+&lt;p&gt;死软狗，业余果黑&lt;/p&gt;
+&lt;p&gt;Windows10 + Office365全家桶使用者&lt;br&gt;
     
     </summary>
     
-      <category term="Web" scheme="https://tinyadapter.nl/categories/Web/"/>
+      <category term="Hello" scheme="https://tinyadapter.nl/categories/Hello/"/>
     
     
   </entry>
