@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="前言 单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。 不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。 这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了全局可修改性。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个XXXClass.getInstance()与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。 在这种错误的应用方式下，单例模式逐渐向着那个恶魔靠近。没错，充其量，不过是比全局变量好了一点点而已。 解决方案 可能有人要问了，既然你把单例模式说得那么坏，那么如果我确实需要全局唯一性怎么办呢？ 这个问题比较好回答。其实单例模式也不是不可以用，只是不能滥用，不能我随便在任何一个地方想调用它就调用它。 完全不符合面向接口编程的思想。因为单例是不能被接口化的（这里不严谨，实际上单例可以让 getInstance 方法返回接口，只是这样没什么卯月，因为调用方的代码已经写死了没法替换），因此只能显式地与某个特定类产生依赖。未来任何对这个类的替换或者扩展都变成了不可能的任务。 增加了单元测试的编写难度。因为单例在整个测试过程中也是全局唯一的，使得需要在测试开始前模拟出某种状态的过程，同时需要在测试完成后手动销毁这种状态以备下一个测试，造成潜在的逻辑异常。 那么我们该如何正确地使用单例模式呢？ 答案就是使用依赖注入（Dependency Injection），不是由调用方主动发起指向单例类的连接，而是从一开始就假设调用方已经拥有了这个单例类。其实不论是使用构造函数传入，还是使用普通方法绑定，核心思想都只有一个： 只要我想要某个依赖，我就一定会拥有。至于这个依赖究竟来自哪里，是谁给我的，我不关心。\r举个栗子 就拿手头一个正在推进的项目举例吧。 class TaskManager implements ITaskManager { private Iterable&lt;Rule&gt; rules; private Timer timer = new Timer(); private ConcurrentHashMap&lt;Rule, TimerTask&gt; timerTasks = new ConcurrentHashMap&lt;&gt;(); public TaskManager(Iterable&lt;Rule&gt; rules) { this.rules = rules; filterActiveRules(); createTimers(); } private void filterActiveRules() { ArrayList&lt;Rule&gt; activeRules = new ArrayList&lt;&gt;(); for (Rule rule : this.">
+<title>使用依赖注入，「消灭」单例模式</title>
+
+<link rel='canonical' href='https://tinyadapter.com/post/code/di-to-overcome-drawbacks-of-singleton/'>
+
+<link rel="stylesheet" href="/scss/style.min.a98711dd77f882bba6c64662ae7c3515ce1792919805694d18301cf79deae512.css"><meta property='og:title' content="使用依赖注入，「消灭」单例模式">
+<meta property='og:description' content="前言 单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。 不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。 这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了全局可修改性。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个XXXClass.getInstance()与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。 在这种错误的应用方式下，单例模式逐渐向着那个恶魔靠近。没错，充其量，不过是比全局变量好了一点点而已。 解决方案 可能有人要问了，既然你把单例模式说得那么坏，那么如果我确实需要全局唯一性怎么办呢？ 这个问题比较好回答。其实单例模式也不是不可以用，只是不能滥用，不能我随便在任何一个地方想调用它就调用它。 完全不符合面向接口编程的思想。因为单例是不能被接口化的（这里不严谨，实际上单例可以让 getInstance 方法返回接口，只是这样没什么卯月，因为调用方的代码已经写死了没法替换），因此只能显式地与某个特定类产生依赖。未来任何对这个类的替换或者扩展都变成了不可能的任务。 增加了单元测试的编写难度。因为单例在整个测试过程中也是全局唯一的，使得需要在测试开始前模拟出某种状态的过程，同时需要在测试完成后手动销毁这种状态以备下一个测试，造成潜在的逻辑异常。 那么我们该如何正确地使用单例模式呢？ 答案就是使用依赖注入（Dependency Injection），不是由调用方主动发起指向单例类的连接，而是从一开始就假设调用方已经拥有了这个单例类。其实不论是使用构造函数传入，还是使用普通方法绑定，核心思想都只有一个： 只要我想要某个依赖，我就一定会拥有。至于这个依赖究竟来自哪里，是谁给我的，我不关心。\r举个栗子 就拿手头一个正在推进的项目举例吧。 class TaskManager implements ITaskManager { private Iterable&lt;Rule&gt; rules; private Timer timer = new Timer(); private ConcurrentHashMap&lt;Rule, TimerTask&gt; timerTasks = new ConcurrentHashMap&lt;&gt;(); public TaskManager(Iterable&lt;Rule&gt; rules) { this.rules = rules; filterActiveRules(); createTimers(); } private void filterActiveRules() { ArrayList&lt;Rule&gt; activeRules = new ArrayList&lt;&gt;(); for (Rule rule : this.">
+<meta property='og:url' content='https://tinyadapter.com/post/code/di-to-overcome-drawbacks-of-singleton/'>
+<meta property='og:site_name' content='斑桜の桜海~'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='设计模式' /><meta property='article:tag' content='依赖注入' /><meta property='article:published_time' content='2019-03-15T19:33:28&#43;00:00'/><meta property='article:modified_time' content='2019-03-15T19:33:28&#43;00:00'/>
+<meta name="twitter:title" content="使用依赖注入，「消灭」单例模式">
+<meta name="twitter:description" content="前言 单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。 不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。 这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了全局可修改性。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个XXXClass.getInstance()与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。 在这种错误的应用方式下，单例模式逐渐向着那个恶魔靠近。没错，充其量，不过是比全局变量好了一点点而已。 解决方案 可能有人要问了，既然你把单例模式说得那么坏，那么如果我确实需要全局唯一性怎么办呢？ 这个问题比较好回答。其实单例模式也不是不可以用，只是不能滥用，不能我随便在任何一个地方想调用它就调用它。 完全不符合面向接口编程的思想。因为单例是不能被接口化的（这里不严谨，实际上单例可以让 getInstance 方法返回接口，只是这样没什么卯月，因为调用方的代码已经写死了没法替换），因此只能显式地与某个特定类产生依赖。未来任何对这个类的替换或者扩展都变成了不可能的任务。 增加了单元测试的编写难度。因为单例在整个测试过程中也是全局唯一的，使得需要在测试开始前模拟出某种状态的过程，同时需要在测试完成后手动销毁这种状态以备下一个测试，造成潜在的逻辑异常。 那么我们该如何正确地使用单例模式呢？ 答案就是使用依赖注入（Dependency Injection），不是由调用方主动发起指向单例类的连接，而是从一开始就假设调用方已经拥有了这个单例类。其实不论是使用构造函数传入，还是使用普通方法绑定，核心思想都只有一个： 只要我想要某个依赖，我就一定会拥有。至于这个依赖究竟来自哪里，是谁给我的，我不关心。\r举个栗子 就拿手头一个正在推进的项目举例吧。 class TaskManager implements ITaskManager { private Iterable&lt;Rule&gt; rules; private Timer timer = new Timer(); private ConcurrentHashMap&lt;Rule, TimerTask&gt; timerTasks = new ConcurrentHashMap&lt;&gt;(); public TaskManager(Iterable&lt;Rule&gt; rules) { this.rules = rules; filterActiveRules(); createTimers(); } private void filterActiveRules() { ArrayList&lt;Rule&gt; activeRules = new ArrayList&lt;&gt;(); for (Rule rule : this.">
+    <link rel="shortcut icon" href="/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/avatar_huac4a689acb3521cd9acf6ff50c89661d_17647_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">斑桜の桜海~</a></h1>
+            <h2 class="site-description">砕くる月と酔ふ梦の集结</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/tinyAdapter'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/tinyAdapter'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://space.bilibili.com/479339'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#解决方案">解决方案</a></li>
+    <li><a href="#举个栗子">举个栗子</a></li>
+    <li><a href="#使用依赖注入的改正">使用依赖注入的改正</a></li>
+    <li><a href="#总结">总结</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E7%A0%81/" >
+                代码
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/code/di-to-overcome-drawbacks-of-singleton/">使用依赖注入，「消灭」单例模式</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 15, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="前言">前言</h2>
+<p>单例模式，作为 GoF 开篇提出的第一个设计模式，因其简单的需求，简单的实现，基本上每个学习过 OOP 的同学都会随手默写一个出来。更不用说如今绝大多数 IDE 都自带的生成 Singleton 类的模板了。</p>
+<p>不过，简单往往意味着粗糙与简陋。根据我个人至今的项目经验（其实也没多少，但足以发现其问题），单例模式保证全局唯一实例的特性确实有着一定的用武之地，但是，初学者们却往往不是以其全局唯一实例的用途为出发点去使用这个模式的，而是将其全局可访问的特性发扬光大了起来。</p>
+<p>这便是单例模式最大的弱点。全局唯一实例总是有着自身的状态（否则，单纯的静态方法便能满足全局可访问性），但是这种状态又因其全局可访问性导致了<strong>全局可修改性</strong>。而众所周知，全局可修改性意味着接踵而至的依赖关系。任何一个类的任何一个实例都可以反手就是一个<code>XXXClass.getInstance()</code>与某个单例类建立依赖。随着与单例类建立依赖的类越来越多，整个项目的架构变得混乱不堪，高度耦合。</p>
+<p>在这种错误的应用方式下，单例模式逐渐向着<strong>那个恶魔</strong>靠近。没错，充其量，不过是<strong>比全局变量好了一点点而已</strong>。</p>
+<!-- raw HTML omitted -->
+<h2 id="解决方案">解决方案</h2>
+<p>可能有人要问了，既然你把单例模式说得那么坏，那么如果我确实需要全局唯一性怎么办呢？</p>
+<p>这个问题比较好回答。其实单例模式也不是不可以用，只是不能滥用，不能我随便在任何一个地方想调用它就调用它。</p>
+<ol>
+<li>完全不符合面向接口编程的思想。因为单例是不能被接口化的（这里不严谨，实际上单例可以让 getInstance 方法返回接口，只是这样没什么卯月，因为调用方的代码已经写死了没法替换），因此只能显式地与某个特定类产生依赖。未来任何对这个类的替换或者扩展都变成了不可能的任务。</li>
+<li>增加了单元测试的编写难度。因为单例在整个测试过程中也是全局唯一的，使得需要在测试开始前模拟出某种状态的过程，同时需要在测试完成后手动销毁这种状态以备下一个测试，造成潜在的逻辑异常。</li>
+</ol>
+<p>那么我们该如何<strong>正确地使用单例模式</strong>呢？</p>
+<p>答案就是使用依赖注入（Dependency Injection），不是由调用方主动发起指向单例类的连接，而是<strong>从一开始就假设调用方已经拥有了这个单例类</strong>。其实不论是使用构造函数传入，还是使用普通方法绑定，核心思想都只有一个：</p>
+<pre><code>只要我想要某个依赖，我就一定会拥有。至于这个依赖究竟来自哪里，是谁给我的，我不关心。
+</code></pre>
+<h2 id="举个栗子">举个栗子</h2>
+<p>就拿手头一个正在推进的项目举例吧。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">TaskManager</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ITaskManager</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Timer</span><span class="w"> </span><span class="n">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Timer</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ConcurrentHashMap</span><span class="o">&lt;</span><span class="n">Rule</span><span class="p">,</span><span class="w"> </span><span class="n">TimerTask</span><span class="o">&gt;</span><span class="w"> </span><span class="n">timerTasks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ConcurrentHashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">TaskManager</span><span class="p">(</span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">filterActiveRules</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">createTimers</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">filterActiveRules</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">activeRules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rule</span><span class="p">.</span><span class="na">isActive</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">activeRules</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeRules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createTimers</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">timerTasks</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">rule</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TimerTask</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="c1">// emmm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">BackgroundWorker</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">newTask</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">});</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">start</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// emmm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">BackgroundWorker</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">start</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">scheduleAtFixedRate</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">rule</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">0</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="w"> </span><span class="n">rule</span><span class="p">.</span><span class="na">getDuration</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">60</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">1000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">rule</span><span class="p">).</span><span class="na">cancel</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">purge</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// emmm</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">BackgroundWorker</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">stop</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>TaskManager 类是一个负责管理消息推送任务的类，每隔特定的时间向 BackgroundWorker 这个单例类推送某个特定的任务让其执行。</p>
+<p>看起来似乎没什么问题，代码也很简单。但是在我开始编写单元测试的时候，问题出现了：</p>
+<p>因为 Mockito 不支持 mock 静态方法，因此我没有办法隔离 TaskManager 对 BackgroundWorker 的调用，而 BackgroundWorker 本身又是依赖 Android 设备的。</p>
+<p>当然，我可以选择使用功能更强大，支持 mock 静态方法的 Powermock，但似乎本能的，我对这种 hack 的解决方式打心眼里不甚喜欢，且不说对静态函数的修改会导致测试代码变得丑陋。</p>
+<p>怎么办呢？单元测试总是要写的。</p>
+<p>那么，答案就只有一……</p>
+<p>咳咳，刚才我什么都没说。那么，是时候祭出我们的依赖注入了！</p>
+<h2 id="使用依赖注入的改正">使用依赖注入的改正</h2>
+<p>直接贴代码，解释见注释。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">TaskManager</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ITaskManager</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Timer</span><span class="w"> </span><span class="n">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Timer</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ConcurrentHashMap</span><span class="o">&lt;</span><span class="n">Rule</span><span class="p">,</span><span class="w"> </span><span class="n">TimerTask</span><span class="o">&gt;</span><span class="w"> </span><span class="n">timerTasks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ConcurrentHashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/* 留有一份IBackgroundWorker的实例 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">IBackgroundWorker</span><span class="w"> </span><span class="n">backgroundWorker</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="cm">/* 为了简化调用逻辑，使用构造函数注入，并更换为接口 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">TaskManager</span><span class="p">(</span><span class="n">Iterable</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rules</span><span class="p">,</span><span class="w"> </span><span class="n">IBackgroundWorker</span><span class="w"> </span><span class="n">backgroundWorker</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">          拿到IBackgroundWorker实例，可以调用啦
+</span></span></span><span class="line"><span class="cl"><span class="cm">          至于它是哪里来的，不管，反正只要能用就行
+</span></span></span><span class="line"><span class="cl"><span class="cm">         */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">backgroundWorker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">backgroundWorker</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">filterActiveRules</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">createTimers</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">filterActiveRules</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Rule</span><span class="o">&gt;</span><span class="w"> </span><span class="n">activeRules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">rule</span><span class="p">.</span><span class="na">isActive</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">activeRules</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeRules</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">createTimers</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">rules</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">timerTasks</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">rule</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TimerTask</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">                      这里，直接使用我们得到的IBackgroundWorker实例
+</span></span></span><span class="line"><span class="cl"><span class="cm">                      免去直接对单例类的依赖
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">TaskManager</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">backgroundWorker</span><span class="p">.</span><span class="na">newTask</span><span class="p">(</span><span class="n">rule</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">});</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">start</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalStateException</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="cm">/* 同理 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">backgroundWorker</span><span class="p">.</span><span class="na">start</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">scheduleAtFixedRate</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">rule</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">0</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="w"> </span><span class="n">rule</span><span class="p">.</span><span class="na">getDuration</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">60</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">1000</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">timerTasks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">rule</span><span class="p">).</span><span class="na">cancel</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="p">.</span><span class="na">purge</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="cm">/* 同理 */</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">backgroundWorker</span><span class="p">.</span><span class="na">stop</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>这样，当我在编写单元测试的时候，就可以直接 mock 一个 BackgroundWorker 实例，作为参数传入 TaskManager，通过调用计数的方式检查其是否成功推送了任务。</p>
+<p>大概就长这样：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">BackgroundWorker</span><span class="w"> </span><span class="n">cttBackgroundWorker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mock</span><span class="p">(</span><span class="n">BackgroundWorker</span><span class="p">.</span><span class="na">class</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">doNothing</span><span class="p">().</span><span class="na">when</span><span class="p">(</span><span class="n">cttBackgroundWorker</span><span class="p">).</span><span class="na">newTask</span><span class="p">(</span><span class="n">any</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">doNothing</span><span class="p">().</span><span class="na">when</span><span class="p">(</span><span class="n">cttBackgroundWorker</span><span class="p">).</span><span class="na">start</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">doNothing</span><span class="p">().</span><span class="na">when</span><span class="p">(</span><span class="n">cttBackgroundWorker</span><span class="p">).</span><span class="na">stop</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">TaskManager</span><span class="w"> </span><span class="n">taskManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TaskManager</span><span class="p">(</span><span class="n">rules</span><span class="p">,</span><span class="w"> </span><span class="n">cttBackgroundWorker</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">taskManager</span><span class="p">.</span><span class="na">start</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">verify</span><span class="p">(</span><span class="n">cttBackgroundWorker</span><span class="p">,</span><span class="w"> </span><span class="n">times</span><span class="p">(</span><span class="n">3</span><span class="p">)).</span><span class="na">newTask</span><span class="p">(</span><span class="n">any</span><span class="p">());</span><span class="w">
+</span></span></span></code></pre></div><p>当然，我 TaskManager 里用实例是用得爽了，但是实例要从哪来呢？</p>
+<p>其实简单思考一下，答案马上就出来了：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">TaskManager</span><span class="w"> </span><span class="n">taskManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TaskManager</span><span class="p">(</span><span class="n">rules</span><span class="p">,</span><span class="w"> </span><span class="n">BackgroundWorker</span><span class="p">.</span><span class="na">getInstance</span><span class="p">());</span><span class="w">
+</span></span></span></code></pre></div><p>完事。</p>
+<h2 id="总结">总结</h2>
+<p>其实这篇文章的诞生完全是一个顺理成章的过程，以上的种种经过也是我在开发项目过程中真实产生的问题。而想到这个解决方案也是完全凭借我自己的思考。之前虽然有看过诸如控制反转，依赖注入之类的文章，但当时就是云里雾里，完全不知道他们在说什么，如今编写了真实的代码，遇到了真实的问题，才对这一切有了真实的感受。</p>
+<p>软件工程本就是一个经验科学。任何理论最终还是需要用实践去体会。我不知道这是否意味着只要是一个实战经验丰富的软件工程师，哪怕仅凭无意识，也能熟练运用类似的构建方式，毕竟这会使我怀疑起软件工程这门学科本身的存在意义。</p>
+<p>但是，我确定知道的一点是，亲手让一个系统中的各个模块变得简单，专一，易于测试，这个过程，是十分令人愉快的。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        
+            <a href="/tags/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/">依赖注入</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2024 斑桜の桜海~
+    </section>
+    
+    <section class="powerby">
+        
+            Unless otherwise specified, all materials and content available on this website are licensed under CC BY-NC 4.0. <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.24.2">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
