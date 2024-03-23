@@ -1,65 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Doujinmusic on 斑桜の桜海~</title>
-        <link>https://tinyadapter.com/tags/doujinmusic/</link>
-        <description>Recent content in Doujinmusic on 斑桜の桜海~</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Wed, 09 Aug 2017 21:12:24 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/tags/doujinmusic/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>同人音乐、CD与电子正版</title>
-        <link>https://tinyadapter.com/post/touhou/doujin-music-elect/</link>
-        <pubDate>Wed, 09 Aug 2017 21:12:24 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/touhou/doujin-music-elect/</guid>
-        <description>&lt;p&gt;前两天跟某同学讨论了件不那么有趣的事。&lt;/p&gt;
-&lt;p&gt;事件的起因是他在沈阳的某展子上给别人看摊，偶遇了yv在那里的摊子。&lt;/p&gt;
-&lt;p&gt;于是就跟他们聊了一下，同时也买了几张CD。&lt;/p&gt;
-&lt;p&gt;然后呢，重点来了。&lt;/p&gt;
-&lt;p&gt;yv在那个展子上应该是带了有几百张CD，结果最后，&lt;/p&gt;
-&lt;p&gt;算上我那个同学，一共卖出去4个人。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;没错，4个人&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;先不讨论东北地区ACG文化/同人文化的贫瘠（这点我承认，确实是不怎么样）&lt;/p&gt;
-&lt;p&gt;但是这也“实在是太惨了”（同学原话复述）。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;而我呢，大概思考这件事情有挺长时间了。&lt;/p&gt;
-&lt;p&gt;也不仅仅是同人圈子这样，全世界所有的音乐产业现在都有这种问题。&lt;/p&gt;
-&lt;p&gt;简单的说就是&lt;em&gt;信息爆炸&lt;/em&gt;。&lt;/p&gt;
-&lt;p&gt;现在互联网上有这么多的音乐，随手一点就可以听到，为什么我要花那么大的精力去买CD，还不能带着随处听呢？&lt;/p&gt;
-&lt;p&gt;想想Spotify，Apple Music有多火，这种态势显然只会愈演愈烈。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;当然了，对于买CD为了收藏的人来说，一切都是伪命题。&lt;/p&gt;
-&lt;p&gt;但不可否认的，这世上还是听音乐的人比较多。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;能想到的唯一出路，就是和那些欧美/国内的几大音乐公司一样，搞“数字化转型”。&lt;/p&gt;
-&lt;p&gt;而鉴于国内这种&lt;em&gt;特殊情况&lt;/em&gt;（你懂的），我的想法就很简单了：&lt;/p&gt;
-&lt;p&gt;做一个内容分发的大平台。&lt;/p&gt;
-&lt;p&gt;我目前总结的，这个平台可能拥有的几种受众：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;收藏用户，这些人有没有数字版都会去买实体碟，所以需要为他们提供一个及时、完整的新作信息集散地，同时买实体版赠送电子版为那些不想拆封的人提供听歌方式。&lt;/li&gt;
-&lt;li&gt;潜在用户I，这些人因为家里空间不足（没地方放碟），设备不足（现在笔记本没光驱）或者嫌听CD麻烦，因此几乎不会买实体版，但如果有电子正版就一定会支持自己的社团。这些是电子版的一小部分受众，需要全平台覆盖客户端保证他们随时听到自己想听的音乐。&lt;/li&gt;
-&lt;li&gt;潜在用户II，这些人很少为了支持某个社团而去购买正版（无论电子版还是实体版），只是想简单方便地听歌，但也会拥有一定的支持正版的心理。这些是电子版的大部分受众，既需要全平台覆盖客户端，同时也要将电子版的价格保持在一定的低点（RMB10左右），以吸引客户入驻。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;我目前思考的，这个平台需要拥有的一些特点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;全平台覆盖客户端（包括移动客户端）&lt;/li&gt;
-&lt;li&gt;拥有信息发布区，可以让社团宣传自己的新砖&lt;/li&gt;
-&lt;li&gt;提供歌曲交流平台（类似网易云评论区），可以让听众之间保持互动，增强平台用户粘度&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我目前构想的，这个平台的主要运营模式：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;主营数字版，但同时也提供实体版的网店跳转&lt;/li&gt;
-&lt;li&gt;如果购买了实体版，可以免费获得一份数字版&lt;/li&gt;
-&lt;li&gt;数字版价格在RMB10左右/砖，不提供下载，但可以在线播放/本地缓存，音质320K&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;同时也有两个比较基础的问题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;怎样吸引社团入驻&lt;/li&gt;
-&lt;li&gt;如何与监管打交道&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;大概就酱。&lt;/p&gt;
-&lt;p&gt;有谁愿意来接这个&lt;strong&gt;巨坑&lt;/strong&gt;么（笑）&lt;/p&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Doujinmusic on 斑桜の桜海~</title><link>https://tinyadapter.com/tags/doujinmusic/</link><description>Recent content in Doujinmusic on 斑桜の桜海~</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 09 Aug 2017 21:12:24 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/tags/doujinmusic/index.xml" rel="self" type="application/rss+xml"/><item><title>同人音乐、CD与电子正版</title><link>https://tinyadapter.com/post/touhou/doujin-music-elect/</link><pubDate>Wed, 09 Aug 2017 21:12:24 +0000</pubDate><guid>https://tinyadapter.com/post/touhou/doujin-music-elect/</guid><description>&lt;p>前两天跟某同学讨论了件不那么有趣的事。&lt;/p>
+&lt;p>事件的起因是他在沈阳的某展子上给别人看摊，偶遇了yv在那里的摊子。&lt;/p>
+&lt;p>于是就跟他们聊了一下，同时也买了几张CD。&lt;/p>
+&lt;p>然后呢，重点来了。&lt;/p>
+&lt;p>yv在那个展子上应该是带了有几百张CD，结果最后，&lt;/p>
+&lt;p>算上我那个同学，一共卖出去4个人。&lt;/p>
+&lt;p>&lt;strong>没错，4个人&lt;/strong>。&lt;/p>
+&lt;p>先不讨论东北地区ACG文化/同人文化的贫瘠（这点我承认，确实是不怎么样）&lt;/p>
+&lt;p>但是这也“实在是太惨了”（同学原话复述）。&lt;/p>
+&lt;hr>
+&lt;p>而我呢，大概思考这件事情有挺长时间了。&lt;/p>
+&lt;p>也不仅仅是同人圈子这样，全世界所有的音乐产业现在都有这种问题。&lt;/p>
+&lt;p>简单的说就是&lt;em>信息爆炸&lt;/em>。&lt;/p>
+&lt;p>现在互联网上有这么多的音乐，随手一点就可以听到，为什么我要花那么大的精力去买CD，还不能带着随处听呢？&lt;/p>
+&lt;p>想想Spotify，Apple Music有多火，这种态势显然只会愈演愈烈。&lt;/p>
+&lt;hr>
+&lt;p>当然了，对于买CD为了收藏的人来说，一切都是伪命题。&lt;/p>
+&lt;p>但不可否认的，这世上还是听音乐的人比较多。&lt;/p>
+&lt;hr>
+&lt;p>能想到的唯一出路，就是和那些欧美/国内的几大音乐公司一样，搞“数字化转型”。&lt;/p>
+&lt;p>而鉴于国内这种&lt;em>特殊情况&lt;/em>（你懂的），我的想法就很简单了：&lt;/p>
+&lt;p>做一个内容分发的大平台。&lt;/p>
+&lt;p>我目前总结的，这个平台可能拥有的几种受众：&lt;/p>
+&lt;ol>
+&lt;li>收藏用户，这些人有没有数字版都会去买实体碟，所以需要为他们提供一个及时、完整的新作信息集散地，同时买实体版赠送电子版为那些不想拆封的人提供听歌方式。&lt;/li>
+&lt;li>潜在用户I，这些人因为家里空间不足（没地方放碟），设备不足（现在笔记本没光驱）或者嫌听CD麻烦，因此几乎不会买实体版，但如果有电子正版就一定会支持自己的社团。这些是电子版的一小部分受众，需要全平台覆盖客户端保证他们随时听到自己想听的音乐。&lt;/li>
+&lt;li>潜在用户II，这些人很少为了支持某个社团而去购买正版（无论电子版还是实体版），只是想简单方便地听歌，但也会拥有一定的支持正版的心理。这些是电子版的大部分受众，既需要全平台覆盖客户端，同时也要将电子版的价格保持在一定的低点（RMB10左右），以吸引客户入驻。&lt;/li>
+&lt;/ol>
+&lt;p>我目前思考的，这个平台需要拥有的一些特点：&lt;/p>
+&lt;ul>
+&lt;li>全平台覆盖客户端（包括移动客户端）&lt;/li>
+&lt;li>拥有信息发布区，可以让社团宣传自己的新砖&lt;/li>
+&lt;li>提供歌曲交流平台（类似网易云评论区），可以让听众之间保持互动，增强平台用户粘度&lt;/li>
+&lt;/ul>
+&lt;p>我目前构想的，这个平台的主要运营模式：&lt;/p>
+&lt;ul>
+&lt;li>主营数字版，但同时也提供实体版的网店跳转&lt;/li>
+&lt;li>如果购买了实体版，可以免费获得一份数字版&lt;/li>
+&lt;li>数字版价格在RMB10左右/砖，不提供下载，但可以在线播放/本地缓存，音质320K&lt;/li>
+&lt;/ul>
+&lt;p>同时也有两个比较基础的问题：&lt;/p>
+&lt;ul>
+&lt;li>怎样吸引社团入驻&lt;/li>
+&lt;li>如何与监管打交道&lt;/li>
+&lt;/ul>
+&lt;p>大概就酱。&lt;/p>
+&lt;p>有谁愿意来接这个&lt;strong>巨坑&lt;/strong>么（笑）&lt;/p></description></item></channel></rss>

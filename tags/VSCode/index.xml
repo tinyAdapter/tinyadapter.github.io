@@ -1,146 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>VSCode on 斑桜の桜海~</title>
-        <link>https://tinyadapter.com/tags/vscode/</link>
-        <description>Recent content in VSCode on 斑桜の桜海~</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sat, 16 Mar 2019 10:22:02 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/tags/vscode/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>TypeScript &#43; Vue, 防止 TSLint, Vetur, Prettier 打架的 VSCode 配置方式</title>
-        <link>https://tinyadapter.com/post/code/typescript-vue-linters-formatters-settings/</link>
-        <pubDate>Sat, 16 Mar 2019 10:22:02 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/code/typescript-vue-linters-formatters-settings/</guid>
-        <description>&lt;p&gt;注：大忙人请直接跳到最后一节哦~&lt;/p&gt;
-&lt;p&gt;最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://camo.githubusercontent.com/ac8a70bd5fdbcef7bfc0f1095e276471765435d3/68747470733a2f2f63646e2e7261776769742e636f6d2f7374616e646172642f7374616e646172642f6d61737465722f62616467652e737667&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;JavaScript Style Guide&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;讲真，这个图标还是有点好看的。&lt;/p&gt;
-&lt;p&gt;不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。&lt;/p&gt;
-&lt;p&gt;没办法，只好先关了 Prettier，把 TSLint 装了起来。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;顺带说一句，大概也就前两个月，TypeScript 团队&lt;a class=&#34;link&#34; href=&#34;https://github.com/Microsoft/TypeScript/issues/29288&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;宣布使用 ESLint 作为 TypeScript 和 VSCode 仓库的 Linter&lt;/a&gt;，ESLint 那边也表示欢迎，当天就放出了新的 &lt;a class=&#34;link&#34; href=&#34;https://github.com/typescript-eslint/typescript-eslint&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;typescript-eslint&lt;/a&gt; 项目。但是两个月后的现在，我在使用 ESLint 检查 TypeScript 代码时依然会遇到一些 BUG，因此这里就暂时依旧用着 TSLint 了。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yarn add -D tslint tslint-config-standard
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;再配置一下 tslint.json 和 tsconfig.json：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//tslint.json
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;extends&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint:recommended&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint-config-standard&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;rules&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;max-line-length&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;//有些规则限制太死，先关一关
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;no-var-requires&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;object-literal-sort-keys&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;no-floating-promises&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;forin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//tsconfig.json
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;plugins&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;typescript-tslint-plugin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;configFile&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint.json&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;alwaysShowRuleFailuresAsWarnings&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;装好之后，确实出现了不少的警告信息，并且自动修复也能正常工作。但是用着用着，突然发现了一个问题，就是 TSLint 在一行代码超过 80 字符时并不会自动帮你把代码分行（当然，如果 TSLint 抑或是 ESLint 真的能做到这点的话，就不会有 Prettier 这个东西存在了「误」），虽然确实是个小问题，不过对于我这种习惯了什么格式化任务都一个 Ctrl-S 全权交给 Prettier 处理的人来说，确实有点不爽。&lt;/p&gt;
-&lt;p&gt;这好办，把 Prettier 装回来不就好了……吗？&lt;/p&gt;
-&lt;p&gt;从这里起，事情就开始向着不可控的方向发展了……&lt;/p&gt;
-&lt;h2 id=&#34;tslint--prettier&#34;&gt;TSLint + Prettier&lt;/h2&gt;
-&lt;p&gt;启动 Prettier，开启&lt;code&gt;editor.formatOnSave&lt;/code&gt;，然后……&lt;/p&gt;
-&lt;p&gt;这不对啊教练，怎么一按 Ctrl-S Prettier 就无视 TSLint 规则把分号又加回去了！&lt;/p&gt;
-&lt;p&gt;……哦抱歉，因为 Prettier 是一个「武断」的格式化工具。它才不管你 TSLint 啥规则呢。&lt;/p&gt;
-&lt;p&gt;这怎么办呢？&lt;/p&gt;
-&lt;p&gt;还好，虽说 Prettier 配置项少得可怜，但是起码还给你了集成 ESLint 和 TSLint 的方式，就是&lt;code&gt;prettier.eslintIntegration&lt;/code&gt;和&lt;code&gt;prettier.tslintIntegration&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;看来它们还是有一丝良知的嘛，感心感心（佩服佩服）。&lt;/p&gt;
-&lt;p&gt;在 VSCode 配置文件里把 Prettier 的 TSLint 集成打开：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;prettier.tslintIntegration&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//启用下面这个VSCode默认的保存时格式化选项，Prettier会覆盖VSCode默认的规则
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;editor.formatOnSave&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;现在的情况是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;VSCode::formatOnSave -&amp;gt; Prettier 的格式化器 -&amp;gt; TSLint 的规则&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ctrl-S 一下，emmm，看起来不错，除了需要多按几次保存之外没啥缺点了。&lt;/p&gt;
-&lt;p&gt;打开 Vue 文件，保存一下。&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;怎么没反应？&lt;/p&gt;
-&lt;p&gt;You gotta be kidding me，原来 TSLint 插件根本没办法访问到 Vue 文件里的&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;块。&lt;/p&gt;
-&lt;h2 id=&#34;tslint--tslint-vue--prettier&#34;&gt;TSLint + TSLint Vue + Prettier&lt;/h2&gt;
-&lt;p&gt;行行行，访问不到也正常，谁让 Vue 单文件组件这么特殊呢。&lt;/p&gt;
-&lt;p&gt;商店里搜一波，找到了 TSLint Vue 插件，号称能帮助 lint .vue 文件。&lt;/p&gt;
-&lt;p&gt;装上装上。Ctrl-S，┏ (゜ ω ゜)=☞！&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;怎么还是没反应？&lt;/p&gt;
-&lt;p&gt;难道说不是 TSLint 的问题，而是 Prettier 访问不到.vue？&lt;/p&gt;
-&lt;p&gt;好吧，直接说结论。其实不是因为 Prettier 对.vue 失效，Prettier 自身确实无法获取.vue 里的&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;块，但是 vetur 插件帮我们解决了这个问题。但是 vetur 调用 Prettier 并没有关注它是否继承 TSLint 配置，因此实际上还是 Prettier 默认的规则！&lt;/p&gt;
-&lt;h2 id=&#34;tslint--tslint-vue--vetur--prettier&#34;&gt;TSLint + TSLint Vue + Vetur + Prettier&lt;/h2&gt;
-&lt;p&gt;……有点糟糕。这样我们就只能启用&lt;code&gt;tslint.autoFixOnSave&lt;/code&gt;，让 tslint 也参与到保存时的格式化过程中。但是，现在的情况就变成了：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TSLint::autoFixOnSave -&amp;gt; TSLint 的规则（无格式化）&lt;/li&gt;
-&lt;li&gt;Vetur::format.defaultFormatter.ts -&amp;gt; Prettier -&amp;gt; Prettier 默认规则（带格式化）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;两个格式化过程之间规则的冲突导致了一个奇葩现象：&lt;/p&gt;
-&lt;p&gt;保存 - 分号被加上 - 保存 - 分号被去掉 - 保存 - 分号被加上 ……&lt;/p&gt;
-&lt;p&gt;因此最终，只能去掉第三条，也就是在配置文件里加上&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vetur.format.defaultFormatter.ts&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;none&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;来禁用掉 Vetur 对代码的格式化。&lt;/p&gt;
-&lt;p&gt;这样，我们还是失去了.vue 文件里代码的自动格式化。不过其实，由于 TSLint 本身也能处理一部分代码不规范的问题，因此只剩下自动换行这件事没有被实现。&lt;/p&gt;
-&lt;p&gt;那么问题来了，自动换行究竟是好还是坏呢？因为我目前已经遇到不少案例，Prettier 自动换行将我本就调好的格式给破坏掉了，而我又没办法修正，因为下次保存时又会被改回去。&lt;/p&gt;
-&lt;p&gt;但是，自动换行又可以节省人工调整格式的麻烦。毕竟，能自动化的东西为什么还要人手动来搞呢？&lt;/p&gt;
-&lt;h2 id=&#34;最终的配置文件&#34;&gt;最终的配置文件&lt;/h2&gt;
-&lt;p&gt;废话不多说。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//settings.json - VSCode配置文件
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;editor.formatOnSave&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;prettier.tslintIntegration&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;tslint.autoFixOnSave&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;typescript.format.enable&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;vetur.format.defaultFormatter.ts&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;none&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//tslint.json - 自己想要啥就配啥
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;extends&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint:recommended&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint-config-standard&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;rules&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;max-line-length&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;no-var-requires&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;object-literal-sort-keys&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;no-floating-promises&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;forin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//tsconfig.json
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;err&#34;&gt;...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;plugins&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;typescript-tslint-plugin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;configFile&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tslint.json&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;alwaysShowRuleFailuresAsWarnings&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以上。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VSCode on 斑桜の桜海~</title><link>https://tinyadapter.com/tags/vscode/</link><description>Recent content in VSCode on 斑桜の桜海~</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 16 Mar 2019 10:22:02 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/tags/vscode/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScript + Vue, 防止 TSLint, Vetur, Prettier 打架的 VSCode 配置方式</title><link>https://tinyadapter.com/post/code/typescript-vue-linters-formatters-settings/</link><pubDate>Sat, 16 Mar 2019 10:22:02 +0000</pubDate><guid>https://tinyadapter.com/post/code/typescript-vue-linters-formatters-settings/</guid><description>&lt;p>注：大忙人请直接跳到最后一节哦~&lt;/p>
+&lt;p>最近把 Yagt 的代码迁移到了 Standard 风格，就是这个：&lt;/p>
+&lt;p>&lt;img src="https://camo.githubusercontent.com/ac8a70bd5fdbcef7bfc0f1095e276471765435d3/68747470733a2f2f63646e2e7261776769742e636f6d2f7374616e646172642f7374616e646172642f6d61737465722f62616467652e737667"
+loading="lazy"
+alt="JavaScript Style Guide"
+>&lt;/p>
+&lt;p>讲真，这个图标还是有点好看的。&lt;/p>
+&lt;p>不过之前项目一直使用开箱即用的 Prettier 插件（甚至连配置文件都没有，直接依赖 VSCode 自带的默认配置），而 Prettier 这个东西一直以「武断」著称，根本就不给你多少配置的空间。&lt;/p>
+&lt;p>没办法，只好先关了 Prettier，把 TSLint 装了起来。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>顺带说一句，大概也就前两个月，TypeScript 团队&lt;a class="link" href="https://github.com/Microsoft/TypeScript/issues/29288" target="_blank" rel="noopener"
+>宣布使用 ESLint 作为 TypeScript 和 VSCode 仓库的 Linter&lt;/a>，ESLint 那边也表示欢迎，当天就放出了新的 &lt;a class="link" href="https://github.com/typescript-eslint/typescript-eslint" target="_blank" rel="noopener"
+>typescript-eslint&lt;/a> 项目。但是两个月后的现在，我在使用 ESLint 检查 TypeScript 代码时依然会遇到一些 BUG，因此这里就暂时依旧用着 TSLint 了。&lt;/p>
+&lt;pre tabindex="0">&lt;code>yarn add -D tslint tslint-config-standard
+&lt;/code>&lt;/pre>&lt;p>再配置一下 tslint.json 和 tsconfig.json：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//tslint.json
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;extends&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;tslint:recommended&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;tslint-config-standard&amp;#34;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;rules&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;max-line-length&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">80&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//有些规则限制太死，先关一关
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nt">&amp;#34;no-var-requires&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;object-literal-sort-keys&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;no-floating-promises&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;forin&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//tsconfig.json
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;plugins&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;typescript-tslint-plugin&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;configFile&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;tslint.json&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;alwaysShowRuleFailuresAsWarnings&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>装好之后，确实出现了不少的警告信息，并且自动修复也能正常工作。但是用着用着，突然发现了一个问题，就是 TSLint 在一行代码超过 80 字符时并不会自动帮你把代码分行（当然，如果 TSLint 抑或是 ESLint 真的能做到这点的话，就不会有 Prettier 这个东西存在了「误」），虽然确实是个小问题，不过对于我这种习惯了什么格式化任务都一个 Ctrl-S 全权交给 Prettier 处理的人来说，确实有点不爽。&lt;/p>
+&lt;p>这好办，把 Prettier 装回来不就好了……吗？&lt;/p>
+&lt;p>从这里起，事情就开始向着不可控的方向发展了……&lt;/p>
+&lt;h2 id="tslint--prettier">TSLint + Prettier&lt;/h2>
+&lt;p>启动 Prettier，开启&lt;code>editor.formatOnSave&lt;/code>，然后……&lt;/p>
+&lt;p>这不对啊教练，怎么一按 Ctrl-S Prettier 就无视 TSLint 规则把分号又加回去了！&lt;/p>
+&lt;p>……哦抱歉，因为 Prettier 是一个「武断」的格式化工具。它才不管你 TSLint 啥规则呢。&lt;/p>
+&lt;p>这怎么办呢？&lt;/p>
+&lt;p>还好，虽说 Prettier 配置项少得可怜，但是起码还给你了集成 ESLint 和 TSLint 的方式，就是&lt;code>prettier.eslintIntegration&lt;/code>和&lt;code>prettier.tslintIntegration&lt;/code>。&lt;/p>
+&lt;p>看来它们还是有一丝良知的嘛，感心感心（佩服佩服）。&lt;/p>
+&lt;p>在 VSCode 配置文件里把 Prettier 的 TSLint 集成打开：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;prettier.tslintIntegration&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//启用下面这个VSCode默认的保存时格式化选项，Prettier会覆盖VSCode默认的规则
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="s2">&amp;#34;editor.formatOnSave&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现在的情况是：&lt;/p>
+&lt;ul>
+&lt;li>VSCode::formatOnSave -&amp;gt; Prettier 的格式化器 -&amp;gt; TSLint 的规则&lt;/li>
+&lt;/ul>
+&lt;p>Ctrl-S 一下，emmm，看起来不错，除了需要多按几次保存之外没啥缺点了。&lt;/p>
+&lt;p>打开 Vue 文件，保存一下。&lt;/p>
+&lt;p>……&lt;/p>
+&lt;p>怎么没反应？&lt;/p>
+&lt;p>You gotta be kidding me，原来 TSLint 插件根本没办法访问到 Vue 文件里的&lt;code>&amp;lt;script&amp;gt;&lt;/code>块。&lt;/p>
+&lt;h2 id="tslint--tslint-vue--prettier">TSLint + TSLint Vue + Prettier&lt;/h2>
+&lt;p>行行行，访问不到也正常，谁让 Vue 单文件组件这么特殊呢。&lt;/p>
+&lt;p>商店里搜一波，找到了 TSLint Vue 插件，号称能帮助 lint .vue 文件。&lt;/p>
+&lt;p>装上装上。Ctrl-S，┏ (゜ ω ゜)=☞！&lt;/p>
+&lt;p>……&lt;/p>
+&lt;p>怎么还是没反应？&lt;/p>
+&lt;p>难道说不是 TSLint 的问题，而是 Prettier 访问不到.vue？&lt;/p>
+&lt;p>好吧，直接说结论。其实不是因为 Prettier 对.vue 失效，Prettier 自身确实无法获取.vue 里的&lt;code>&amp;lt;script&amp;gt;&lt;/code>块，但是 vetur 插件帮我们解决了这个问题。但是 vetur 调用 Prettier 并没有关注它是否继承 TSLint 配置，因此实际上还是 Prettier 默认的规则！&lt;/p>
+&lt;h2 id="tslint--tslint-vue--vetur--prettier">TSLint + TSLint Vue + Vetur + Prettier&lt;/h2>
+&lt;p>……有点糟糕。这样我们就只能启用&lt;code>tslint.autoFixOnSave&lt;/code>，让 tslint 也参与到保存时的格式化过程中。但是，现在的情况就变成了：&lt;/p>
+&lt;ul>
+&lt;li>TSLint::autoFixOnSave -&amp;gt; TSLint 的规则（无格式化）&lt;/li>
+&lt;li>Vetur::format.defaultFormatter.ts -&amp;gt; Prettier -&amp;gt; Prettier 默认规则（带格式化）&lt;/li>
+&lt;/ul>
+&lt;p>两个格式化过程之间规则的冲突导致了一个奇葩现象：&lt;/p>
+&lt;p>保存 - 分号被加上 - 保存 - 分号被去掉 - 保存 - 分号被加上 ……&lt;/p>
+&lt;p>因此最终，只能去掉第三条，也就是在配置文件里加上&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;vetur.format.defaultFormatter.ts&amp;#34;&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="s2">&amp;#34;none&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来禁用掉 Vetur 对代码的格式化。&lt;/p>
+&lt;p>这样，我们还是失去了.vue 文件里代码的自动格式化。不过其实，由于 TSLint 本身也能处理一部分代码不规范的问题，因此只剩下自动换行这件事没有被实现。&lt;/p>
+&lt;p>那么问题来了，自动换行究竟是好还是坏呢？因为我目前已经遇到不少案例，Prettier 自动换行将我本就调好的格式给破坏掉了，而我又没办法修正，因为下次保存时又会被改回去。&lt;/p>
+&lt;p>但是，自动换行又可以节省人工调整格式的麻烦。毕竟，能自动化的东西为什么还要人手动来搞呢？&lt;/p>
+&lt;h2 id="最终的配置文件">最终的配置文件&lt;/h2>
+&lt;p>废话不多说。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//settings.json - VSCode配置文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;editor.formatOnSave&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;prettier.tslintIntegration&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;tslint.autoFixOnSave&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;typescript.format.enable&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;vetur.format.defaultFormatter.ts&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;none&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//tslint.json - 自己想要啥就配啥
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;extends&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;tslint:recommended&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;tslint-config-standard&amp;#34;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;rules&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;max-line-length&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">80&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;no-var-requires&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;object-literal-sort-keys&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;no-floating-promises&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;forin&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//tsconfig.json
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;compilerOptions&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;plugins&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;typescript-tslint-plugin&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;configFile&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;tslint.json&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;alwaysShowRuleFailuresAsWarnings&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上。&lt;/p></description></item></channel></rss>

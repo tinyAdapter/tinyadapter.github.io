@@ -1,1027 +1,932 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Galgame小评 on 斑桜の桜海~</title>
-        <link>https://tinyadapter.com/categories/galgame%E5%B0%8F%E8%AF%84/</link>
-        <description>Recent content in Galgame小评 on 斑桜の桜海~</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sun, 03 Feb 2019 22:47:43 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/categories/galgame%E5%B0%8F%E8%AF%84/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>《彼女は天使で妹で》小评</title>
-        <link>https://tinyadapter.com/post/galgame-review/tenshiimo/</link>
-        <pubDate>Sun, 03 Feb 2019 22:47:43 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/tenshiimo/</guid>
-        <description>&lt;p&gt;所以说人为什么要作死呢（笑）&lt;/p&gt;
-&lt;p&gt;这里是被 node-ffi 虐到无以复加的斑桜。&lt;/p&gt;
-&lt;p&gt;说起来我好像食言了，上篇博客结尾说下篇要写《LOVESICK PUPPIES》的，那么问题来了（以下略）&lt;/p&gt;
-&lt;p&gt;好吧，其实游戏我玩了，但是怎么说呢，完全没有必要为它写小评啊。&lt;/p&gt;
-&lt;p&gt;整部 Gal 给我的感觉就是，用一个绝对新颖的世界观，起了一个无与伦比的好头，之后就 TM 一泻千里。&lt;/p&gt;
-&lt;p&gt;讲真，可以算是良作，但编剧实在是自己对不起自己。好好往下写啊魂淡！&lt;/p&gt;
-&lt;p&gt;之后又断断续续推了一些：《Strawberry Nauts》啊，《将軍様はお年頃》啊，《Corona Blossom》啊，《乙女が結ぶ月夜の煌めき》啊（还是用的 VNR，音符社女儿怎能不看，咳咳，跑题了），但其实这些作品也不是特别有深度，属于那种可以哈哈哈来消遣，但很难冷静下来仔细思考的作品。&lt;/p&gt;
-&lt;p&gt;然后就让我摸到了这作。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;先说好，以下所有内容都是我边推边思考边写的，因为整条主线一气呵成，甚至已经可以算作线性剧情了，而且结局使我致郁（这里是重点），所以就不整理了，可以一瞥我在推本作时的心路历程 emmm&lt;/p&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;其实整部作品从一开始就已经从字里行间渗透出一种氛围：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;所谓的人物线其实根本就是为主线服务的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;当然，至于说为什么，从游戏流程（其实就是攻略啦）便可知晓。&lt;/p&gt;
-&lt;p&gt;首先，本作并没有采用类似悬疑推理型 Gal 常见的线性剧情模式（如《秽翼的尤斯蒂娅》《时钟机关的 Ley-line》等作品中出现的，游戏沿既定的线路一直走下去，直到在某处分支出次要人物线并直接中断）。当然，不要被表象迷惑，因为隐藏在选择肢下的其实是以下剧情结构：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;高桥未亚  -- +
-
-            |-- 源恵理那 -- 仁科十花
-
-相羽一海  -- +
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;看到了么，距离完全的线性剧情模式也仅仅只在前两个人物的攻略顺序上给出了一点点自由度而已。这说明什么？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;未亚和一海两线能够在只交代一部分世界观的情况下走完，但是惠理那和十花两线就不行，必须要完整的世界观；&lt;/li&gt;
-&lt;li&gt;十花是女主我可以理解，但惠理那居然也必须满足第一点，说真的我惊到了。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;其次，在我实实在在通了未亚线之后，对于以上情况的理解便更加深刻了。&lt;/p&gt;
-&lt;h2 id=&#34;高桥未亚&#34;&gt;高桥未亚&lt;/h2&gt;
-&lt;p&gt;未亚线其实讲述了一个十分复杂而又具备宏大叙事的主题，即人的幸福与生命长短之间到底是否存在因果关系的话题。当然，作为一个身经百战，见得多了的 Gal 玩家，类似主题的作品早已阅历无数，因此也并没有过高或者过低的期待值。&lt;/p&gt;
-&lt;p&gt;但是本作异于往常的地方就在于，就在其他内涵不佳的作品（这里不点名）仅仅通过男女主之间各种离奇遭遇狂轰滥炸般向玩家灌输“我们确实是在讨论生死大义的问题”时，《天使妹》却在其中加入了一个不一样的点：&lt;/p&gt;
-&lt;p&gt;一个从来没有出场但又切实存在，充满着恶趣味的神的形象。&lt;/p&gt;
-&lt;p&gt;可以说，这样一个将现实世界中各种突发事件拟人化的手法巧妙规避了以往讨论此类话题中频繁遭人诟病的都合主义问题，毕竟，剧情中但凡出现突发事件的地方，都可以是拜这个恶趣味的神所赐，跟萤幕外的编剧没有一丝一毫的关系（笑）&lt;/p&gt;
-&lt;p&gt;另外还有一点，算作忠告一类的东西。&lt;/p&gt;
-&lt;p&gt;虽然我本人推这部作品的最初动力确实是开篇各种搞笑剧情和梗、包袱齐飞的场面，但是，《天使妹》却绝对不是一个让人哈哈一笑就能过去的作品。未亚线的结束让我更加意识到这点。&lt;/p&gt;
-&lt;p&gt;其实一开始看到攻略中出现的“フラグ END”字样，我是很奇怪的。“フラグ”是 flag 的日语念法，而这个词在 ACG 语境下指什么大家应该都懂。所以我还是有点怕，一旦出现什么全灭结局，就着实比较让人无语。&lt;/p&gt;
-&lt;p&gt;但是，等我真的通关未亚线（包含一个人物 END 和一个フラグ END。顺带一提，一共有三个フラグ END）后，我发现我想反了。&lt;/p&gt;
-&lt;p&gt;如果拿线性剧情模式类比的话，那么フラグ END 就跟继续主线是一样的结果。男主没有在人物上多做停留，而是继续开始了他接下来的征程。&lt;/p&gt;
-&lt;p&gt;而在人物 END 中，男主选择了留下来，于是跟线性剧情模式一样，故事在此处终止。&lt;/p&gt;
-&lt;p&gt;这种停留并不是一种令人释怀的停留，而是男主放弃了。他决定收起背后黑色的羽翼，将自己想要向现任神提出的问题亲手终结。&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;作为戏外的玩家，我们当然可以动动鼠标就轻松地将两个结局全部阅览一番。但是，现实可不是游戏。假如你是游戏中的男主，你又会做出怎样的选择呢？&lt;/p&gt;
-&lt;p&gt;如果你的答案是继续前行，那么恭喜你。&lt;/p&gt;
-&lt;p&gt;因为，正如洞穴探险一般——&lt;/p&gt;
-&lt;p&gt;愈往深处，便愈黑暗。&lt;/p&gt;
-&lt;h2 id=&#34;相羽一海&#34;&gt;相羽一海&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——神啊。这个就还给你吧。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——我，不，我们已经不需要你的慈悲了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——因为人类绝对没有那么脆弱。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;相比起未亚线一波三折的剧情走向，一海线就要简单直白得多，整条故事线自始至终围绕着一海的母亲展开。&lt;/p&gt;
-&lt;p&gt;而一海线的终极矛盾就在于，「明明想死却死不了，和明明不想死却已经死了，到底哪边更加不幸」，这样一个主题。&lt;/p&gt;
-&lt;p&gt;虽然人鱼吃人的典故我不是很懂，但是这个梗本身并不妨碍理解剧情。&lt;/p&gt;
-&lt;p&gt;在一海线临近结束的部分，故事终于将渐渐明晰的完整世界观展现给了玩家：每当男主放弃与人物之间的感情，而选择继续前行，这个世界就会被神「撕毁」。&lt;/p&gt;
-&lt;p&gt;因此，所有的故事都是虚假的。男主只剩下一往无前。&lt;/p&gt;
-&lt;p&gt;……行吧，虽然对其它人物挺不公平的，但是线性剧情嘛，没办法。&lt;/p&gt;
-&lt;p&gt;但其实让我无法理解的一点在于，除了男主之外，貌似所有的人物都早就知道这个世界是虚假的。这次也是一样，当男主下定决心继续前行时，是一海直接跟男主说的「这个世界会结束」。&lt;/p&gt;
-&lt;p&gt;我大概可以理解，每条人物线中的女主都是真心与男主相伴的。因此无论男主最终的选择如何，自己都没有任何的损失。&lt;/p&gt;
-&lt;p&gt;说到底，连这个世界本身都是假的，那么自己的存在究竟还是否有意义呢？&lt;/p&gt;
-&lt;p&gt;……实在是有够哲学的。&lt;/p&gt;
-&lt;p&gt;哦对了，如果你像我一样提前看了攻略的话，一定能够理解一海线最后的那个选择肢究竟在指什么。「杀死」和「不杀」，应该不用我多做说明。&lt;/p&gt;
-&lt;p&gt;别信它的。&lt;/p&gt;
-&lt;p&gt;不管你怎么选，最后的结局都不会发生变化（对于这个虚假的世界而言）。&lt;/p&gt;
-&lt;h2 id=&#34;源恵理那&#34;&gt;源恵理那&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「神」是一个 AI。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;整部作品就像是一个大混杂。看似人畜无害的浪漫背景下，隐藏的是各种各样复杂而又敏感的社会问题。&lt;/p&gt;
-&lt;p&gt;包括强人工智能的主旨偏离，娱乐圈的规则与潜规则，个人与他人的关系，平行世界，物质与情感的取舍，兄妹伦理等。&lt;/p&gt;
-&lt;p&gt;很难想象这是一个 Gal 可以一本正经地讨论的问题。&lt;/p&gt;
-&lt;p&gt;如果一路沿着主线一路奔下去的话，其实前三条线就是男主对三种不同情感诱惑的拒绝：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;象征解决他者重大变故的未亚线&lt;/li&gt;
-&lt;li&gt;象征解决关系者重大变故的一海线&lt;/li&gt;
-&lt;li&gt;象征没有任何重大变故，平和情感推进的恵理那线&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;上演了一出《只有神知道的世界》。&lt;/p&gt;
-&lt;p&gt;就像中文一样，日语中也总是把 AI（人工智能）和爱联系在一起（日语中「爱」就读 ai）。&lt;/p&gt;
-&lt;p&gt;世界观完全明晰了。男主由于内心的纯净而被维护临时支撑这个世界的 AI，也就是爱，的人看中，想要让他成为新世界的卡密（误）。&lt;/p&gt;
-&lt;p&gt;而随着时间的推移，爱对于世界的塑造愈发的让人无法理解。&lt;/p&gt;
-&lt;p&gt;可以说，距离崩坏越来越近。&lt;/p&gt;
-&lt;p&gt;关于这点，当初一海线的叙述可能并不明显，因为一海母亲本身就是个不受神控制的存在。但在未亚线中，可以清楚地看到，随着剧情走向后期，神控制人生死的混乱与前后不一。&lt;/p&gt;
-&lt;p&gt;为什么神偏偏就自 150 年前起不在了，而不是什么别的时间呢？&lt;/p&gt;
-&lt;p&gt;唯一能够解释的一点就是，这段剧情其实是在影射明治维新。&lt;/p&gt;
-&lt;p&gt;看这段：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;十花「神不在了。这个状态已经持续了 150 年了」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一海「那以前我见过的那个神呢？」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;十花「那只不过是未来用神之奇迹创造的假货」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;十花「毕竟不能随便让人知道现在的世界早就没了神的管理啊」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;破除神权 + 君主立宪，只能说 ALcot 这次真的是有点往神作方向发展的意味了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;在第三个世界结束前，神无月代替被爱选中的优希，成为了神。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我一直都想问神。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为何明明唯有悲苦，却依旧让人降生。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;于是，神（朋）明（友）明确地告诉了我。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;万灵皆伴祝福而生。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1.jpg&#34;
-	width=&#34;1585&#34;
-	height=&#34;891&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1_hu720ffb06cf0648117a4dc004af52f11a_267883_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1_hu720ffb06cf0648117a4dc004af52f11a_267883_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;当然，最终这个世界也被「撕毁」了。而最后一次循环，当优希真正想成为神的时候，自然应当面对最为黑暗与痛苦的过程。&lt;/p&gt;
-&lt;p&gt;来吧，最凶的故事即将开始！&lt;/p&gt;
-&lt;h2 id=&#34;仁科十花&#34;&gt;仁科十花&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;大家都说我的灵魂纯净无暇。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;但那份纯净，一定不是由纯真而来。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;只不过是，期望一切都重归虚无的一种表达。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;人类的价值观一直在教导人类敬畏生命。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;所以绝不能自杀。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;无论多么辛苦，都要活下去。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这就是常识。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;但那不正是在强迫让人必须选择活下去吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;那真的是正确的吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;既然不能强迫人的死亡，难道对待生存的选择权不也应该同理吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有些人为了保护尊严，自愿选择死亡，难道是不对的吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——我消灭了全人类。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——但希望艾莲和仁科优希他们两个能够幸福地活下去。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「希望和绝望，一定就是硬币的正反面」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「它们是绝对不会分隔开的」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「只要有人选择绝望，就会给其他人带来与之相应的希望」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「规则大概就是这个样子」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果纯以结果论而言的话，优希终究还是成为了神。&lt;/p&gt;
-&lt;p&gt;当然，这个过程就显得十分复杂并且极度剧透，所以还是不展开了。&lt;/p&gt;
-&lt;p&gt;说到底，其实整条线都在向玩家灌输一点：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果人类只是一个肮脏，麻烦，自相残杀，性欲满载，只会加害地球的物种，那么我们为什么还要让他们继续存在下去呢？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;先代神明们不是离开神殿后再也不回，就是自杀，一方面看到人类荒唐的活动而精神崩溃，另一方面又必须不断为人类的活动书写世界日志。&lt;/p&gt;
-&lt;p&gt;货真价实的身心俱疲。&lt;/p&gt;
-&lt;p&gt;优希从一开始的对不讲道理的神的仇恨，到知晓一切时对自身的否定，此时他作为人类的部分死去了，而作为神明的部分因而诞生。&lt;/p&gt;
-&lt;p&gt;他自己也很清楚这点，最初的那句「期望一切都重归虚无」便是证明。&lt;/p&gt;
-&lt;p&gt;然而最终，在目睹了全人类消失的世界后，他还是意识到自己错了。&lt;/p&gt;
-&lt;p&gt;因为这个看似对神明完美的结局，其实最终没有拯救十花、凉、未来三人。&lt;/p&gt;
-&lt;p&gt;最终，优希以自身的不幸为代价，换取了世界上所有人的幸福。&lt;/p&gt;
-&lt;p&gt;然而，那些曾经与他有过羁绊的人并没有忘记。&lt;/p&gt;
-&lt;p&gt;十花在结束前向着天空的那一声嘶吼，伴随着那个 CG 定格为新的主标题界面背景，为整部作品增添了无数的魅力。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2.jpg&#34;
-	width=&#34;1585&#34;
-	height=&#34;891&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2_hu125684dcd4e41398e522a6adf4d26689_219923_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2_hu125684dcd4e41398e522a6adf4d26689_219923_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;《彼女は天使で妹で》其实找到了一个有趣的剧情切入点：如果这个世界真的存在「神」的话，那么这个「神」的工作是什么样子的。&lt;/p&gt;
-&lt;p&gt;以此为契机，整部作品其实都在回答这个问题。&lt;/p&gt;
-&lt;p&gt;如果你简单运用唯物辩证法思考一下的话，其实马上也可以得出结论：在这个熵增的世界下，人类的活动越来越频繁，如果「神」真的存在，那么它早就会不堪重负。&lt;/p&gt;
-&lt;p&gt;因而，根本就不存在什么「神」。只有人类才能决定人类的未来。&lt;/p&gt;
-&lt;p&gt;完美的唯物主义。&lt;/p&gt;
-&lt;p&gt;其实我本可以在脑内将本作划分为神作的范畴，但是突然想到的一件事让我开始犹豫起来。&lt;/p&gt;
-&lt;p&gt;那就是，本作与《秽翼的尤斯蒂娅》的雷同性。&lt;/p&gt;
-&lt;p&gt;没有比这更巧合的了：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;两部作品都可以算作线性剧情&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;男主选择某一非女主人物都只是暂时逃避，世界最终还是会毁灭&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;最终一人成神迎来世界和平（这里的不同在于本作成神的是男主，而《尤斯蒂娅》是女主）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;当然，我肯定不能因此就断定本作的编剧在创作时是否借鉴了《尤斯蒂娅》，也可能类似的剧情只能使用这种表现方式什么的。事实上，我也确实没想到什么其他表现的手段。&lt;/p&gt;
-&lt;p&gt;但是，谨慎一点总是好的。&lt;/p&gt;
-&lt;p&gt;话说回来，既然提到了八月社的作品，下部预定要推的就要非八月社遗作（误）《千の刃濤、桃花染の皇姫》莫属了。&lt;/p&gt;
-&lt;p&gt;听说这部作品口碑稀烂，根据本人特有的审丑美学，我倒要看看能烂到什么程度 (完)&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>《ノラと皇女と野良猫ハート》小评</title>
-        <link>https://tinyadapter.com/post/galgame-review/noraneko/</link>
-        <pubDate>Wed, 18 Jul 2018 18:52:26 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/noraneko/</guid>
-        <description>&lt;p&gt;啊啊，好久不见。&lt;/p&gt;
-&lt;p&gt;没更新blog的这接近一年的时间里，本人过得简直焦头烂额，经历了各种诸如「24小时精通软件工程」、「16小时精通操作系统」、「48小时精通数据库系统」之类的不堪回首的往事。&lt;/p&gt;
-&lt;p&gt;在这里给那些大学想报软件工程的高中生们提个醒：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;软件工程 (SE) 是文科专业，想学编程出门左转计算机科学与技术 (CS)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;好了牢骚发完了，接下来进入正题。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;要从最近数年的市场找一个既有趣又能讲深度的Gal，《野良猫》确实得算一个。&lt;/p&gt;
-&lt;p&gt;但是吹的人多了，自然总会有一种想确认是不是真的如说得那么神的冲动。&lt;/p&gt;
-&lt;p&gt;于是就玩了。然后开场几分钟就被震惊到了。&lt;/p&gt;
-&lt;p&gt;编剧绝对是三分钟不玩梗会死，前两小时的共通线简直是从头笑到尾233&lt;/p&gt;
-&lt;p&gt;于是，起码搞笑这部分算是齐活了。&lt;/p&gt;
-&lt;h2 id=&#34;旁白&#34;&gt;旁白&lt;/h2&gt;
-&lt;p&gt;我一开始对旁白这种角色是不怎么感冒的，主要是最近见到了不少以旁白角色作为游戏主要元素之一的MetaGames，而我普遍又对那种本身没啥营养，只是刻意制造话题的旁白角色们没什么兴趣。不过《野良猫》里的旁白显然不属于前者。&lt;/p&gt;
-&lt;p&gt;作为人声部分的旁白需要花一定的时间适应（毕竟其它Gal里很少见），不过当习惯了之后，只要这个吐槽役担当主力一出场，就绝对会让你笑个不停。&lt;/p&gt;
-&lt;h2 id=&#34;黑木未知&#34;&gt;黑木未知&lt;/h2&gt;
-&lt;p&gt;黑木线最大的冲突点来自黑木和她的母亲之间的隔阂。这种隔阂起源于一个单亲家庭最普通的寂寞感与自立希望，而又因野良的加入而更添阴霾。&lt;/p&gt;
-&lt;p&gt;说起来这种事情也是现实生活中很常见的。作为失去丈夫，只剩下独生女的母亲，望女成凤的心态自然是不在话下。而如果这个唯一的女儿能够在某种程度上处于同龄人中的佼佼者的话，就会更加助推这种心态的无限放大，直到达到一种近乎病态的状态。&lt;/p&gt;
-&lt;p&gt;但说到底孩子即属于父母又不属于父母。不论儿子还是女儿，首先都是一个活生生的人。他们有着自己的想法，而将来也都会有离开父母，远走高飞的一天。&lt;/p&gt;
-&lt;p&gt;而心里十分清楚这一点的黑木母亲，内心的混乱驱使她将这份不协调无理由地转嫁到黑木身边的“差等生”，包括野良。这使得黑木更加不信任她的母亲，反过来更加依靠她身边的朋友。&lt;/p&gt;
-&lt;p&gt;死结就此形成。&lt;/p&gt;
-&lt;p&gt;并且，这种缺乏被女儿理解的现状使得黑木母亲会转过来将其寄托到某个幻想的，能够理解她心情的，同龄男性身上。而众所周知，这种外人眼中「成功的女强人」所主导的家庭，同时也是由最家庭中最脆弱的「单亲妈妈」所管理的。&lt;/p&gt;
-&lt;p&gt;最终，被别有用心的人利用了。&lt;/p&gt;
-&lt;p&gt;说到底还是挺讽刺的，黑木母亲最后还是被她看不起的黑木的朋友救了。救人的是即使在社会上也容易让人紧张的黑道一组的女儿。&lt;/p&gt;
-&lt;p&gt;故事主线叙述完了，接下来分析一下问题。&lt;/p&gt;
-&lt;p&gt;从总体上来说，黑木线还是有着一个比较优秀的，能在主人公们吵吵闹闹的过程中将剧情推进到结束的不无聊的故事。但是这不代表着它能一直保持着这种优势。&lt;/p&gt;
-&lt;p&gt;在故事接近结尾的地方，出现了由于前面过于暴走的剧情走向刹不住闸所导致的两个问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;作为整个剧情中大反派担当的黑木母亲洗白得过快，玩家有点转不过来弯；&lt;/li&gt;
-&lt;li&gt;最关键的是，跳过了一大段甚至可以直接出续作的剧情，直接飞入了大团圆结局。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;当然，这么明显的「失误」，就当是HARUKAZE为真·续作开了个支票好了。谁叫他们有这个自信呢(笑)&lt;/p&gt;
-&lt;p&gt;另外，黑木线的最后，旁白有一句容易被忽略但却又至关重要的话被我发现了，从而知道了其在游戏世界中对应的真实身份是谁。当然这里为了不剧透就不说了，不过我觉得很多玩家应该猜得到吧。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko1.jpg&#34;
-	width=&#34;1920&#34;
-	height=&#34;1080&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko1_huc8a0da157c81eb2352817fcc6efb9264_197131_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko1_huc8a0da157c81eb2352817fcc6efb9264_197131_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;明日原佑希&#34;&gt;明日原佑希&lt;/h2&gt;
-&lt;p&gt;相对于黑木线剧情大开大合始终处于暴走状态，明日原线就是一个简单到不行的小故事。&lt;/p&gt;
-&lt;p&gt;但故事小不意味着无趣，其中穿插着以野良作为猫的姿态在明日原打工的猫咪咖啡厅「工作」的欢乐与感动交织的日常，诉说着动物与生命的大道。&lt;/p&gt;
-&lt;p&gt;当然，主线还是放在「人」的一边。&lt;/p&gt;
-&lt;p&gt;明日原小时候因为学习不好加上出身贫寒，受尽了班里人的欺负。后来她初二就退了学，独自一人前往东京打拼。&lt;/p&gt;
-&lt;p&gt;然而只坚持了三个月。&lt;/p&gt;
-&lt;p&gt;至于为什么是这么短的时间，明日原在后来与野良的长谈中表明了自己的想法：如果抱着讨厌这里的逃避心态前往东京，那么过不了多久也会因同样的理由讨厌起东京来。&lt;/p&gt;
-&lt;p&gt;说到底，不是环境的问题，而是人的问题。&lt;/p&gt;
-&lt;p&gt;逃避是没有用的。如果一味地逃避，最后停下来时便会发现——周围只剩下自己孤身一人了。&lt;/p&gt;
-&lt;p&gt;故事剩下的，就是怎样为过往叛逆的自己赎罪，以及与那些同样轻浮的人断绝关系，成为一个货真价值的「人」了。&lt;/p&gt;
-&lt;p&gt;又是一个拯救失足少女的美满结局，可喜可贺可喜可贺。&lt;/p&gt;
-&lt;p&gt;主要还是故事简单而平凡(?)的叙事风格让我没办法长篇大论地评价。不过，嘛这样也挺好的不是么。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko2.jpg&#34;
-	width=&#34;1920&#34;
-	height=&#34;1080&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko2_hu6285c1449d520dd7a32db3c0cc2563a2_284619_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko2_hu6285c1449d520dd7a32db3c0cc2563a2_284619_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;夕莉纱织&#34;&gt;夕莉纱织&lt;/h2&gt;
-&lt;p&gt;如果说开了支票的续作要补完哪部分的话，那纱织线绝对是必需之一。&lt;/p&gt;
-&lt;p&gt;在纱织线中，世界观从最初的人冥两界被拓宽到了人冥天三界，而纱织本人便是从天界降临的。&lt;/p&gt;
-&lt;p&gt;但是整个剧情除了这个含混不清的「天界」概念，以及附着在纱织背后的机械翅膀之外，就别无其它对背景的交代。从理论上讲，天冥二界本身也是水火不容的，但除了最后三姐妹之间的有一小段对话阐释了一下，其它的也丝毫没有提及。&lt;/p&gt;
-&lt;p&gt;……所谓的挖坑不填呢(笑)&lt;/p&gt;
-&lt;p&gt;除开世界观不谈，纱织线是一条完整补完野良童年往事的故事线。而两人感情最初的跌跌撞撞，也是起于野良母亲在生命的最后交代给纱织的一段话。&lt;/p&gt;
-&lt;p&gt;因为这段话的存在，纱织一直想担当的其实是野良的母亲而并非女友，这与野良心目中纱织照看他的目标完全不同。&lt;/p&gt;
-&lt;p&gt;作为无机质机械的气候调节装置，纱织在野良家住下的这几年，使她逐渐被人类所同化，拥有了情感。&lt;/p&gt;
-&lt;p&gt;而故事的最后，两人在旧友和新友的见证下成功结为情侣。没有什么波澜的平和时光。&lt;/p&gt;
-&lt;p&gt;但是，这样就好。&lt;/p&gt;
-&lt;h2 id=&#34;帕特莉希亚欧布恩特&#34;&gt;帕特莉希亚·欧布恩特&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「据说人变为兽之时，将会成为美丽的传说」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如若为马，其名为肯陶洛斯」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如若为鹿，其名为阿克泰翁」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如若为熊，其名为卡利斯托」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如若为狼，其名为莱卡翁」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如若为猫，其名为，野良」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;帕特线作为整个游戏的主线，流程自然是整个游戏中最长的。&lt;/p&gt;
-&lt;p&gt;长到什么程度呢，甚至连帕特的两个姐妹都加入了被攻略阵营。&lt;/p&gt;
-&lt;p&gt;所以说，这应该叫「三姐妹线」(笑)&lt;/p&gt;
-&lt;p&gt;剧情主要的着力点放在了「人之所以为人」这样的宏大叙事上，给玩家留下了无尽的思考。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;人类的寿命越来越长了。再这样下去，人类就会完全忘记死亡。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这样是不行的，于是要给人间带来毁灭，才能是他们记起死亡为何物。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;但是，这是真的么？&lt;/p&gt;
-&lt;p&gt;纵使根据人类寿命变长便可以推断将来真的有可能实现「不老」，但是「不死」， 可不是仅凭人类就可以独自决定的事情。&lt;/p&gt;
-&lt;p&gt;这让我想起另一部叫做《さくら、咲きました。》Gal。在那部Gal中，人类甚至已经实现了不老，成为了tokoshie (常しえ，永远) ，但最终还是在小行星撞击地球的瞬间迎来了毁灭。&lt;/p&gt;
-&lt;p&gt;当然，每个故事都有独属于自己的世界观，套用别作没多大意义，不过，这样也可以多一种思考的方向，加深自己的理解。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko3.png&#34;
-	width=&#34;1806&#34;
-	height=&#34;1016&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/noraneko/noraneko3_hua7b29023db3ecf6d71ea3fbec8aaf8b3_1206962_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko3_hua7b29023db3ecf6d71ea3fbec8aaf8b3_1206962_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;放眼近几年的Gal市场，废萌横行，硬核说理很难得到应有的赏识。不过像《野良猫》这种在喜剧 &amp;amp; 讨好阿宅的剧本大框架下隐藏严肃理论的作品火了一把，应该可以被理解为被失声已久的传统Gal受众的一次成体系的反扑。&lt;/p&gt;
-&lt;p&gt;现如今业界风气不佳，纵使完全剧情向的自信之作也仅有frontwing发布的《ISLAND》一作 (这年头能出真·全年龄作，那确实得对剧本有不小的自信)。sprite社的「倒戈」也是大环境中的一个小体现。&lt;/p&gt;
-&lt;p&gt;下一个要推的Gal已经预定好了，《LOVESICK PUPPIES》，也是口碑挺高的一部作品。&lt;/p&gt;
-&lt;p&gt;抓紧时间玩吧，谁知道业界还能撑几年 (完)&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>《隙间樱花与谎言都市》小评</title>
-        <link>https://tinyadapter.com/post/galgame-review/sakurano/</link>
-        <pubDate>Fri, 09 Jun 2017 12:24:27 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/sakurano/</guid>
-        <description>&lt;p&gt;其实我一直很纠结究竟要不要推这部来自propeller的作品。&lt;/p&gt;
-&lt;p&gt;第一次接触到这部作品是在初中，当时打到序章后到达樱花庄的那部分的时候感觉不是很对胃口，于是就弃了。现在看来真是一大损失。&lt;/p&gt;
-&lt;p&gt;（也许当年的我还没有成为一个萌豚（跑&lt;/p&gt;
-&lt;p&gt;现在回过头来看，从序章开始到春日井兄妹跟随樱花庄众人进入学校这部分的剧情，确实很难说得上顺理成章，有点跟人一种强行进入故事线的唐突之感。&lt;/p&gt;
-&lt;p&gt;不过这样一来，很少的世界观背景给了我将这部作品的剧情视作推理型的理由。怀着这种心态，我进入了樱乃——&lt;/p&gt;
-&lt;p&gt;一个只有“骗子”才有资格进入的，樱花之海。&lt;/p&gt;
-&lt;h2 id=&#34;花珠线&#34;&gt;花珠线&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「~的市道十字路口，在等待信号灯的橘先生一家面前，山本伸也先生驾驶的轿车冲了过来。」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「结果，妹妹橘飘小姐受重伤，意识不清。然后——父亲敬三，母亲真纪子以及姐姐花珠小姐」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「被确认，死亡」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;花珠线是一条完全对得起”推理“这两个字的线。整个故事一环扣一环，以花珠失忆后进入樱乃的背景为开端，通过逐渐找回的记忆推动剧情的发展，最终到达故事结局。&lt;/p&gt;
-&lt;p&gt;……真的这么简单么？&lt;/p&gt;
-&lt;p&gt;玩家在故事发展到中段时已经可以通过花珠身体的变化与男主优真的回忆片段找到蛛丝马迹，比如说从优真和花珠交往开始花珠频繁摔盘子、掉自动铅笔的那段描写中推断出来这些发生的原因是她的身体（手）变得透明（后续剧情里也被证实了），从而明确花珠是已经死亡的幽灵。&lt;/p&gt;
-&lt;p&gt;什么你说你没看出来？没关系啊，当剧情发展到后半的时候，在公园游荡的橘飘会直接了当地告诉优真这个真相：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「樱乃，这里是，连幽灵也会聚集的地方。」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;玩家会顺理成章地认为花珠是因为车祸被撞死（上文引用的新闻），因为小时候答应优真参加生日party，因为车祸而死不能实现，从而说了谎，因此化身幽灵来到樱乃，而花珠的存在现在正在逐渐变得稀薄……&lt;/p&gt;
-&lt;p&gt;嘿，那你可就结结实实地被编剧给骗了。&lt;/p&gt;
-&lt;p&gt;当最终结局明朗时，我才震惊地发现——原来花珠不是花珠，而是“飘”。&lt;/p&gt;
-&lt;p&gt;（以下为解释方便，带引号的均为实际的人名）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;车祸而死的确是是“花珠”，但却不是花珠，而是在公园四处游荡，随时出现而又迅速消失的飘。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;没错，花珠其实是妹妹“飘“，而飘其实是姐姐“花珠”。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“飘”一直想成为”花珠“一样坚强又温柔的大姐姐，于是小时候与男主见面时谎称自己是花珠，并处处对男主展（biao）现（yan）大姐姐的感觉。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因此，花珠的谎言并不是因为答应优真的生日party没去，而是压根就在用自己姐姐的身份与优真交往。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;而“飘”重伤后这几年在现实世界一直处于昏迷状态，与此同时“花珠“以真正的幽灵身份引导”飘“的灵魂进入了樱乃。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;故事结局，花珠的灵魂回到了现实世界（医院），而飘也因为帮助花珠从自我身份欺骗的泥沼中挣脱而出，从而实现了自己的愿望，顺利成佛，优真回现实世界找到了苏醒过来的花珠。THE END。&lt;/p&gt;
-&lt;p&gt;很不错的故事，剧本本身不长（大约四五个小时），但却满足了我对Galgame一种特定类型的剧情的全部需求：故事性、推理性、说理性。不论是优真和花珠甜甜的日常，还是花珠即将消失时的压抑与无助，抑或飘点明真相时的惊讶与反思，都不禁使人大呼过瘾。&lt;/p&gt;
-&lt;p&gt;本来我推这部作品的动力是铃和妹妹，结果这条”非主线“却也展现了超凡的实力，让我不得不认真对待接下来的故事。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu.jpg&#34;
-	width=&#34;1536&#34;
-	height=&#34;864&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu_hu35f7580255a3f078eabb20d580d5f779_183881_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu_hu35f7580255a3f078eabb20d580d5f779_183881_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;巧可线&#34;&gt;巧可线&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「诸位，你们完全没有去做第一的必要」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「每个人都有属于自己的个性。所以，只要找到属于自己的第一就行了」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「喜欢的东西是什么？擅长的东西是什么？一个，只要一个就够了」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「这个，是你这个人成形的要素，并且，这是你们最弥足珍贵的——宝物」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;巧可线剧情比花珠线还短（三四个小时左右），而且人物关系也不复杂，讲述了一个死宅遇到另一个比自己还宅的死宅的故事（笑）&lt;/p&gt;
-&lt;p&gt;剧情本身没有什么特别的地方，优真和巧可也是经历了一段莫名其妙的日常之后就互相喜欢上了对方，十分地套路。不过对于巧可能够进入樱乃的资格（也就是“谎言”），还是挺有意思的，不可不说。&lt;/p&gt;
-&lt;p&gt;简单说，“特别”即是巧可的“谎言”。&lt;/p&gt;
-&lt;p&gt;别看巧可在樱乃到处展现着她的活泼可爱，还拍了个子供向（？）的侦探剧《宇宙侦探巧可炭》，但其实在现实世界，她只是一个居住于普通都市家庭的，普通的女孩。&lt;/p&gt;
-&lt;p&gt;这是一种很微妙的状态。巧可始终找不到属于自己的“特别”，&lt;/p&gt;
-&lt;p&gt;但在优真的眼中，“她就是特别”。&lt;/p&gt;
-&lt;p&gt;而当故事结尾，巧可因为双亲回家接她到国外两年而不得不离开樱乃，优真与她相隔两个世界的两年后，巧可回到樱乃，与在境界口等待的优真重逢。&lt;/p&gt;
-&lt;p&gt;我很难去评判整个巧可线的故事，感觉少了一些思维碰撞，但多了一些日常与温馨。&lt;/p&gt;
-&lt;p&gt;也许这就是“普通”吧。不过我还挺喜欢的。&lt;/p&gt;
-&lt;p&gt;最后送上故事结局的一段话：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为不知何去何从而颤抖，或许『曾存在于那里的』思春期特有的那种纠葛，会将其超越。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——去超越它，去追逐新的目标。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在她心之所向。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;好了，接下来就是一些比较偏重整部作品核心的两条线了：咲良与铃。&lt;/p&gt;
-&lt;p&gt;在非主线二人的剧情中极少有针对整体世界观的阐述，大多数含沙射影的提及主要集中在共通线前段（兄妹二人刚入住樱花庄的那段时间）。目前主要的两个未说明的部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;优真经常做的梦&lt;/li&gt;
-&lt;li&gt;母亲与兄妹二人之间的问题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;虽然没有直接点明，但是二人确实是在杀死母亲之后才逃出母亲的囚禁。&lt;/p&gt;
-&lt;p&gt;剧中有一句很简单的介绍母亲经历的话：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;被父亲所抛弃，作为歌手的梦想破碎，商业失败，被朋友骗走钱财，亲戚把贷款推到自己身上，被可疑的买卖所骗&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;OK，请开始你的表演吧！&lt;/p&gt;
-&lt;h2 id=&#34;咲良线&#34;&gt;咲良线&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「其家之景，牛马鸡犬，从未嫌多，红白之花，相继怒放」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「纯粹的，漂亮的，总有一天会迷失的事物很多，然而比起这些，来访之人」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「——都能找到，名为幸福的东西」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;果然不枉我的推断，咲良和铃这两条线就是得放在一起看。&lt;/p&gt;
-&lt;p&gt;其实咲良线可以看作主线中的表线，而铃线则是不折不扣的里线。&lt;/p&gt;
-&lt;p&gt;咲良的表线并没有什么对世界观的直接交代，大多依旧处于“这里需要解释一下于是就解释一下”的状态，更多的剧情表现在兄妹二人之间”奇怪的人生探讨“以及最后咲良取回声音的过程。&lt;/p&gt;
-&lt;p&gt;那段过程真的是很有意思而又逻辑自洽，如果可以的话我建议大家都可以推一推看看。&lt;/p&gt;
-&lt;p&gt;简单说，就是优真拜托铃和樱花庄的大家共同给咲良编织了一个谎言。&lt;/p&gt;
-&lt;p&gt;铃本身是没有什么外人口中的”把谎言变为现实”的能力，比起神明，应该说“更像是妖精” &amp;lt;- 铃的原话&lt;/p&gt;
-&lt;p&gt;但是，如果她真的装作可以把谎言变为现实呢？&lt;/p&gt;
-&lt;p&gt;其实咲良不能说话是因为心理原因。俗话说，心理问题要用心理治疗。简单说就是让她重新认为自己“能够说话”。&lt;/p&gt;
-&lt;p&gt;而咲良一直都想让樱花庄的大家成为一家人。&lt;/p&gt;
-&lt;p&gt;于是优真拜托樱花庄的大家演戏，装作一家人（使用家人之间的称呼与关系），说这是铃的能力，以让咲良取得对铃的信任。&lt;/p&gt;
-&lt;p&gt;然后骗了她。&lt;/p&gt;
-&lt;p&gt;然后咲良就开口说话了。&lt;/p&gt;
-&lt;p&gt;（这里还有一点小细节，取回声音后，咲良的配音变得有了语调和情绪，而之前一直都是棒读。原因无它，因为那些“声音”其实都是优真的想象）&lt;/p&gt;
-&lt;p&gt;之后优真告白，过了一点交往生活，最后时间跳到二人于樱花庄订婚。自此咲良线完结。&lt;/p&gt;
-&lt;p&gt;……&lt;/p&gt;
-&lt;p&gt;是不是感觉有什么不对的地方？&lt;/p&gt;
-&lt;p&gt;推完咲良线的一段时间内我还没什么感觉，后来突然一想到还有条铃线，顿时就觉得不对劲了——&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果说别的线不讲世界观是因为真的跟世界观扯不上关系，那咲良线不讲世界观又是为啥？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;咲良最终取回了声音，可以算是HAPPY END，可是你共通线吊了人那么久的胃口，最后居然啥也没说？&lt;/p&gt;
-&lt;p&gt;这不正常。&lt;/p&gt;
-&lt;p&gt;果然最后证明，一切关于世界观背景的陈述都藏在了铃线中。&lt;/p&gt;
-&lt;p&gt;不如说，铃线就是为了交代世界观而存在的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura.jpg&#34;
-	width=&#34;1536&#34;
-	height=&#34;864&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura_hue34e9c010d093f47897a25333867d1f0_231795_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura_hue34e9c010d093f47897a25333867d1f0_231795_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;铃线&#34;&gt;铃线&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这正是为了「取回」的故事。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;铃线是继承了咲良线主要剧情——咲良取回声音的那部分内容，但在这件事发生之前优真其实已经多次跑到樱花树下寻找铃。&lt;/p&gt;
-&lt;p&gt;然后呢，在与铃于樱花树下度过了一段平静的生活之后，男主的行踪被樱花庄的大家发现，并且因此把铃带回了樱花庄。&lt;/p&gt;
-&lt;p&gt;之后又是一段樱花庄的生活。&lt;/p&gt;
-&lt;p&gt;在这之中，优真他们重复着早起去学校的日子，而铃则是早起到处去散步。&lt;/p&gt;
-&lt;p&gt;以上都是清水般的轻松日常。&lt;/p&gt;
-&lt;p&gt;剧情急转直下的开始是铃的一次突然高烧。&lt;/p&gt;
-&lt;p&gt;“妖精难道也会发烧？”&lt;/p&gt;
-&lt;p&gt;优真在经历了到处找资料，询问治疗咲良的心理医生夕阳（她是推动各线剧情发展的关键人物，贯穿始终），最后束手无策。&lt;/p&gt;
-&lt;p&gt;其实，这一天的到来铃自己早有预料。&lt;/p&gt;
-&lt;p&gt;在樱花树下，优真真诚地向樱花树祈祷，希望拯救自己所爱之人。&lt;/p&gt;
-&lt;p&gt;然后奇迹真的发生了。铃看起来从消失边缘被拯救了回来，又恢复了往常的活力。&lt;/p&gt;
-&lt;p&gt;在二人于樱花树下完成仪式之后，优真抱起了铃，想要和她一起回到樱花庄。&lt;/p&gt;
-&lt;p&gt;然而在这时，优真突然发现——&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;铃撒了谎。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;这一切都是「谎言」。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;铃根本没有好转，只是装出祈祷成功的样子。&lt;/p&gt;
-&lt;p&gt;然后，铃就这么在优真的怀抱中，&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;消失了。&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;人类在好奇心的驱使下，打开了沉睡着巨大祸患的箱子。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;而那一刻，那才是，世界真正的开端。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;若是那样，即使是坏事，或许对这个世界的运转来说也是必须存在的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;记述了空想的书本，传颂着妄想的歌谣。生物送入体内的是于己无益的，腐害自身的食物。然后——&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;就好比“谎言”。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;或许，丧失了那些东西的这个世界，&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;然后才不得不面临毁灭。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;——谎言，究竟是什么？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai.png&#34;
-	width=&#34;1536&#34;
-	height=&#34;864&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai_huc61351eee6773b1c6cd9ae00777f264e_984913_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai_huc61351eee6773b1c6cd9ae00777f264e_984913_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;优真做了一个梦。&lt;/p&gt;
-&lt;p&gt;在梦中，世界已遭灭顶之灾。&lt;/p&gt;
-&lt;p&gt;人类因为近乎偏执地追求超越肉体的能力，从而不断地消灭那些“坏的东西”。&lt;/p&gt;
-&lt;p&gt;食物是不需要的，因为当中存在有害的物质。&lt;/p&gt;
-&lt;p&gt;感情是不需要的，因为这会让人陷入迷惘。&lt;/p&gt;
-&lt;p&gt;甚至于到最后，肉体也是不需要的了，于是人类变成了喝着油的机器。&lt;/p&gt;
-&lt;p&gt;这时候人类（或者说机器）突然发现，世界大概也是不需要的了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;铃是这个崩坏的世界最后的希望。&lt;/p&gt;
-&lt;p&gt;铃的母亲在生下（准确地说是制作）铃的时候，刻意按照真正的人类的样子，放弃了所有的超能力，并在她心中种下了发展感情的种子——&amp;ldquo;箱子&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;在取回“谎言”的那一刻，“箱子”就会被打开，拯救这个世界。&lt;/p&gt;
-&lt;p&gt;优真作为铃的哥哥，实际上只是拥有人形的机器，不懂感情。&lt;/p&gt;
-&lt;p&gt;兄妹二人在某个大楼的角落躲藏着，因为“那些机器”要铲除这个世界上“坏的东西”，显然铃符合这个要求。&lt;/p&gt;
-&lt;p&gt;妹妹开始学习世界崩坏前的书籍，问各种问题，万事通的优真都会给予解答。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「如果说人们忘记了感情，丧失了价值观，变成了单纯的永动机，是这个世界的『进化』的话。」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;「那么我们现在所做的事情，也许是『退化』也说不定。」&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;妹妹的感情越来越丰富。她开始要求走出大楼，去街上散步。&lt;/p&gt;
-&lt;p&gt;作为打开“箱子”，拯救世界的一种捷径，虽然冒着被“那些机器”发现的危险，优真还是满足了铃的要求。&lt;/p&gt;
-&lt;p&gt;在到处散步的过程中，铃主动开始要求和优真接吻。&lt;/p&gt;
-&lt;p&gt;但是优真并不理解为什么，只是单纯的被动接受。&lt;/p&gt;
-&lt;p&gt;这时，即使是无机质生物的优真也逐渐感觉到，铃拯救世界的日期，似乎越来越近了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;“那些机器”的到来比想象中要早。&lt;/p&gt;
-&lt;p&gt;作为没有任何能力，只是普通人类的铃的保护者，优真想尽一切办法与铃一同逃出了大楼，击退所有来犯的机器，竭尽全力保护着自己的妹妹。&lt;/p&gt;
-&lt;p&gt;但是，对方人多势众。&lt;/p&gt;
-&lt;p&gt;虽然溃败了机器们，但是优真自己也不堪重负，倒在黑色的“血泊”中。&lt;/p&gt;
-&lt;p&gt;妹妹眼角的液体是什么呢？&lt;/p&gt;
-&lt;p&gt;应该是眼泪吧。&lt;/p&gt;
-&lt;p&gt;那么，妹妹为什么哭了呢。&lt;/p&gt;
-&lt;p&gt;妹妹说：“哥哥没发现么，你现在正在笑着呢。”&lt;/p&gt;
-&lt;p&gt;然后，“箱子”打开了。从中诞生了一颗巨大的，包覆世界的樱花树。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;创造了世界的谎言是，「优真的笑容」。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;在优真这个长梦结束的时候，身为神明、妖精，不，应该说妹妹的铃，主动出现在优真的面前，告诉他说，&lt;/p&gt;
-&lt;p&gt;这个世界恐怕是不行了，但她希望在下一个世界能够将优真从这个轮回的命运中解救出来，还给他真正的笑容。&lt;/p&gt;
-&lt;p&gt;而在铃转身前往下一个世界的时候，她的背影，竟意外地和咲良的模样重叠了起来……&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;自此，整个世界观基本上明了了。&lt;/p&gt;
-&lt;p&gt;樱乃是铃心中的“箱子”所创造的城市，作为收集“谎言”，保证世界不落入崩坏的一种方式。&lt;/p&gt;
-&lt;p&gt;而咲良是铃的转世，作为这个世界中优真的妹妹，陪伴在他身边。&lt;/p&gt;
-&lt;p&gt;（emmm，容我插一句，上次见到galgame里玩转世的，大概就是《樱吹雪》及其外传《花鸟风月》了，除此之外还真的不怎么常见）&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;总体来说，《隙间樱花与谎言都市》的剧情总是给我一种错觉，就是“我玩了一份游戏结果居然看了两份剧情”。&lt;/p&gt;
-&lt;p&gt;确实，如果将全线作为两部分的话，那么铃线甚至可以说自成一段故事，和之前所有的线似乎除了基本世界观统一之外没有什么搭边的。&lt;/p&gt;
-&lt;p&gt;虽说最后的最后铃依旧没能回来，但是优真还是能够和咲良，和樱花庄的大家一直幸福地生活，然后在下个世界，去实现未完成的救赎。&lt;/p&gt;
-&lt;p&gt;整个剧情可以说是相当完整，虽然也有一点小BUG，不过总体还是很愉快的。&lt;/p&gt;
-&lt;p&gt;顺带一提，整部作品的BGM我墙裂推荐，首首精品，尤其ED的《BrandNewVoice》，可以说百听不厌。&lt;/p&gt;
-&lt;p&gt;嗯……最后说点小细节，&lt;/p&gt;
-&lt;p&gt;也许没人注意过标题下面还有一行小字吧。&lt;/p&gt;
-&lt;p&gt;翻译过来的意思是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;世界终焉与樱花公主&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-        </item>
-        <item>
-        <title>《FORTUNE ARTERIAL》小评</title>
-        <link>https://tinyadapter.com/post/galgame-review/fortune-arterial/</link>
-        <pubDate>Mon, 20 Feb 2017 13:46:10 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/fortune-arterial/</guid>
-        <description>&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/fortune-arterial/erika.jpg&#34;
-	width=&#34;1002&#34;
-	height=&#34;783&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/fortune-arterial/erika_huc3154f7b082d60502b70081627f2d932_129074_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/fortune-arterial/erika_huc3154f7b082d60502b70081627f2d932_129074_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;127&#34;
-		data-flex-basis=&#34;307px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;说起来，自开始推Galgame起，我就没有做过二刷这种事情。&lt;/p&gt;
-&lt;p&gt;当然，类似《魔女的夜宴》这种强制二周目的不算在内（笑）。&lt;/p&gt;
-&lt;p&gt;不过今次的《FORTUNE AETERIAL》，确实是如假包换的二周目。一来第一次推是在五年前，主线剧情早就已经忘干净了；二来趁着最近集中推八月社的作品，再回味一下五年前推这部作品时的感觉。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;不过，当我真正走完五个表结局+里结局之后，才发现自己当初根本就没有理解故事本身想要表达的主题。&lt;/p&gt;
-&lt;p&gt;确实，我觉得把它当作八月社除脏翅膀外的巅峰之作也未尝不过。虽然对于动画我还是无法释怀，但作为原作的游戏的水准还是出乎了我的意料。&lt;/p&gt;
-&lt;p&gt;不仅有让人从头笑到尾的学园日常，还有严肃紧张的情感纠葛，更有推心置腹的家人互动，让我能够一口气把整部作品通关。&lt;/p&gt;
-&lt;h2 id=&#34;表线&#34;&gt;表线&lt;/h2&gt;
-&lt;p&gt;虽然五条表线的篇幅都不是很长，并且悠木姐妹的两条线还几乎跟故事背景完全无关（至于为什么是几乎而不是彻底无关，接下来会提到），但作为快速表达主题和对世界观的铺垫，几条线都展现得恰到好处。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;悠木奏和悠木阳菜两姐妹互相对自己喜欢上男主支仓孝平的事情心知肚明，但因为六年前阳菜因为车祸而丧失了记忆（韩剧走向？），使得她和孝平之间互通信件的传统变得无法再维持下去。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;孝平一直过着随父母工作调动而到处转校的生活。七年前，他和悠木姐妹在一所学校，而一年后又再度离开。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;无数次的分别，使得男主封闭了自己的内心。而阳菜想要和他互通信件的动作，让他重拾了交朋友的信心。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;然而世事难料。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不过七年后男主又回到了这里。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;奏与阳菜互相考虑着对方的幸福，而将孝平主动推给对方。不过在两条线的结局中，二人最终都敞开心扉，主动接纳了孝平。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;至于我为什么说这段简单的友人故事跟世界观之间不是完全无关，是因为阳菜的失忆其实不是因为车祸的物理因素。&lt;/p&gt;
-&lt;p&gt;虽然真相其实很简单，但作为普通的观众，一般是不会把这种程度的失忆和吸血鬼的能力之间划等号的。&lt;/p&gt;
-&lt;p&gt;这也是整部作品在剧情上非常巧妙的一点——一切与常理相悖的事实总能与世界观关联起来。比起某些漏洞百出的超现实舞台下的故事，这些细节能够很好地体现出编剧在处理宏观背景上的功底。&lt;/p&gt;
-&lt;p&gt;作为眷属的红濑桐叶与作为东仪家准当主的东仪白，同样也能起到铺垫与补充世界观的作用，并且在里线的故事走向中能够不时地让人有“原来男主跟桐叶/白在一起的时候会说某些话是因为这样”的爽快感。&lt;/p&gt;
-&lt;p&gt;瑛里华的表线中，孝平因为去拜访瑛里华的母亲，同为吸血鬼的千堂伽耶而遭袭击，命悬一线的时刻，赶来的瑛里华让孝平喝下了她的血。于是孝平“成功地”成为了瑛里华的眷属。&lt;/p&gt;
-&lt;p&gt;虽然作为结果来说，孝平没有死，也能和瑛里华（真正意义上的）永远在一起了，但作为瑛里华自身“不希望因为自己作为吸血鬼的自私而伤害他人”的信条，却因此粉碎得一塌糊涂。&lt;/p&gt;
-&lt;h2 id=&#34;里线&#34;&gt;里线&lt;/h2&gt;
-&lt;p&gt;如果说表线想要集中表达的是“朋友”，那么里线就是货真价实的“家人”。&lt;/p&gt;
-&lt;p&gt;虽然伽耶、瑛里华、瑛里华的哥哥伊织彼此之间并没有血缘关系，但是作为家人的羁绊，依旧是存在的。&lt;/p&gt;
-&lt;p&gt;不过，在孝平带领瑛里华真正解开他们心头的结之前，兄妹二人与母亲之间的关系确实很糟。&lt;/p&gt;
-&lt;p&gt;整个故事因为太复杂所以就不详述了，不过却真正道出了一个发人深省的道理：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;只有放下彼此间的立场，推心置腹地交流，化解误会，才能取得理解与信任。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;故事通篇最大的矛盾点在于，伽耶会错了她父亲在她小时候教导她“作为吸血鬼的生存方式”的本意。&lt;/p&gt;
-&lt;p&gt;父亲让她“交友人，吸人血”，是将两者拆开来对待，一个是让她通过多交朋友排除寂寞，一个是让她吸食人血保持理性。&lt;/p&gt;
-&lt;p&gt;作为永生的代价，每当与关系亲密的人分离时，吸血鬼的心中就会燃起把对方变为自己的眷属，从而永远在一起的黑暗想法，这时只有通过吸食人血才能抑制这股冲动。&lt;/p&gt;
-&lt;p&gt;而伽耶显然是把两者作为因果对待了，再加上自己永远不愿面对“感情是通过自己的奋斗得来的”这一事实，从而在这250年来一直保持着小孩子般的任性胡为，对待家人也是如此。&lt;/p&gt;
-&lt;p&gt;说起来，这种因为话语本意的错位而招致的矛盾冲突在《时钟机关的Ley-line》里也是作为故事最大的着力点。当然啦，不是说谁抄谁，只是说这种问题绝对有其在真实世界中的代表性，我们在面对周围的人时，也要尽量避免类似情况的发生。&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;有一个很小的细节，我不知道编剧的安排究竟是出于什么思考：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果基于真正的血缘关系，那瑛里华其实和东仪白一样，也是东仪征一郎的妹妹。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;直到故事最后，瑛里华都没有知道这个事实。&lt;/p&gt;
-&lt;p&gt;不过，知道了又能怎样呢？&lt;/p&gt;
-&lt;p&gt;不管怎么说，千堂家族的三人彼此间和睦相处，而困扰着瑛里华的吸血鬼身份也被伽耶摘除，能够以普通人类的身份和孝平相爱（因为红珠碎片残留在身体里的缘故所以两人的年龄较一般人来得长，但也已经不是永生），伽耶和桐叶也回到昔日好友的关系，对于一个在此背景下展开的故事已经可以算是最好的结局了。&lt;/p&gt;
-&lt;p&gt;而故事想要表达的两个主题，我想一定会让每个观众记忆犹新。&lt;/p&gt;
-&lt;p&gt;真是期待下一个五年呢。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>《罪之光Rendezvous》小评</title>
-        <link>https://tinyadapter.com/post/galgame-review/rendezvous/</link>
-        <pubDate>Thu, 09 Feb 2017 00:17:18 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/rendezvous/</guid>
-        <description>&lt;p&gt;&lt;img src=&#34;https://tinyadapter.com/post/galgame-review/rendezvous/fuuka.png&#34;
-	width=&#34;1600&#34;
-	height=&#34;900&#34;
-	srcset=&#34;https://tinyadapter.com/post/galgame-review/rendezvous/fuuka_hu7746fa2f37fbb6fdf5f82b67e3a57130_890162_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/rendezvous/fuuka_hu7746fa2f37fbb6fdf5f82b67e3a57130_890162_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;177&#34;
-		data-flex-basis=&#34;426px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。&lt;/p&gt;
-&lt;p&gt;（默哀一秒钟😔）&lt;/p&gt;
-&lt;p&gt;好了继续。这次推的《罪之光Rendezvous》，总体而言还是不错的，不论是从整体剧情的把控还是氛围的营造，都能够让人唯美地享受其中。BGM加分颇多，和整体稍显平缓的叙事相辅相成，共同展现了一幅世外桃源般的古镇画卷。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;。。。。。。&lt;/p&gt;
-&lt;p&gt;我承认，单就一开始的剧情，我的确是抱着上面的心态在推的。&lt;/p&gt;
-&lt;h2 id=&#34;剧情非剧透&#34;&gt;剧情（非剧透）&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;野野村优人（男主）从出生起就从来没有离开过这个和外界只有一条隧道相通的村子。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;小时候，经营孤儿院的父亲在一场火灾中不幸丧生，当初提议并与其共同经营这家孤儿院的母亲因此遭受了村民的歧视，最终带着优人的姐姐离开了村子，将孤身一人的优人留给了他的祖母。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;而如今，祖母逝世，为其在村庄留下了一大片田地，优人便在村长的指导下共同维护着这片种着橙子的果园。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;优人有一份始终结在心头的痛楚。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;当初，在父亲被大火吞噬之后，受到巨大打击的优人看见一个和他一同玩耍，一同看连环画的女孩子手中拿着一跟点燃的红蜡烛。精神错乱的他坚持认为是那个女孩子点火烧了孤儿院，因此在祖母的影响下将她赶出了村子。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“你犯了罪，”优人对那个女孩子说，“一生都无法偿还的罪。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;但其实这只是优人所犯的罪。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间一晃而过，有一天，优人在通往外界的隧道口坐着，画着一张美人鱼的画。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这时，从隧道的那边，一条那张画中所画的”美人鱼“，走了出来。。。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;那个女孩子叫真澄哀，从外面来到这个村子里生活，后来又转学到优人所在的班级。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;和本是青梅竹马的水园円来、突然转入的毒舌女椿风香一起，新的生活就此展开。。。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;其实到这里共通线还没有开始，接下来的剧情只能说真是中二社的恶意。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;后来，随着交流的日渐深入，优人终于意识到，哀就是那个当初那个被自己赶出了村子的女孩子。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;交换了”罪“的两人，迅速建立了羁绊，并最终开始交往。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;。。。我还一个选项没选呢，就直接进了女主线？ &amp;lt;- 当时的第一想法&lt;/p&gt;
-&lt;p&gt;（tiny眉头一皱，发现事情绝不简单.jpg）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;然后男女主分了。共通线由此开始。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;。。。&lt;/p&gt;
-&lt;p&gt;可以啊中二社！&lt;/p&gt;
-&lt;h2 id=&#34;剧情剧透注意&#34;&gt;剧情（剧透注意！）&lt;/h2&gt;
-&lt;h3 id=&#34;风香线&#34;&gt;风香线&lt;/h3&gt;
-&lt;p&gt;风香一开始说自己是优人的姐姐，野野村栞的朋友的时候，我是绝对不信的。尤其是&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;优人总是把栞和风香的形象重叠，看见风香就想起自己姐姐&lt;/li&gt;
-&lt;li&gt;风香说这段话的时候支支吾吾，给人一种不自然的感觉。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;然后风香表示自己就是从栞口中听来的关于优人喜欢的事物，优人病弱的事实等等。依旧非常的不自然，起码我那时没有信。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;优人一直想知道栞的情况，以及为什么不是栞而是风香回到了村子。最终风香告诉了优人，栞在某次车祸中保护了风香，结果自己被车撞死。而在死之前栞的遗愿就是让风香照顾好自己的弟弟优人。栞死了，于是风香选择了模仿栞的行为，接近并照顾优人。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这便是风香的“罪”。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;看起来貌似一切都解释得通了。我在剧情走到这里的时候的确也完全相信了风香所说的，并且觉得接下来差不多就是老套的男女互相坠入爱河的剧情了。&lt;/p&gt;
-&lt;p&gt;。。。结果TMD不是。&lt;/p&gt;
-&lt;p&gt;风香就是栞假扮的。&lt;/p&gt;
-&lt;p&gt;我去合着当时风香说自己身世的时候掉的眼泪都是假的了？这不科学啊。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;然后优人知道了风香就是姐姐的事实，与此同时风香开始疯狂地求爱。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;其实她显然是在害怕。因为这种有血缘的姐弟恋是不会被这个保守的村子接受的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;然后优人觉得这样下去不行，主动避开了风香。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有一天他们在废弃的铁路隧道前遇到了塌方。风香推了优人一把，自己被巨石砸中，送进了医院。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;医生说必须输血，而优人如果提供血的话，他们是血亲一事就会暴露。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;优人肯定是选择救人啦，然后他们两人最终一起离开了村子。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;剧情到这里结束。&lt;/p&gt;
-&lt;p&gt;其实没结束，两人后来有了孩子。当然这是后话。&lt;/p&gt;
-&lt;p&gt;虽然我这样叙述剧情听起来似乎还挺简略的，但实际的氛围要比这压抑得多。基本上二人的故事线全程处于一种淡淡的感伤与忧郁之中，给人一种莫名其妙的不舒服之感。整篇故事虽然没什么特别的地方，主要的矛盾冲突也是发生在老生常谈的近亲恋爱，但在演出效果的渲染下依旧达到了不错的成效，几乎全程没有让人有“接下来一定会是这样”的套路之感。最终二人也是选择了要孩子，我不知道他们会如何走接下来的路（包括孩子的问题），但是，没人在意这些，不是么？&lt;/p&gt;
-&lt;p&gt;所以，还是祝福一下他们吧。&lt;/p&gt;
-&lt;h3 id=&#34;円来线&#34;&gt;円来线&lt;/h3&gt;
-&lt;p&gt;円来线整体不算长，相比于风香线略显沉重的主题，整体较为和缓与轻松，只是在中途男女主短暂的一段分手到复合的过程中显得较为低沉。&lt;/p&gt;
-&lt;p&gt;本篇的故事主线也十分清晰：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;円来是村长的女儿，而村长为其安排了一名村外的公子哥未婚夫，以得到来自公子哥所在会社的捐赠，得以重新再建一座孤儿院。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;円来十分的喜欢村子，而当时又并不理解恋爱是一种什么感受，再加上为了村子，因此答应了村长的婚事安排。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;而故事前段在超展开了一下之后回归了一段比较套路的剧情：同是青梅竹马的芹香向円来告白了。&lt;/p&gt;
-&lt;p&gt;哦忘了说，她是女的。（百合大法好！）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;円来在那时第一次对自己不知道恋爱的感受而慌张，拒绝了芹香的告白，并寻求优人的协助。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;于是两人开始了为期三天的模拟恋人（恋人ごっこ）。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;不用想也知道，三天之后两人坠入了爱河= =&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这时円来开始了真正的纠结，一方面想通过建孤儿院拯救村子的少子化，另一方面又不想和优人分开。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;剧情后半，故事最大的转折点在于优人在村长的对峙过程中发现了一件关于自己父亲的事实：在大火吞噬孤儿院的一年前，来自那位公子哥的会社的捐赠停止了，从此孤儿院的运营陷入了巨大的困难。父亲甚至求助于优人的祖母，无论多少资金都行，以保证孤儿院不要解散。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;其实推到这里的时候我不是太理解优人的心态为什么从此发生了巨大的转变。也许是因为父亲的行动让他知道，单纯的阻碍婚事是没有任何意义的，如果不想円来被人抢走的话，只有通过自己的努力，继承父亲的遗愿，在村子里重新建造一家孤儿院，才能迎来最终的Happy End。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;后来优人开始了奋斗，并同时向之前顶撞过的村长道歉，并表明了自己的决心。其实村长也不是像他们想的那样铁板一块，说实在的，比起把自己的女儿交给一个重其外表的公子哥，一个有恒心、懂奋斗、和女儿互相爱着对方的优人显然是更好的选项。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;故事的最后两个取得了保育士的资格，在村子里开了一家托儿所，并想着他们心中的梦想——经营一家孤儿院不断前行。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;可喜可贺可喜可贺。&lt;/p&gt;
-&lt;h3 id=&#34;哀线&#34;&gt;哀线&lt;/h3&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;故事，果然还是悲伤的好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因为悲伤，所以才能让人铭记。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;其实在上面介绍剧情的时候我一直回避了一个点，就是男女主为何会在交往之后选择分手。&lt;/p&gt;
-&lt;p&gt;啊，怎么说呢，这理由还真的是。。。只能说幸好这只是剧本，是小说，是游戏。。。随便怎么叫。总之，用简单的话来阐述男女主之间的关系，就是&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;哀一直想要用罪（优人父亲的死，和优人将哀赶出村子）将两人连接在一起。因为这样所形成的羁绊是极其深的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;于是，当有一天哀和优人一同回到那栋被烧毁的孤儿院的残骸时，哀手举着点燃的红蜡烛，向优人道出了一个使他震惊的事实：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“那天，就是我放的火。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;优人其实没有冤枉哀，火的确是哀放的，她认为这样才能让优人永远记住自己。这就是哀所谓的“复仇”。&lt;/p&gt;
-&lt;p&gt;。。。这显然已经是“心理扭曲”所没法形容的了，看起来被家人抛弃，送进孤儿院这件事情对哀尚初幼小的心灵造成了极大的伤害。&lt;/p&gt;
-&lt;p&gt;而当时的优人显然被冲击的事实给震到了，不过，他还是认为靠这种“罪”联系他人是不对的。因此意见不合的两人选择了分手。&lt;/p&gt;
-&lt;p&gt;（嘛，我要是单把上段的最后一句话拿出来做一句话总结，那就是“意见不合结果分手”了233）&lt;/p&gt;
-&lt;p&gt;在作为前置剧情锁的风香线和円来线中，优人选择了放弃哀，重新开始了一段新的恋情。而在哀线中，优人始终对哀死缠烂打，最终两人和好如初。&lt;/p&gt;
-&lt;p&gt;不过，这个复合的过程嘛。。。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;当时，在两人分手之后的最初一段时间内，优人悲痛欲绝，跑到绘画社把之前画的那张美人鱼的画泼了红颜料。而这件事又恰好被哀看见了，因此她觉得他们之间的感情就像这幅画一样再也修复不回来了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;而优人显然是一时冲动，后来也想方设法把画修复了回来，并以此向哀传达了“泼了颜料的话，修复回来就好了。同样的，撕裂的感情，重新修补回来就好了”这个道理。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;优人将画作为礼物送给了哀，哀也很高兴地收下了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这件事情深刻地告诉了我们，外行在不了解行业的情况下擅自发表意见是没有好下场的（笑）&lt;/p&gt;
-&lt;p&gt;其实我觉得这段复合得有点莫名其妙，因为优人和哀都刻意回避了导致两人分手的原因——究竟是爱，还是罪，更容易让人铭记。&lt;/p&gt;
-&lt;p&gt;果然，接下来问题就出现了。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;优人仔细地思考了一下，觉得火不可能是哀放的。很简单的一个道理，如果要放火烧掉孤儿院，那完全不可能会用蜡烛去点，直接用打火机不就好了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;同时，优人捕风捉影得获得了円来线后半所知道的关于父亲经营孤儿院困难的事情。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这时，一个非常不好的想法同时在优人和风香心里产生：该不会，父亲其实是自己点着了孤儿院，选择逃避这个世界，并让村人承受永远的怨恨吧？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;后来真相大白，从村长口中道出的事情原委，证实了两人最坏的猜想。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;而哀知道不是自己放的火，但没想到优人父亲其实是自杀，于是邪恶的种子再度在其心中发芽：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;故事，果然还是悲伤的好。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因为悲伤，所以才能让人铭记。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;哀曾在优人的感化下一度放弃了自己的主张，觉得爱其实还是可以永恒的。但现在&lt;strong&gt;マジやばくね&lt;/strong&gt;，优人父亲站在哀那一边了，哀心中的红蜡烛又被点燃了。&lt;/p&gt;
-&lt;p&gt;这就是优人始终没有解决的问题，于是是时候做个了结了。（自信脸）&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;哀在同样的地方再度提出了分手。这次男主没有逃避，而是敏锐得发现了一个事实：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;哀其实很想和优人结下爱缘，但她始终在害怕，害怕哪天这种“不如罪连接的羁绊持久”的情感有一天会终结。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;于是这次轮到优人发威了。他对哀说：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“你没有错。错的是这个到处充满悲伤的村子。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“这样的话，我把这个村子烧掉就好了。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;优人也知道，一旦哀真的放任自己去烧村子的话，自己就会成为罪犯。但他始终坚信，哀会在自己这种行为下冲破恐惧的枷锁，好好表达自己的感情。&lt;/p&gt;
-&lt;p&gt;终于，哀彻底地知道了自己的想法会给心爱的人造成多大的痛苦，二人终归吹灭了烛火，选择了村口隧道那头所射入的光。&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;哀一直说，爱是没办法让人铭记的。只有罪可以。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;因为自己离开村子的几年后从村口隧道走出来时，优人并没有记得她。但是对那个“自己误认为放火烧掉孤儿院的小女孩”，他却始终记得。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;但她却没有注意到，那个让优人拿起画笔，并且在这十年的时光当中，从未放下的，&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;其实就是哀。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;我是一个把推Galgame当成看有声小说的人，因此对一部作品的剧情，会有最最直白的考量。&lt;/p&gt;
-&lt;p&gt;如果说要我对这部作品的剧情做个简要的评价的话，那就是&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;有小感动，有小平和，但通篇的主线让人觉得莫名其妙&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;其实作品在其他地方真的很卖力，比如说动态背景啊，极为丰富的CG啊，H Scene表演的卖力啊（捂脸），&lt;/p&gt;
-&lt;p&gt;但可惜，我不是说对这些东西不关心，但还是剧情，是最为我所追崇的first point.&lt;/p&gt;
-&lt;p&gt;《罪之光》想要传递的中心思想极其简单：从科学和人性的层面来说，人们都喜欢悲剧，但爱依旧还是永恒的话题。&lt;/p&gt;
-&lt;p&gt;但，minori显然用了一种极其不简单，甚至可以说有些别扭的方式，去把这件事情讲出来。&lt;/p&gt;
-&lt;p&gt;说不定，比起大开大合的哀线剧情，我更喜欢円来线那种简单、平和的叙述方式，娓娓道来。&lt;/p&gt;
-&lt;p&gt;对于不像我这种对剧本偏执到爆炸的人来说，这部作品还是比较有吸引力的。音乐很好听，画面很柔美，小村的氛围渲染得也很到位。&lt;/p&gt;
-&lt;p&gt;But，如果很不幸你跟我一样，是个剧情first的人的话，对于这部有将近8G大小的巨型Gal，那我只能说，&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我不推荐。&lt;/strong&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>“Galgame小评”板块开启</title>
-        <link>https://tinyadapter.com/post/galgame-review/galgame-review-block-opened/</link>
-        <pubDate>Wed, 08 Feb 2017 23:32:55 +0000</pubDate>
-        
-        <guid>https://tinyadapter.com/post/galgame-review/galgame-review-block-opened/</guid>
-        <description>&lt;h3 id=&#34;说在前面的话&#34;&gt;说在前面的话&lt;/h3&gt;
-&lt;p&gt;时隔四年，终于又开了这个“Galgame小评”板块。&lt;/p&gt;
-&lt;p&gt;为什么要说又呢，是因为四年前断断续续地写（chao）过一些Galgame评测的文章，至今依旧躺在QQ空间里。&lt;/p&gt;
-&lt;p&gt;没错，是QQ空间。。。&lt;/p&gt;
-&lt;p&gt;嘛，说起来自己推Gal的时间真是够长的了，没办法，我就是这么个喜欢听故事的人，嗯。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;具体想法&#34;&gt;具体想法&lt;/h3&gt;
-&lt;p&gt;这里会不定期连载一些对自己推过的Gal的看法和评价。&lt;/p&gt;
-&lt;p&gt;说是评价，其实也就是一些自己在推Gal的过程中对于某段剧情走向自己当时产生的想法和思考。&lt;/p&gt;
-&lt;p&gt;同时，因为自己也在编一些游戏用的BGM，因此对音乐这部分也会涉及一点。&lt;/p&gt;
-&lt;p&gt;具体来说，就是剧情+音乐方面的感受，其他诸如人设啊系统啊什么的如果没什么提的必要就不谈了。&lt;/p&gt;
-&lt;h3 id=&#34;关于剧透&#34;&gt;关于剧透&lt;/h3&gt;
-&lt;p&gt;既然要写Galgame评测，一个逃不开的话题就是剧透。&lt;/p&gt;
-&lt;p&gt;我对剧透的看法是，如果一定有必要的话，需要在剧透前进行警告，并说明程度。&lt;/p&gt;
-&lt;p&gt;因此，本人所写的小评会将整篇文章分为“不剧透或少量剧透开端剧情”和“含剧透”两个部分。&lt;/p&gt;
-&lt;p&gt;对于没有玩过原作的朋友，看前一个部分就可以了。&lt;/p&gt;
-&lt;p&gt;想说的差不多都说完了，じゃ、始まるぞ！&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Galgame小评 on 斑桜の桜海~</title><link>https://tinyadapter.com/categories/galgame%E5%B0%8F%E8%AF%84/</link><description>Recent content in Galgame小评 on 斑桜の桜海~</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 03 Feb 2019 22:47:43 +0000</lastBuildDate><atom:link href="https://tinyadapter.com/categories/galgame%E5%B0%8F%E8%AF%84/index.xml" rel="self" type="application/rss+xml"/><item><title>《彼女は天使で妹で》小评</title><link>https://tinyadapter.com/post/galgame-review/tenshiimo/</link><pubDate>Sun, 03 Feb 2019 22:47:43 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/tenshiimo/</guid><description>&lt;p>所以说人为什么要作死呢（笑）&lt;/p>
+&lt;p>这里是被 node-ffi 虐到无以复加的斑桜。&lt;/p>
+&lt;p>说起来我好像食言了，上篇博客结尾说下篇要写《LOVESICK PUPPIES》的，那么问题来了（以下略）&lt;/p>
+&lt;p>好吧，其实游戏我玩了，但是怎么说呢，完全没有必要为它写小评啊。&lt;/p>
+&lt;p>整部 Gal 给我的感觉就是，用一个绝对新颖的世界观，起了一个无与伦比的好头，之后就 TM 一泻千里。&lt;/p>
+&lt;p>讲真，可以算是良作，但编剧实在是自己对不起自己。好好往下写啊魂淡！&lt;/p>
+&lt;p>之后又断断续续推了一些：《Strawberry Nauts》啊，《将軍様はお年頃》啊，《Corona Blossom》啊，《乙女が結ぶ月夜の煌めき》啊（还是用的 VNR，音符社女儿怎能不看，咳咳，跑题了），但其实这些作品也不是特别有深度，属于那种可以哈哈哈来消遣，但很难冷静下来仔细思考的作品。&lt;/p>
+&lt;p>然后就让我摸到了这作。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>先说好，以下所有内容都是我边推边思考边写的，因为整条主线一气呵成，甚至已经可以算作线性剧情了，而且结局使我致郁（这里是重点），所以就不整理了，可以一瞥我在推本作时的心路历程 emmm&lt;/p>
+&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>其实整部作品从一开始就已经从字里行间渗透出一种氛围：&lt;/p>
+&lt;blockquote>
+&lt;p>所谓的人物线其实根本就是为主线服务的。&lt;/p>
+&lt;/blockquote>
+&lt;p>当然，至于说为什么，从游戏流程（其实就是攻略啦）便可知晓。&lt;/p>
+&lt;p>首先，本作并没有采用类似悬疑推理型 Gal 常见的线性剧情模式（如《秽翼的尤斯蒂娅》《时钟机关的 Ley-line》等作品中出现的，游戏沿既定的线路一直走下去，直到在某处分支出次要人物线并直接中断）。当然，不要被表象迷惑，因为隐藏在选择肢下的其实是以下剧情结构：&lt;/p>
+&lt;pre>&lt;code>高桥未亚 -- +
+|-- 源恵理那 -- 仁科十花
+相羽一海 -- +
+&lt;/code>&lt;/pre>
+&lt;p>看到了么，距离完全的线性剧情模式也仅仅只在前两个人物的攻略顺序上给出了一点点自由度而已。这说明什么？&lt;/p>
+&lt;ol>
+&lt;li>未亚和一海两线能够在只交代一部分世界观的情况下走完，但是惠理那和十花两线就不行，必须要完整的世界观；&lt;/li>
+&lt;li>十花是女主我可以理解，但惠理那居然也必须满足第一点，说真的我惊到了。&lt;/li>
+&lt;/ol>
+&lt;p>其次，在我实实在在通了未亚线之后，对于以上情况的理解便更加深刻了。&lt;/p>
+&lt;h2 id="高桥未亚">高桥未亚&lt;/h2>
+&lt;p>未亚线其实讲述了一个十分复杂而又具备宏大叙事的主题，即人的幸福与生命长短之间到底是否存在因果关系的话题。当然，作为一个身经百战，见得多了的 Gal 玩家，类似主题的作品早已阅历无数，因此也并没有过高或者过低的期待值。&lt;/p>
+&lt;p>但是本作异于往常的地方就在于，就在其他内涵不佳的作品（这里不点名）仅仅通过男女主之间各种离奇遭遇狂轰滥炸般向玩家灌输“我们确实是在讨论生死大义的问题”时，《天使妹》却在其中加入了一个不一样的点：&lt;/p>
+&lt;p>一个从来没有出场但又切实存在，充满着恶趣味的神的形象。&lt;/p>
+&lt;p>可以说，这样一个将现实世界中各种突发事件拟人化的手法巧妙规避了以往讨论此类话题中频繁遭人诟病的都合主义问题，毕竟，剧情中但凡出现突发事件的地方，都可以是拜这个恶趣味的神所赐，跟萤幕外的编剧没有一丝一毫的关系（笑）&lt;/p>
+&lt;p>另外还有一点，算作忠告一类的东西。&lt;/p>
+&lt;p>虽然我本人推这部作品的最初动力确实是开篇各种搞笑剧情和梗、包袱齐飞的场面，但是，《天使妹》却绝对不是一个让人哈哈一笑就能过去的作品。未亚线的结束让我更加意识到这点。&lt;/p>
+&lt;p>其实一开始看到攻略中出现的“フラグ END”字样，我是很奇怪的。“フラグ”是 flag 的日语念法，而这个词在 ACG 语境下指什么大家应该都懂。所以我还是有点怕，一旦出现什么全灭结局，就着实比较让人无语。&lt;/p>
+&lt;p>但是，等我真的通关未亚线（包含一个人物 END 和一个フラグ END。顺带一提，一共有三个フラグ END）后，我发现我想反了。&lt;/p>
+&lt;p>如果拿线性剧情模式类比的话，那么フラグ END 就跟继续主线是一样的结果。男主没有在人物上多做停留，而是继续开始了他接下来的征程。&lt;/p>
+&lt;p>而在人物 END 中，男主选择了留下来，于是跟线性剧情模式一样，故事在此处终止。&lt;/p>
+&lt;p>这种停留并不是一种令人释怀的停留，而是男主放弃了。他决定收起背后黑色的羽翼，将自己想要向现任神提出的问题亲手终结。&lt;/p>
+&lt;p>……&lt;/p>
+&lt;p>作为戏外的玩家，我们当然可以动动鼠标就轻松地将两个结局全部阅览一番。但是，现实可不是游戏。假如你是游戏中的男主，你又会做出怎样的选择呢？&lt;/p>
+&lt;p>如果你的答案是继续前行，那么恭喜你。&lt;/p>
+&lt;p>因为，正如洞穴探险一般——&lt;/p>
+&lt;p>愈往深处，便愈黑暗。&lt;/p>
+&lt;h2 id="相羽一海">相羽一海&lt;/h2>
+&lt;blockquote>
+&lt;p>——神啊。这个就还给你吧。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>——我，不，我们已经不需要你的慈悲了。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>——因为人类绝对没有那么脆弱。&lt;/p>
+&lt;/blockquote>
+&lt;p>相比起未亚线一波三折的剧情走向，一海线就要简单直白得多，整条故事线自始至终围绕着一海的母亲展开。&lt;/p>
+&lt;p>而一海线的终极矛盾就在于，「明明想死却死不了，和明明不想死却已经死了，到底哪边更加不幸」，这样一个主题。&lt;/p>
+&lt;p>虽然人鱼吃人的典故我不是很懂，但是这个梗本身并不妨碍理解剧情。&lt;/p>
+&lt;p>在一海线临近结束的部分，故事终于将渐渐明晰的完整世界观展现给了玩家：每当男主放弃与人物之间的感情，而选择继续前行，这个世界就会被神「撕毁」。&lt;/p>
+&lt;p>因此，所有的故事都是虚假的。男主只剩下一往无前。&lt;/p>
+&lt;p>……行吧，虽然对其它人物挺不公平的，但是线性剧情嘛，没办法。&lt;/p>
+&lt;p>但其实让我无法理解的一点在于，除了男主之外，貌似所有的人物都早就知道这个世界是虚假的。这次也是一样，当男主下定决心继续前行时，是一海直接跟男主说的「这个世界会结束」。&lt;/p>
+&lt;p>我大概可以理解，每条人物线中的女主都是真心与男主相伴的。因此无论男主最终的选择如何，自己都没有任何的损失。&lt;/p>
+&lt;p>说到底，连这个世界本身都是假的，那么自己的存在究竟还是否有意义呢？&lt;/p>
+&lt;p>……实在是有够哲学的。&lt;/p>
+&lt;p>哦对了，如果你像我一样提前看了攻略的话，一定能够理解一海线最后的那个选择肢究竟在指什么。「杀死」和「不杀」，应该不用我多做说明。&lt;/p>
+&lt;p>别信它的。&lt;/p>
+&lt;p>不管你怎么选，最后的结局都不会发生变化（对于这个虚假的世界而言）。&lt;/p>
+&lt;h2 id="源恵理那">源恵理那&lt;/h2>
+&lt;blockquote>
+&lt;p>「神」是一个 AI。&lt;/p>
+&lt;/blockquote>
+&lt;p>整部作品就像是一个大混杂。看似人畜无害的浪漫背景下，隐藏的是各种各样复杂而又敏感的社会问题。&lt;/p>
+&lt;p>包括强人工智能的主旨偏离，娱乐圈的规则与潜规则，个人与他人的关系，平行世界，物质与情感的取舍，兄妹伦理等。&lt;/p>
+&lt;p>很难想象这是一个 Gal 可以一本正经地讨论的问题。&lt;/p>
+&lt;p>如果一路沿着主线一路奔下去的话，其实前三条线就是男主对三种不同情感诱惑的拒绝：&lt;/p>
+&lt;ul>
+&lt;li>象征解决他者重大变故的未亚线&lt;/li>
+&lt;li>象征解决关系者重大变故的一海线&lt;/li>
+&lt;li>象征没有任何重大变故，平和情感推进的恵理那线&lt;/li>
+&lt;/ul>
+&lt;p>上演了一出《只有神知道的世界》。&lt;/p>
+&lt;p>就像中文一样，日语中也总是把 AI（人工智能）和爱联系在一起（日语中「爱」就读 ai）。&lt;/p>
+&lt;p>世界观完全明晰了。男主由于内心的纯净而被维护临时支撑这个世界的 AI，也就是爱，的人看中，想要让他成为新世界的卡密（误）。&lt;/p>
+&lt;p>而随着时间的推移，爱对于世界的塑造愈发的让人无法理解。&lt;/p>
+&lt;p>可以说，距离崩坏越来越近。&lt;/p>
+&lt;p>关于这点，当初一海线的叙述可能并不明显，因为一海母亲本身就是个不受神控制的存在。但在未亚线中，可以清楚地看到，随着剧情走向后期，神控制人生死的混乱与前后不一。&lt;/p>
+&lt;p>为什么神偏偏就自 150 年前起不在了，而不是什么别的时间呢？&lt;/p>
+&lt;p>唯一能够解释的一点就是，这段剧情其实是在影射明治维新。&lt;/p>
+&lt;p>看这段：&lt;/p>
+&lt;blockquote>
+&lt;p>十花「神不在了。这个状态已经持续了 150 年了」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>一海「那以前我见过的那个神呢？」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>十花「那只不过是未来用神之奇迹创造的假货」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>十花「毕竟不能随便让人知道现在的世界早就没了神的管理啊」&lt;/p>
+&lt;/blockquote>
+&lt;p>破除神权 + 君主立宪，只能说 ALcot 这次真的是有点往神作方向发展的意味了。&lt;/p>
+&lt;hr>
+&lt;p>在第三个世界结束前，神无月代替被爱选中的优希，成为了神。&lt;/p>
+&lt;blockquote>
+&lt;p>我一直都想问神。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>为何明明唯有悲苦，却依旧让人降生。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>于是，神（朋）明（友）明确地告诉了我。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>万灵皆伴祝福而生。&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1.jpg"
+width="1585"
+height="891"
+srcset="https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1_hu720ffb06cf0648117a4dc004af52f11a_267883_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo1_hu720ffb06cf0648117a4dc004af52f11a_267883_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>当然，最终这个世界也被「撕毁」了。而最后一次循环，当优希真正想成为神的时候，自然应当面对最为黑暗与痛苦的过程。&lt;/p>
+&lt;p>来吧，最凶的故事即将开始！&lt;/p>
+&lt;h2 id="仁科十花">仁科十花&lt;/h2>
+&lt;blockquote>
+&lt;p>大家都说我的灵魂纯净无暇。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>但那份纯净，一定不是由纯真而来。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>只不过是，期望一切都重归虚无的一种表达。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>人类的价值观一直在教导人类敬畏生命。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>所以绝不能自杀。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>无论多么辛苦，都要活下去。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这就是常识。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>但那不正是在强迫让人必须选择活下去吗？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>那真的是正确的吗？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>既然不能强迫人的死亡，难道对待生存的选择权不也应该同理吗？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>有些人为了保护尊严，自愿选择死亡，难道是不对的吗？&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>——我消灭了全人类。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>——但希望艾莲和仁科优希他们两个能够幸福地活下去。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>「希望和绝望，一定就是硬币的正反面」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「它们是绝对不会分隔开的」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「只要有人选择绝望，就会给其他人带来与之相应的希望」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「规则大概就是这个样子」&lt;/p>
+&lt;/blockquote>
+&lt;p>如果纯以结果论而言的话，优希终究还是成为了神。&lt;/p>
+&lt;p>当然，这个过程就显得十分复杂并且极度剧透，所以还是不展开了。&lt;/p>
+&lt;p>说到底，其实整条线都在向玩家灌输一点：&lt;/p>
+&lt;blockquote>
+&lt;p>如果人类只是一个肮脏，麻烦，自相残杀，性欲满载，只会加害地球的物种，那么我们为什么还要让他们继续存在下去呢？&lt;/p>
+&lt;/blockquote>
+&lt;p>先代神明们不是离开神殿后再也不回，就是自杀，一方面看到人类荒唐的活动而精神崩溃，另一方面又必须不断为人类的活动书写世界日志。&lt;/p>
+&lt;p>货真价实的身心俱疲。&lt;/p>
+&lt;p>优希从一开始的对不讲道理的神的仇恨，到知晓一切时对自身的否定，此时他作为人类的部分死去了，而作为神明的部分因而诞生。&lt;/p>
+&lt;p>他自己也很清楚这点，最初的那句「期望一切都重归虚无」便是证明。&lt;/p>
+&lt;p>然而最终，在目睹了全人类消失的世界后，他还是意识到自己错了。&lt;/p>
+&lt;p>因为这个看似对神明完美的结局，其实最终没有拯救十花、凉、未来三人。&lt;/p>
+&lt;p>最终，优希以自身的不幸为代价，换取了世界上所有人的幸福。&lt;/p>
+&lt;p>然而，那些曾经与他有过羁绊的人并没有忘记。&lt;/p>
+&lt;p>十花在结束前向着天空的那一声嘶吼，伴随着那个 CG 定格为新的主标题界面背景，为整部作品增添了无数的魅力。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2.jpg"
+width="1585"
+height="891"
+srcset="https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2_hu125684dcd4e41398e522a6adf4d26689_219923_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/tenshiimo/tenshiimo2_hu125684dcd4e41398e522a6adf4d26689_219923_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="结语">结语&lt;/h2>
+&lt;p>《彼女は天使で妹で》其实找到了一个有趣的剧情切入点：如果这个世界真的存在「神」的话，那么这个「神」的工作是什么样子的。&lt;/p>
+&lt;p>以此为契机，整部作品其实都在回答这个问题。&lt;/p>
+&lt;p>如果你简单运用唯物辩证法思考一下的话，其实马上也可以得出结论：在这个熵增的世界下，人类的活动越来越频繁，如果「神」真的存在，那么它早就会不堪重负。&lt;/p>
+&lt;p>因而，根本就不存在什么「神」。只有人类才能决定人类的未来。&lt;/p>
+&lt;p>完美的唯物主义。&lt;/p>
+&lt;p>其实我本可以在脑内将本作划分为神作的范畴，但是突然想到的一件事让我开始犹豫起来。&lt;/p>
+&lt;p>那就是，本作与《秽翼的尤斯蒂娅》的雷同性。&lt;/p>
+&lt;p>没有比这更巧合的了：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>两部作品都可以算作线性剧情&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>男主选择某一非女主人物都只是暂时逃避，世界最终还是会毁灭&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>最终一人成神迎来世界和平（这里的不同在于本作成神的是男主，而《尤斯蒂娅》是女主）&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>当然，我肯定不能因此就断定本作的编剧在创作时是否借鉴了《尤斯蒂娅》，也可能类似的剧情只能使用这种表现方式什么的。事实上，我也确实没想到什么其他表现的手段。&lt;/p>
+&lt;p>但是，谨慎一点总是好的。&lt;/p>
+&lt;p>话说回来，既然提到了八月社的作品，下部预定要推的就要非八月社遗作（误）《千の刃濤、桃花染の皇姫》莫属了。&lt;/p>
+&lt;p>听说这部作品口碑稀烂，根据本人特有的审丑美学，我倒要看看能烂到什么程度 (完)&lt;/p></description></item><item><title>《ノラと皇女と野良猫ハート》小评</title><link>https://tinyadapter.com/post/galgame-review/noraneko/</link><pubDate>Wed, 18 Jul 2018 18:52:26 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/noraneko/</guid><description>&lt;p>啊啊，好久不见。&lt;/p>
+&lt;p>没更新blog的这接近一年的时间里，本人过得简直焦头烂额，经历了各种诸如「24小时精通软件工程」、「16小时精通操作系统」、「48小时精通数据库系统」之类的不堪回首的往事。&lt;/p>
+&lt;p>在这里给那些大学想报软件工程的高中生们提个醒：&lt;/p>
+&lt;p>&lt;strong>软件工程 (SE) 是文科专业，想学编程出门左转计算机科学与技术 (CS)&lt;/strong>&lt;/p>
+&lt;p>好了牢骚发完了，接下来进入正题。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>要从最近数年的市场找一个既有趣又能讲深度的Gal，《野良猫》确实得算一个。&lt;/p>
+&lt;p>但是吹的人多了，自然总会有一种想确认是不是真的如说得那么神的冲动。&lt;/p>
+&lt;p>于是就玩了。然后开场几分钟就被震惊到了。&lt;/p>
+&lt;p>编剧绝对是三分钟不玩梗会死，前两小时的共通线简直是从头笑到尾233&lt;/p>
+&lt;p>于是，起码搞笑这部分算是齐活了。&lt;/p>
+&lt;h2 id="旁白">旁白&lt;/h2>
+&lt;p>我一开始对旁白这种角色是不怎么感冒的，主要是最近见到了不少以旁白角色作为游戏主要元素之一的MetaGames，而我普遍又对那种本身没啥营养，只是刻意制造话题的旁白角色们没什么兴趣。不过《野良猫》里的旁白显然不属于前者。&lt;/p>
+&lt;p>作为人声部分的旁白需要花一定的时间适应（毕竟其它Gal里很少见），不过当习惯了之后，只要这个吐槽役担当主力一出场，就绝对会让你笑个不停。&lt;/p>
+&lt;h2 id="黑木未知">黑木未知&lt;/h2>
+&lt;p>黑木线最大的冲突点来自黑木和她的母亲之间的隔阂。这种隔阂起源于一个单亲家庭最普通的寂寞感与自立希望，而又因野良的加入而更添阴霾。&lt;/p>
+&lt;p>说起来这种事情也是现实生活中很常见的。作为失去丈夫，只剩下独生女的母亲，望女成凤的心态自然是不在话下。而如果这个唯一的女儿能够在某种程度上处于同龄人中的佼佼者的话，就会更加助推这种心态的无限放大，直到达到一种近乎病态的状态。&lt;/p>
+&lt;p>但说到底孩子即属于父母又不属于父母。不论儿子还是女儿，首先都是一个活生生的人。他们有着自己的想法，而将来也都会有离开父母，远走高飞的一天。&lt;/p>
+&lt;p>而心里十分清楚这一点的黑木母亲，内心的混乱驱使她将这份不协调无理由地转嫁到黑木身边的“差等生”，包括野良。这使得黑木更加不信任她的母亲，反过来更加依靠她身边的朋友。&lt;/p>
+&lt;p>死结就此形成。&lt;/p>
+&lt;p>并且，这种缺乏被女儿理解的现状使得黑木母亲会转过来将其寄托到某个幻想的，能够理解她心情的，同龄男性身上。而众所周知，这种外人眼中「成功的女强人」所主导的家庭，同时也是由最家庭中最脆弱的「单亲妈妈」所管理的。&lt;/p>
+&lt;p>最终，被别有用心的人利用了。&lt;/p>
+&lt;p>说到底还是挺讽刺的，黑木母亲最后还是被她看不起的黑木的朋友救了。救人的是即使在社会上也容易让人紧张的黑道一组的女儿。&lt;/p>
+&lt;p>故事主线叙述完了，接下来分析一下问题。&lt;/p>
+&lt;p>从总体上来说，黑木线还是有着一个比较优秀的，能在主人公们吵吵闹闹的过程中将剧情推进到结束的不无聊的故事。但是这不代表着它能一直保持着这种优势。&lt;/p>
+&lt;p>在故事接近结尾的地方，出现了由于前面过于暴走的剧情走向刹不住闸所导致的两个问题：&lt;/p>
+&lt;ol>
+&lt;li>作为整个剧情中大反派担当的黑木母亲洗白得过快，玩家有点转不过来弯；&lt;/li>
+&lt;li>最关键的是，跳过了一大段甚至可以直接出续作的剧情，直接飞入了大团圆结局。&lt;/li>
+&lt;/ol>
+&lt;p>当然，这么明显的「失误」，就当是HARUKAZE为真·续作开了个支票好了。谁叫他们有这个自信呢(笑)&lt;/p>
+&lt;p>另外，黑木线的最后，旁白有一句容易被忽略但却又至关重要的话被我发现了，从而知道了其在游戏世界中对应的真实身份是谁。当然这里为了不剧透就不说了，不过我觉得很多玩家应该猜得到吧。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/noraneko/noraneko1.jpg"
+width="1920"
+height="1080"
+srcset="https://tinyadapter.com/post/galgame-review/noraneko/noraneko1_huc8a0da157c81eb2352817fcc6efb9264_197131_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko1_huc8a0da157c81eb2352817fcc6efb9264_197131_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="明日原佑希">明日原佑希&lt;/h2>
+&lt;p>相对于黑木线剧情大开大合始终处于暴走状态，明日原线就是一个简单到不行的小故事。&lt;/p>
+&lt;p>但故事小不意味着无趣，其中穿插着以野良作为猫的姿态在明日原打工的猫咪咖啡厅「工作」的欢乐与感动交织的日常，诉说着动物与生命的大道。&lt;/p>
+&lt;p>当然，主线还是放在「人」的一边。&lt;/p>
+&lt;p>明日原小时候因为学习不好加上出身贫寒，受尽了班里人的欺负。后来她初二就退了学，独自一人前往东京打拼。&lt;/p>
+&lt;p>然而只坚持了三个月。&lt;/p>
+&lt;p>至于为什么是这么短的时间，明日原在后来与野良的长谈中表明了自己的想法：如果抱着讨厌这里的逃避心态前往东京，那么过不了多久也会因同样的理由讨厌起东京来。&lt;/p>
+&lt;p>说到底，不是环境的问题，而是人的问题。&lt;/p>
+&lt;p>逃避是没有用的。如果一味地逃避，最后停下来时便会发现——周围只剩下自己孤身一人了。&lt;/p>
+&lt;p>故事剩下的，就是怎样为过往叛逆的自己赎罪，以及与那些同样轻浮的人断绝关系，成为一个货真价值的「人」了。&lt;/p>
+&lt;p>又是一个拯救失足少女的美满结局，可喜可贺可喜可贺。&lt;/p>
+&lt;p>主要还是故事简单而平凡(?)的叙事风格让我没办法长篇大论地评价。不过，嘛这样也挺好的不是么。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/noraneko/noraneko2.jpg"
+width="1920"
+height="1080"
+srcset="https://tinyadapter.com/post/galgame-review/noraneko/noraneko2_hu6285c1449d520dd7a32db3c0cc2563a2_284619_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko2_hu6285c1449d520dd7a32db3c0cc2563a2_284619_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="夕莉纱织">夕莉纱织&lt;/h2>
+&lt;p>如果说开了支票的续作要补完哪部分的话，那纱织线绝对是必需之一。&lt;/p>
+&lt;p>在纱织线中，世界观从最初的人冥两界被拓宽到了人冥天三界，而纱织本人便是从天界降临的。&lt;/p>
+&lt;p>但是整个剧情除了这个含混不清的「天界」概念，以及附着在纱织背后的机械翅膀之外，就别无其它对背景的交代。从理论上讲，天冥二界本身也是水火不容的，但除了最后三姐妹之间的有一小段对话阐释了一下，其它的也丝毫没有提及。&lt;/p>
+&lt;p>……所谓的挖坑不填呢(笑)&lt;/p>
+&lt;p>除开世界观不谈，纱织线是一条完整补完野良童年往事的故事线。而两人感情最初的跌跌撞撞，也是起于野良母亲在生命的最后交代给纱织的一段话。&lt;/p>
+&lt;p>因为这段话的存在，纱织一直想担当的其实是野良的母亲而并非女友，这与野良心目中纱织照看他的目标完全不同。&lt;/p>
+&lt;p>作为无机质机械的气候调节装置，纱织在野良家住下的这几年，使她逐渐被人类所同化，拥有了情感。&lt;/p>
+&lt;p>而故事的最后，两人在旧友和新友的见证下成功结为情侣。没有什么波澜的平和时光。&lt;/p>
+&lt;p>但是，这样就好。&lt;/p>
+&lt;h2 id="帕特莉希亚欧布恩特">帕特莉希亚·欧布恩特&lt;/h2>
+&lt;blockquote>
+&lt;p>「据说人变为兽之时，将会成为美丽的传说」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「如若为马，其名为肯陶洛斯」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「如若为鹿，其名为阿克泰翁」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「如若为熊，其名为卡利斯托」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「如若为狼，其名为莱卡翁」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「如若为猫，其名为，野良」&lt;/p>
+&lt;/blockquote>
+&lt;p>帕特线作为整个游戏的主线，流程自然是整个游戏中最长的。&lt;/p>
+&lt;p>长到什么程度呢，甚至连帕特的两个姐妹都加入了被攻略阵营。&lt;/p>
+&lt;p>所以说，这应该叫「三姐妹线」(笑)&lt;/p>
+&lt;p>剧情主要的着力点放在了「人之所以为人」这样的宏大叙事上，给玩家留下了无尽的思考。&lt;/p>
+&lt;blockquote>
+&lt;p>人类的寿命越来越长了。再这样下去，人类就会完全忘记死亡。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这样是不行的，于是要给人间带来毁灭，才能是他们记起死亡为何物。&lt;/p>
+&lt;/blockquote>
+&lt;p>但是，这是真的么？&lt;/p>
+&lt;p>纵使根据人类寿命变长便可以推断将来真的有可能实现「不老」，但是「不死」， 可不是仅凭人类就可以独自决定的事情。&lt;/p>
+&lt;p>这让我想起另一部叫做《さくら、咲きました。》Gal。在那部Gal中，人类甚至已经实现了不老，成为了tokoshie (常しえ，永远) ，但最终还是在小行星撞击地球的瞬间迎来了毁灭。&lt;/p>
+&lt;p>当然，每个故事都有独属于自己的世界观，套用别作没多大意义，不过，这样也可以多一种思考的方向，加深自己的理解。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/noraneko/noraneko3.png"
+width="1806"
+height="1016"
+srcset="https://tinyadapter.com/post/galgame-review/noraneko/noraneko3_hua7b29023db3ecf6d71ea3fbec8aaf8b3_1206962_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/noraneko/noraneko3_hua7b29023db3ecf6d71ea3fbec8aaf8b3_1206962_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>放眼近几年的Gal市场，废萌横行，硬核说理很难得到应有的赏识。不过像《野良猫》这种在喜剧 &amp;amp; 讨好阿宅的剧本大框架下隐藏严肃理论的作品火了一把，应该可以被理解为被失声已久的传统Gal受众的一次成体系的反扑。&lt;/p>
+&lt;p>现如今业界风气不佳，纵使完全剧情向的自信之作也仅有frontwing发布的《ISLAND》一作 (这年头能出真·全年龄作，那确实得对剧本有不小的自信)。sprite社的「倒戈」也是大环境中的一个小体现。&lt;/p>
+&lt;p>下一个要推的Gal已经预定好了，《LOVESICK PUPPIES》，也是口碑挺高的一部作品。&lt;/p>
+&lt;p>抓紧时间玩吧，谁知道业界还能撑几年 (完)&lt;/p></description></item><item><title>《隙间樱花与谎言都市》小评</title><link>https://tinyadapter.com/post/galgame-review/sakurano/</link><pubDate>Fri, 09 Jun 2017 12:24:27 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/sakurano/</guid><description>&lt;p>其实我一直很纠结究竟要不要推这部来自propeller的作品。&lt;/p>
+&lt;p>第一次接触到这部作品是在初中，当时打到序章后到达樱花庄的那部分的时候感觉不是很对胃口，于是就弃了。现在看来真是一大损失。&lt;/p>
+&lt;p>（也许当年的我还没有成为一个萌豚（跑&lt;/p>
+&lt;p>现在回过头来看，从序章开始到春日井兄妹跟随樱花庄众人进入学校这部分的剧情，确实很难说得上顺理成章，有点跟人一种强行进入故事线的唐突之感。&lt;/p>
+&lt;p>不过这样一来，很少的世界观背景给了我将这部作品的剧情视作推理型的理由。怀着这种心态，我进入了樱乃——&lt;/p>
+&lt;p>一个只有“骗子”才有资格进入的，樱花之海。&lt;/p>
+&lt;h2 id="花珠线">花珠线&lt;/h2>
+&lt;blockquote>
+&lt;p>「~的市道十字路口，在等待信号灯的橘先生一家面前，山本伸也先生驾驶的轿车冲了过来。」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「结果，妹妹橘飘小姐受重伤，意识不清。然后——父亲敬三，母亲真纪子以及姐姐花珠小姐」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「被确认，死亡」&lt;/p>
+&lt;/blockquote>
+&lt;p>花珠线是一条完全对得起”推理“这两个字的线。整个故事一环扣一环，以花珠失忆后进入樱乃的背景为开端，通过逐渐找回的记忆推动剧情的发展，最终到达故事结局。&lt;/p>
+&lt;p>……真的这么简单么？&lt;/p>
+&lt;p>玩家在故事发展到中段时已经可以通过花珠身体的变化与男主优真的回忆片段找到蛛丝马迹，比如说从优真和花珠交往开始花珠频繁摔盘子、掉自动铅笔的那段描写中推断出来这些发生的原因是她的身体（手）变得透明（后续剧情里也被证实了），从而明确花珠是已经死亡的幽灵。&lt;/p>
+&lt;p>什么你说你没看出来？没关系啊，当剧情发展到后半的时候，在公园游荡的橘飘会直接了当地告诉优真这个真相：&lt;/p>
+&lt;blockquote>
+&lt;p>「樱乃，这里是，连幽灵也会聚集的地方。」&lt;/p>
+&lt;/blockquote>
+&lt;p>玩家会顺理成章地认为花珠是因为车祸被撞死（上文引用的新闻），因为小时候答应优真参加生日party，因为车祸而死不能实现，从而说了谎，因此化身幽灵来到樱乃，而花珠的存在现在正在逐渐变得稀薄……&lt;/p>
+&lt;p>嘿，那你可就结结实实地被编剧给骗了。&lt;/p>
+&lt;p>当最终结局明朗时，我才震惊地发现——原来花珠不是花珠，而是“飘”。&lt;/p>
+&lt;p>（以下为解释方便，带引号的均为实际的人名）&lt;/p>
+&lt;blockquote>
+&lt;p>车祸而死的确是是“花珠”，但却不是花珠，而是在公园四处游荡，随时出现而又迅速消失的飘。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>没错，花珠其实是妹妹“飘“，而飘其实是姐姐“花珠”。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>“飘”一直想成为”花珠“一样坚强又温柔的大姐姐，于是小时候与男主见面时谎称自己是花珠，并处处对男主展（biao）现（yan）大姐姐的感觉。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>因此，花珠的谎言并不是因为答应优真的生日party没去，而是压根就在用自己姐姐的身份与优真交往。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>而“飘”重伤后这几年在现实世界一直处于昏迷状态，与此同时“花珠“以真正的幽灵身份引导”飘“的灵魂进入了樱乃。&lt;/p>
+&lt;/blockquote>
+&lt;p>故事结局，花珠的灵魂回到了现实世界（医院），而飘也因为帮助花珠从自我身份欺骗的泥沼中挣脱而出，从而实现了自己的愿望，顺利成佛，优真回现实世界找到了苏醒过来的花珠。THE END。&lt;/p>
+&lt;p>很不错的故事，剧本本身不长（大约四五个小时），但却满足了我对Galgame一种特定类型的剧情的全部需求：故事性、推理性、说理性。不论是优真和花珠甜甜的日常，还是花珠即将消失时的压抑与无助，抑或飘点明真相时的惊讶与反思，都不禁使人大呼过瘾。&lt;/p>
+&lt;p>本来我推这部作品的动力是铃和妹妹，结果这条”非主线“却也展现了超凡的实力，让我不得不认真对待接下来的故事。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu.jpg"
+width="1536"
+height="864"
+srcset="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu_hu35f7580255a3f078eabb20d580d5f779_183881_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_kajyu_hu35f7580255a3f078eabb20d580d5f779_183881_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="巧可线">巧可线&lt;/h2>
+&lt;blockquote>
+&lt;p>「诸位，你们完全没有去做第一的必要」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「每个人都有属于自己的个性。所以，只要找到属于自己的第一就行了」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「喜欢的东西是什么？擅长的东西是什么？一个，只要一个就够了」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「这个，是你这个人成形的要素，并且，这是你们最弥足珍贵的——宝物」&lt;/p>
+&lt;/blockquote>
+&lt;p>巧可线剧情比花珠线还短（三四个小时左右），而且人物关系也不复杂，讲述了一个死宅遇到另一个比自己还宅的死宅的故事（笑）&lt;/p>
+&lt;p>剧情本身没有什么特别的地方，优真和巧可也是经历了一段莫名其妙的日常之后就互相喜欢上了对方，十分地套路。不过对于巧可能够进入樱乃的资格（也就是“谎言”），还是挺有意思的，不可不说。&lt;/p>
+&lt;p>简单说，“特别”即是巧可的“谎言”。&lt;/p>
+&lt;p>别看巧可在樱乃到处展现着她的活泼可爱，还拍了个子供向（？）的侦探剧《宇宙侦探巧可炭》，但其实在现实世界，她只是一个居住于普通都市家庭的，普通的女孩。&lt;/p>
+&lt;p>这是一种很微妙的状态。巧可始终找不到属于自己的“特别”，&lt;/p>
+&lt;p>但在优真的眼中，“她就是特别”。&lt;/p>
+&lt;p>而当故事结尾，巧可因为双亲回家接她到国外两年而不得不离开樱乃，优真与她相隔两个世界的两年后，巧可回到樱乃，与在境界口等待的优真重逢。&lt;/p>
+&lt;p>我很难去评判整个巧可线的故事，感觉少了一些思维碰撞，但多了一些日常与温馨。&lt;/p>
+&lt;p>也许这就是“普通”吧。不过我还挺喜欢的。&lt;/p>
+&lt;p>最后送上故事结局的一段话：&lt;/p>
+&lt;blockquote>
+&lt;p>为不知何去何从而颤抖，或许『曾存在于那里的』思春期特有的那种纠葛，会将其超越。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>——去超越它，去追逐新的目标。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>在她心之所向。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>好了，接下来就是一些比较偏重整部作品核心的两条线了：咲良与铃。&lt;/p>
+&lt;p>在非主线二人的剧情中极少有针对整体世界观的阐述，大多数含沙射影的提及主要集中在共通线前段（兄妹二人刚入住樱花庄的那段时间）。目前主要的两个未说明的部分：&lt;/p>
+&lt;ol>
+&lt;li>优真经常做的梦&lt;/li>
+&lt;li>母亲与兄妹二人之间的问题&lt;/li>
+&lt;/ol>
+&lt;p>虽然没有直接点明，但是二人确实是在杀死母亲之后才逃出母亲的囚禁。&lt;/p>
+&lt;p>剧中有一句很简单的介绍母亲经历的话：&lt;/p>
+&lt;blockquote>
+&lt;p>被父亲所抛弃，作为歌手的梦想破碎，商业失败，被朋友骗走钱财，亲戚把贷款推到自己身上，被可疑的买卖所骗&lt;/p>
+&lt;/blockquote>
+&lt;p>OK，请开始你的表演吧！&lt;/p>
+&lt;h2 id="咲良线">咲良线&lt;/h2>
+&lt;blockquote>
+&lt;p>「其家之景，牛马鸡犬，从未嫌多，红白之花，相继怒放」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「纯粹的，漂亮的，总有一天会迷失的事物很多，然而比起这些，来访之人」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「——都能找到，名为幸福的东西」&lt;/p>
+&lt;/blockquote>
+&lt;p>果然不枉我的推断，咲良和铃这两条线就是得放在一起看。&lt;/p>
+&lt;p>其实咲良线可以看作主线中的表线，而铃线则是不折不扣的里线。&lt;/p>
+&lt;p>咲良的表线并没有什么对世界观的直接交代，大多依旧处于“这里需要解释一下于是就解释一下”的状态，更多的剧情表现在兄妹二人之间”奇怪的人生探讨“以及最后咲良取回声音的过程。&lt;/p>
+&lt;p>那段过程真的是很有意思而又逻辑自洽，如果可以的话我建议大家都可以推一推看看。&lt;/p>
+&lt;p>简单说，就是优真拜托铃和樱花庄的大家共同给咲良编织了一个谎言。&lt;/p>
+&lt;p>铃本身是没有什么外人口中的”把谎言变为现实”的能力，比起神明，应该说“更像是妖精” &amp;lt;- 铃的原话&lt;/p>
+&lt;p>但是，如果她真的装作可以把谎言变为现实呢？&lt;/p>
+&lt;p>其实咲良不能说话是因为心理原因。俗话说，心理问题要用心理治疗。简单说就是让她重新认为自己“能够说话”。&lt;/p>
+&lt;p>而咲良一直都想让樱花庄的大家成为一家人。&lt;/p>
+&lt;p>于是优真拜托樱花庄的大家演戏，装作一家人（使用家人之间的称呼与关系），说这是铃的能力，以让咲良取得对铃的信任。&lt;/p>
+&lt;p>然后骗了她。&lt;/p>
+&lt;p>然后咲良就开口说话了。&lt;/p>
+&lt;p>（这里还有一点小细节，取回声音后，咲良的配音变得有了语调和情绪，而之前一直都是棒读。原因无它，因为那些“声音”其实都是优真的想象）&lt;/p>
+&lt;p>之后优真告白，过了一点交往生活，最后时间跳到二人于樱花庄订婚。自此咲良线完结。&lt;/p>
+&lt;p>……&lt;/p>
+&lt;p>是不是感觉有什么不对的地方？&lt;/p>
+&lt;p>推完咲良线的一段时间内我还没什么感觉，后来突然一想到还有条铃线，顿时就觉得不对劲了——&lt;/p>
+&lt;blockquote>
+&lt;p>如果说别的线不讲世界观是因为真的跟世界观扯不上关系，那咲良线不讲世界观又是为啥？&lt;/p>
+&lt;/blockquote>
+&lt;p>咲良最终取回了声音，可以算是HAPPY END，可是你共通线吊了人那么久的胃口，最后居然啥也没说？&lt;/p>
+&lt;p>这不正常。&lt;/p>
+&lt;p>果然最后证明，一切关于世界观背景的陈述都藏在了铃线中。&lt;/p>
+&lt;p>不如说，铃线就是为了交代世界观而存在的。&lt;/p>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura.jpg"
+width="1536"
+height="864"
+srcset="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura_hue34e9c010d093f47897a25333867d1f0_231795_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sakura_hue34e9c010d093f47897a25333867d1f0_231795_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h2 id="铃线">铃线&lt;/h2>
+&lt;blockquote>
+&lt;p>这正是为了「取回」的故事。&lt;/p>
+&lt;/blockquote>
+&lt;p>铃线是继承了咲良线主要剧情——咲良取回声音的那部分内容，但在这件事发生之前优真其实已经多次跑到樱花树下寻找铃。&lt;/p>
+&lt;p>然后呢，在与铃于樱花树下度过了一段平静的生活之后，男主的行踪被樱花庄的大家发现，并且因此把铃带回了樱花庄。&lt;/p>
+&lt;p>之后又是一段樱花庄的生活。&lt;/p>
+&lt;p>在这之中，优真他们重复着早起去学校的日子，而铃则是早起到处去散步。&lt;/p>
+&lt;p>以上都是清水般的轻松日常。&lt;/p>
+&lt;p>剧情急转直下的开始是铃的一次突然高烧。&lt;/p>
+&lt;p>“妖精难道也会发烧？”&lt;/p>
+&lt;p>优真在经历了到处找资料，询问治疗咲良的心理医生夕阳（她是推动各线剧情发展的关键人物，贯穿始终），最后束手无策。&lt;/p>
+&lt;p>其实，这一天的到来铃自己早有预料。&lt;/p>
+&lt;p>在樱花树下，优真真诚地向樱花树祈祷，希望拯救自己所爱之人。&lt;/p>
+&lt;p>然后奇迹真的发生了。铃看起来从消失边缘被拯救了回来，又恢复了往常的活力。&lt;/p>
+&lt;p>在二人于樱花树下完成仪式之后，优真抱起了铃，想要和她一起回到樱花庄。&lt;/p>
+&lt;p>然而在这时，优真突然发现——&lt;/p>
+&lt;p>&lt;strong>铃撒了谎。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>这一切都是「谎言」。&lt;/strong>&lt;/p>
+&lt;p>铃根本没有好转，只是装出祈祷成功的样子。&lt;/p>
+&lt;p>然后，铃就这么在优真的怀抱中，&lt;/p>
+&lt;p>&lt;strong>消失了。&lt;/strong>&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>人类在好奇心的驱使下，打开了沉睡着巨大祸患的箱子。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>而那一刻，那才是，世界真正的开端。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>若是那样，即使是坏事，或许对这个世界的运转来说也是必须存在的。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>记述了空想的书本，传颂着妄想的歌谣。生物送入体内的是于己无益的，腐害自身的食物。然后——&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>就好比“谎言”。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>或许，丧失了那些东西的这个世界，&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然后才不得不面临毁灭。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>——谎言，究竟是什么？&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai.png"
+width="1536"
+height="864"
+srcset="https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai_huc61351eee6773b1c6cd9ae00777f264e_984913_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/sakurano/sakurano_sekai_huc61351eee6773b1c6cd9ae00777f264e_984913_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>优真做了一个梦。&lt;/p>
+&lt;p>在梦中，世界已遭灭顶之灾。&lt;/p>
+&lt;p>人类因为近乎偏执地追求超越肉体的能力，从而不断地消灭那些“坏的东西”。&lt;/p>
+&lt;p>食物是不需要的，因为当中存在有害的物质。&lt;/p>
+&lt;p>感情是不需要的，因为这会让人陷入迷惘。&lt;/p>
+&lt;p>甚至于到最后，肉体也是不需要的了，于是人类变成了喝着油的机器。&lt;/p>
+&lt;p>这时候人类（或者说机器）突然发现，世界大概也是不需要的了。&lt;/p>
+&lt;hr>
+&lt;p>铃是这个崩坏的世界最后的希望。&lt;/p>
+&lt;p>铃的母亲在生下（准确地说是制作）铃的时候，刻意按照真正的人类的样子，放弃了所有的超能力，并在她心中种下了发展感情的种子——&amp;ldquo;箱子&amp;rdquo;。&lt;/p>
+&lt;p>在取回“谎言”的那一刻，“箱子”就会被打开，拯救这个世界。&lt;/p>
+&lt;p>优真作为铃的哥哥，实际上只是拥有人形的机器，不懂感情。&lt;/p>
+&lt;p>兄妹二人在某个大楼的角落躲藏着，因为“那些机器”要铲除这个世界上“坏的东西”，显然铃符合这个要求。&lt;/p>
+&lt;p>妹妹开始学习世界崩坏前的书籍，问各种问题，万事通的优真都会给予解答。&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>「如果说人们忘记了感情，丧失了价值观，变成了单纯的永动机，是这个世界的『进化』的话。」&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>「那么我们现在所做的事情，也许是『退化』也说不定。」&lt;/p>
+&lt;/blockquote>
+&lt;p>妹妹的感情越来越丰富。她开始要求走出大楼，去街上散步。&lt;/p>
+&lt;p>作为打开“箱子”，拯救世界的一种捷径，虽然冒着被“那些机器”发现的危险，优真还是满足了铃的要求。&lt;/p>
+&lt;p>在到处散步的过程中，铃主动开始要求和优真接吻。&lt;/p>
+&lt;p>但是优真并不理解为什么，只是单纯的被动接受。&lt;/p>
+&lt;p>这时，即使是无机质生物的优真也逐渐感觉到，铃拯救世界的日期，似乎越来越近了。&lt;/p>
+&lt;hr>
+&lt;p>“那些机器”的到来比想象中要早。&lt;/p>
+&lt;p>作为没有任何能力，只是普通人类的铃的保护者，优真想尽一切办法与铃一同逃出了大楼，击退所有来犯的机器，竭尽全力保护着自己的妹妹。&lt;/p>
+&lt;p>但是，对方人多势众。&lt;/p>
+&lt;p>虽然溃败了机器们，但是优真自己也不堪重负，倒在黑色的“血泊”中。&lt;/p>
+&lt;p>妹妹眼角的液体是什么呢？&lt;/p>
+&lt;p>应该是眼泪吧。&lt;/p>
+&lt;p>那么，妹妹为什么哭了呢。&lt;/p>
+&lt;p>妹妹说：“哥哥没发现么，你现在正在笑着呢。”&lt;/p>
+&lt;p>然后，“箱子”打开了。从中诞生了一颗巨大的，包覆世界的樱花树。&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>创造了世界的谎言是，「优真的笑容」。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>在优真这个长梦结束的时候，身为神明、妖精，不，应该说妹妹的铃，主动出现在优真的面前，告诉他说，&lt;/p>
+&lt;p>这个世界恐怕是不行了，但她希望在下一个世界能够将优真从这个轮回的命运中解救出来，还给他真正的笑容。&lt;/p>
+&lt;p>而在铃转身前往下一个世界的时候，她的背影，竟意外地和咲良的模样重叠了起来……&lt;/p>
+&lt;hr>
+&lt;p>自此，整个世界观基本上明了了。&lt;/p>
+&lt;p>樱乃是铃心中的“箱子”所创造的城市，作为收集“谎言”，保证世界不落入崩坏的一种方式。&lt;/p>
+&lt;p>而咲良是铃的转世，作为这个世界中优真的妹妹，陪伴在他身边。&lt;/p>
+&lt;p>（emmm，容我插一句，上次见到galgame里玩转世的，大概就是《樱吹雪》及其外传《花鸟风月》了，除此之外还真的不怎么常见）&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>总体来说，《隙间樱花与谎言都市》的剧情总是给我一种错觉，就是“我玩了一份游戏结果居然看了两份剧情”。&lt;/p>
+&lt;p>确实，如果将全线作为两部分的话，那么铃线甚至可以说自成一段故事，和之前所有的线似乎除了基本世界观统一之外没有什么搭边的。&lt;/p>
+&lt;p>虽说最后的最后铃依旧没能回来，但是优真还是能够和咲良，和樱花庄的大家一直幸福地生活，然后在下个世界，去实现未完成的救赎。&lt;/p>
+&lt;p>整个剧情可以说是相当完整，虽然也有一点小BUG，不过总体还是很愉快的。&lt;/p>
+&lt;p>顺带一提，整部作品的BGM我墙裂推荐，首首精品，尤其ED的《BrandNewVoice》，可以说百听不厌。&lt;/p>
+&lt;p>嗯……最后说点小细节，&lt;/p>
+&lt;p>也许没人注意过标题下面还有一行小字吧。&lt;/p>
+&lt;p>翻译过来的意思是：&lt;/p>
+&lt;blockquote>
+&lt;p>世界终焉与樱花公主&lt;/p>
+&lt;/blockquote></description></item><item><title>《FORTUNE ARTERIAL》小评</title><link>https://tinyadapter.com/post/galgame-review/fortune-arterial/</link><pubDate>Mon, 20 Feb 2017 13:46:10 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/fortune-arterial/</guid><description>&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/fortune-arterial/erika.jpg"
+width="1002"
+height="783"
+srcset="https://tinyadapter.com/post/galgame-review/fortune-arterial/erika_huc3154f7b082d60502b70081627f2d932_129074_480x0_resize_q75_box.jpg 480w, https://tinyadapter.com/post/galgame-review/fortune-arterial/erika_huc3154f7b082d60502b70081627f2d932_129074_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="127"
+data-flex-basis="307px"
+>&lt;/p>
+&lt;p>说起来，自开始推Galgame起，我就没有做过二刷这种事情。&lt;/p>
+&lt;p>当然，类似《魔女的夜宴》这种强制二周目的不算在内（笑）。&lt;/p>
+&lt;p>不过今次的《FORTUNE AETERIAL》，确实是如假包换的二周目。一来第一次推是在五年前，主线剧情早就已经忘干净了；二来趁着最近集中推八月社的作品，再回味一下五年前推这部作品时的感觉。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>不过，当我真正走完五个表结局+里结局之后，才发现自己当初根本就没有理解故事本身想要表达的主题。&lt;/p>
+&lt;p>确实，我觉得把它当作八月社除脏翅膀外的巅峰之作也未尝不过。虽然对于动画我还是无法释怀，但作为原作的游戏的水准还是出乎了我的意料。&lt;/p>
+&lt;p>不仅有让人从头笑到尾的学园日常，还有严肃紧张的情感纠葛，更有推心置腹的家人互动，让我能够一口气把整部作品通关。&lt;/p>
+&lt;h2 id="表线">表线&lt;/h2>
+&lt;p>虽然五条表线的篇幅都不是很长，并且悠木姐妹的两条线还几乎跟故事背景完全无关（至于为什么是几乎而不是彻底无关，接下来会提到），但作为快速表达主题和对世界观的铺垫，几条线都展现得恰到好处。&lt;/p>
+&lt;blockquote>
+&lt;p>悠木奏和悠木阳菜两姐妹互相对自己喜欢上男主支仓孝平的事情心知肚明，但因为六年前阳菜因为车祸而丧失了记忆（韩剧走向？），使得她和孝平之间互通信件的传统变得无法再维持下去。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>孝平一直过着随父母工作调动而到处转校的生活。七年前，他和悠木姐妹在一所学校，而一年后又再度离开。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>无数次的分别，使得男主封闭了自己的内心。而阳菜想要和他互通信件的动作，让他重拾了交朋友的信心。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然而世事难料。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>不过七年后男主又回到了这里。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>奏与阳菜互相考虑着对方的幸福，而将孝平主动推给对方。不过在两条线的结局中，二人最终都敞开心扉，主动接纳了孝平。&lt;/p>
+&lt;/blockquote>
+&lt;p>至于我为什么说这段简单的友人故事跟世界观之间不是完全无关，是因为阳菜的失忆其实不是因为车祸的物理因素。&lt;/p>
+&lt;p>虽然真相其实很简单，但作为普通的观众，一般是不会把这种程度的失忆和吸血鬼的能力之间划等号的。&lt;/p>
+&lt;p>这也是整部作品在剧情上非常巧妙的一点——一切与常理相悖的事实总能与世界观关联起来。比起某些漏洞百出的超现实舞台下的故事，这些细节能够很好地体现出编剧在处理宏观背景上的功底。&lt;/p>
+&lt;p>作为眷属的红濑桐叶与作为东仪家准当主的东仪白，同样也能起到铺垫与补充世界观的作用，并且在里线的故事走向中能够不时地让人有“原来男主跟桐叶/白在一起的时候会说某些话是因为这样”的爽快感。&lt;/p>
+&lt;p>瑛里华的表线中，孝平因为去拜访瑛里华的母亲，同为吸血鬼的千堂伽耶而遭袭击，命悬一线的时刻，赶来的瑛里华让孝平喝下了她的血。于是孝平“成功地”成为了瑛里华的眷属。&lt;/p>
+&lt;p>虽然作为结果来说，孝平没有死，也能和瑛里华（真正意义上的）永远在一起了，但作为瑛里华自身“不希望因为自己作为吸血鬼的自私而伤害他人”的信条，却因此粉碎得一塌糊涂。&lt;/p>
+&lt;h2 id="里线">里线&lt;/h2>
+&lt;p>如果说表线想要集中表达的是“朋友”，那么里线就是货真价实的“家人”。&lt;/p>
+&lt;p>虽然伽耶、瑛里华、瑛里华的哥哥伊织彼此之间并没有血缘关系，但是作为家人的羁绊，依旧是存在的。&lt;/p>
+&lt;p>不过，在孝平带领瑛里华真正解开他们心头的结之前，兄妹二人与母亲之间的关系确实很糟。&lt;/p>
+&lt;p>整个故事因为太复杂所以就不详述了，不过却真正道出了一个发人深省的道理：&lt;/p>
+&lt;blockquote>
+&lt;p>只有放下彼此间的立场，推心置腹地交流，化解误会，才能取得理解与信任。&lt;/p>
+&lt;/blockquote>
+&lt;p>故事通篇最大的矛盾点在于，伽耶会错了她父亲在她小时候教导她“作为吸血鬼的生存方式”的本意。&lt;/p>
+&lt;p>父亲让她“交友人，吸人血”，是将两者拆开来对待，一个是让她通过多交朋友排除寂寞，一个是让她吸食人血保持理性。&lt;/p>
+&lt;p>作为永生的代价，每当与关系亲密的人分离时，吸血鬼的心中就会燃起把对方变为自己的眷属，从而永远在一起的黑暗想法，这时只有通过吸食人血才能抑制这股冲动。&lt;/p>
+&lt;p>而伽耶显然是把两者作为因果对待了，再加上自己永远不愿面对“感情是通过自己的奋斗得来的”这一事实，从而在这250年来一直保持着小孩子般的任性胡为，对待家人也是如此。&lt;/p>
+&lt;p>说起来，这种因为话语本意的错位而招致的矛盾冲突在《时钟机关的Ley-line》里也是作为故事最大的着力点。当然啦，不是说谁抄谁，只是说这种问题绝对有其在真实世界中的代表性，我们在面对周围的人时，也要尽量避免类似情况的发生。&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>有一个很小的细节，我不知道编剧的安排究竟是出于什么思考：&lt;/p>
+&lt;blockquote>
+&lt;p>如果基于真正的血缘关系，那瑛里华其实和东仪白一样，也是东仪征一郎的妹妹。&lt;/p>
+&lt;/blockquote>
+&lt;p>直到故事最后，瑛里华都没有知道这个事实。&lt;/p>
+&lt;p>不过，知道了又能怎样呢？&lt;/p>
+&lt;p>不管怎么说，千堂家族的三人彼此间和睦相处，而困扰着瑛里华的吸血鬼身份也被伽耶摘除，能够以普通人类的身份和孝平相爱（因为红珠碎片残留在身体里的缘故所以两人的年龄较一般人来得长，但也已经不是永生），伽耶和桐叶也回到昔日好友的关系，对于一个在此背景下展开的故事已经可以算是最好的结局了。&lt;/p>
+&lt;p>而故事想要表达的两个主题，我想一定会让每个观众记忆犹新。&lt;/p>
+&lt;p>真是期待下一个五年呢。&lt;/p></description></item><item><title>《罪之光Rendezvous》小评</title><link>https://tinyadapter.com/post/galgame-review/rendezvous/</link><pubDate>Thu, 09 Feb 2017 00:17:18 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/rendezvous/</guid><description>&lt;p>&lt;img src="https://tinyadapter.com/post/galgame-review/rendezvous/fuuka.png"
+width="1600"
+height="900"
+srcset="https://tinyadapter.com/post/galgame-review/rendezvous/fuuka_hu7746fa2f37fbb6fdf5f82b67e3a57130_890162_480x0_resize_box_3.png 480w, https://tinyadapter.com/post/galgame-review/rendezvous/fuuka_hu7746fa2f37fbb6fdf5f82b67e3a57130_890162_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;p>早就听闻minori社的大名，不过其作品还一个都没拜看过，对此社的了解也停留在“花了一亿日元做OP结果差点把自己搞破产”这件事上。&lt;/p>
+&lt;p>（默哀一秒钟😔）&lt;/p>
+&lt;p>好了继续。这次推的《罪之光Rendezvous》，总体而言还是不错的，不论是从整体剧情的把控还是氛围的营造，都能够让人唯美地享受其中。BGM加分颇多，和整体稍显平缓的叙事相辅相成，共同展现了一幅世外桃源般的古镇画卷。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>。。。。。。&lt;/p>
+&lt;p>我承认，单就一开始的剧情，我的确是抱着上面的心态在推的。&lt;/p>
+&lt;h2 id="剧情非剧透">剧情（非剧透）&lt;/h2>
+&lt;blockquote>
+&lt;p>野野村优人（男主）从出生起就从来没有离开过这个和外界只有一条隧道相通的村子。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>小时候，经营孤儿院的父亲在一场火灾中不幸丧生，当初提议并与其共同经营这家孤儿院的母亲因此遭受了村民的歧视，最终带着优人的姐姐离开了村子，将孤身一人的优人留给了他的祖母。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>而如今，祖母逝世，为其在村庄留下了一大片田地，优人便在村长的指导下共同维护着这片种着橙子的果园。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>优人有一份始终结在心头的痛楚。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>当初，在父亲被大火吞噬之后，受到巨大打击的优人看见一个和他一同玩耍，一同看连环画的女孩子手中拿着一跟点燃的红蜡烛。精神错乱的他坚持认为是那个女孩子点火烧了孤儿院，因此在祖母的影响下将她赶出了村子。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>“你犯了罪，”优人对那个女孩子说，“一生都无法偿还的罪。”&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>但其实这只是优人所犯的罪。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>时间一晃而过，有一天，优人在通往外界的隧道口坐着，画着一张美人鱼的画。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这时，从隧道的那边，一条那张画中所画的”美人鱼“，走了出来。。。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>那个女孩子叫真澄哀，从外面来到这个村子里生活，后来又转学到优人所在的班级。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>和本是青梅竹马的水园円来、突然转入的毒舌女椿风香一起，新的生活就此展开。。。&lt;/p>
+&lt;/blockquote>
+&lt;p>其实到这里共通线还没有开始，接下来的剧情只能说真是中二社的恶意。&lt;/p>
+&lt;blockquote>
+&lt;p>后来，随着交流的日渐深入，优人终于意识到，哀就是那个当初那个被自己赶出了村子的女孩子。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>交换了”罪“的两人，迅速建立了羁绊，并最终开始交往。&lt;/p>
+&lt;/blockquote>
+&lt;p>。。。我还一个选项没选呢，就直接进了女主线？ &amp;lt;- 当时的第一想法&lt;/p>
+&lt;p>（tiny眉头一皱，发现事情绝不简单.jpg）&lt;/p>
+&lt;blockquote>
+&lt;p>然后男女主分了。共通线由此开始。&lt;/p>
+&lt;/blockquote>
+&lt;p>。。。&lt;/p>
+&lt;p>可以啊中二社！&lt;/p>
+&lt;h2 id="剧情剧透注意">剧情（剧透注意！）&lt;/h2>
+&lt;h3 id="风香线">风香线&lt;/h3>
+&lt;p>风香一开始说自己是优人的姐姐，野野村栞的朋友的时候，我是绝对不信的。尤其是&lt;/p>
+&lt;ol>
+&lt;li>优人总是把栞和风香的形象重叠，看见风香就想起自己姐姐&lt;/li>
+&lt;li>风香说这段话的时候支支吾吾，给人一种不自然的感觉。&lt;/li>
+&lt;/ol>
+&lt;p>然后风香表示自己就是从栞口中听来的关于优人喜欢的事物，优人病弱的事实等等。依旧非常的不自然，起码我那时没有信。&lt;/p>
+&lt;blockquote>
+&lt;p>优人一直想知道栞的情况，以及为什么不是栞而是风香回到了村子。最终风香告诉了优人，栞在某次车祸中保护了风香，结果自己被车撞死。而在死之前栞的遗愿就是让风香照顾好自己的弟弟优人。栞死了，于是风香选择了模仿栞的行为，接近并照顾优人。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这便是风香的“罪”。&lt;/p>
+&lt;/blockquote>
+&lt;p>看起来貌似一切都解释得通了。我在剧情走到这里的时候的确也完全相信了风香所说的，并且觉得接下来差不多就是老套的男女互相坠入爱河的剧情了。&lt;/p>
+&lt;p>。。。结果TMD不是。&lt;/p>
+&lt;p>风香就是栞假扮的。&lt;/p>
+&lt;p>我去合着当时风香说自己身世的时候掉的眼泪都是假的了？这不科学啊。&lt;/p>
+&lt;blockquote>
+&lt;p>然后优人知道了风香就是姐姐的事实，与此同时风香开始疯狂地求爱。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>其实她显然是在害怕。因为这种有血缘的姐弟恋是不会被这个保守的村子接受的。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>然后优人觉得这样下去不行，主动避开了风香。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>有一天他们在废弃的铁路隧道前遇到了塌方。风香推了优人一把，自己被巨石砸中，送进了医院。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>医生说必须输血，而优人如果提供血的话，他们是血亲一事就会暴露。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>优人肯定是选择救人啦，然后他们两人最终一起离开了村子。&lt;/p>
+&lt;/blockquote>
+&lt;p>剧情到这里结束。&lt;/p>
+&lt;p>其实没结束，两人后来有了孩子。当然这是后话。&lt;/p>
+&lt;p>虽然我这样叙述剧情听起来似乎还挺简略的，但实际的氛围要比这压抑得多。基本上二人的故事线全程处于一种淡淡的感伤与忧郁之中，给人一种莫名其妙的不舒服之感。整篇故事虽然没什么特别的地方，主要的矛盾冲突也是发生在老生常谈的近亲恋爱，但在演出效果的渲染下依旧达到了不错的成效，几乎全程没有让人有“接下来一定会是这样”的套路之感。最终二人也是选择了要孩子，我不知道他们会如何走接下来的路（包括孩子的问题），但是，没人在意这些，不是么？&lt;/p>
+&lt;p>所以，还是祝福一下他们吧。&lt;/p>
+&lt;h3 id="円来线">円来线&lt;/h3>
+&lt;p>円来线整体不算长，相比于风香线略显沉重的主题，整体较为和缓与轻松，只是在中途男女主短暂的一段分手到复合的过程中显得较为低沉。&lt;/p>
+&lt;p>本篇的故事主线也十分清晰：&lt;/p>
+&lt;blockquote>
+&lt;p>円来是村长的女儿，而村长为其安排了一名村外的公子哥未婚夫，以得到来自公子哥所在会社的捐赠，得以重新再建一座孤儿院。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>円来十分的喜欢村子，而当时又并不理解恋爱是一种什么感受，再加上为了村子，因此答应了村长的婚事安排。&lt;/p>
+&lt;/blockquote>
+&lt;p>而故事前段在超展开了一下之后回归了一段比较套路的剧情：同是青梅竹马的芹香向円来告白了。&lt;/p>
+&lt;p>哦忘了说，她是女的。（百合大法好！）&lt;/p>
+&lt;blockquote>
+&lt;p>円来在那时第一次对自己不知道恋爱的感受而慌张，拒绝了芹香的告白，并寻求优人的协助。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>于是两人开始了为期三天的模拟恋人（恋人ごっこ）。&lt;/p>
+&lt;/blockquote>
+&lt;p>不用想也知道，三天之后两人坠入了爱河= =&lt;/p>
+&lt;blockquote>
+&lt;p>这时円来开始了真正的纠结，一方面想通过建孤儿院拯救村子的少子化，另一方面又不想和优人分开。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>剧情后半，故事最大的转折点在于优人在村长的对峙过程中发现了一件关于自己父亲的事实：在大火吞噬孤儿院的一年前，来自那位公子哥的会社的捐赠停止了，从此孤儿院的运营陷入了巨大的困难。父亲甚至求助于优人的祖母，无论多少资金都行，以保证孤儿院不要解散。&lt;/p>
+&lt;/blockquote>
+&lt;p>其实推到这里的时候我不是太理解优人的心态为什么从此发生了巨大的转变。也许是因为父亲的行动让他知道，单纯的阻碍婚事是没有任何意义的，如果不想円来被人抢走的话，只有通过自己的努力，继承父亲的遗愿，在村子里重新建造一家孤儿院，才能迎来最终的Happy End。&lt;/p>
+&lt;blockquote>
+&lt;p>后来优人开始了奋斗，并同时向之前顶撞过的村长道歉，并表明了自己的决心。其实村长也不是像他们想的那样铁板一块，说实在的，比起把自己的女儿交给一个重其外表的公子哥，一个有恒心、懂奋斗、和女儿互相爱着对方的优人显然是更好的选项。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>故事的最后两个取得了保育士的资格，在村子里开了一家托儿所，并想着他们心中的梦想——经营一家孤儿院不断前行。&lt;/p>
+&lt;/blockquote>
+&lt;p>可喜可贺可喜可贺。&lt;/p>
+&lt;h3 id="哀线">哀线&lt;/h3>
+&lt;hr>
+&lt;blockquote>
+&lt;p>故事，果然还是悲伤的好。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>因为悲伤，所以才能让人铭记。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>其实在上面介绍剧情的时候我一直回避了一个点，就是男女主为何会在交往之后选择分手。&lt;/p>
+&lt;p>啊，怎么说呢，这理由还真的是。。。只能说幸好这只是剧本，是小说，是游戏。。。随便怎么叫。总之，用简单的话来阐述男女主之间的关系，就是&lt;/p>
+&lt;blockquote>
+&lt;p>哀一直想要用罪（优人父亲的死，和优人将哀赶出村子）将两人连接在一起。因为这样所形成的羁绊是极其深的。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>于是，当有一天哀和优人一同回到那栋被烧毁的孤儿院的残骸时，哀手举着点燃的红蜡烛，向优人道出了一个使他震惊的事实：&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>“那天，就是我放的火。”&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>优人其实没有冤枉哀，火的确是哀放的，她认为这样才能让优人永远记住自己。这就是哀所谓的“复仇”。&lt;/p>
+&lt;p>。。。这显然已经是“心理扭曲”所没法形容的了，看起来被家人抛弃，送进孤儿院这件事情对哀尚初幼小的心灵造成了极大的伤害。&lt;/p>
+&lt;p>而当时的优人显然被冲击的事实给震到了，不过，他还是认为靠这种“罪”联系他人是不对的。因此意见不合的两人选择了分手。&lt;/p>
+&lt;p>（嘛，我要是单把上段的最后一句话拿出来做一句话总结，那就是“意见不合结果分手”了233）&lt;/p>
+&lt;p>在作为前置剧情锁的风香线和円来线中，优人选择了放弃哀，重新开始了一段新的恋情。而在哀线中，优人始终对哀死缠烂打，最终两人和好如初。&lt;/p>
+&lt;p>不过，这个复合的过程嘛。。。&lt;/p>
+&lt;blockquote>
+&lt;p>当时，在两人分手之后的最初一段时间内，优人悲痛欲绝，跑到绘画社把之前画的那张美人鱼的画泼了红颜料。而这件事又恰好被哀看见了，因此她觉得他们之间的感情就像这幅画一样再也修复不回来了。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>而优人显然是一时冲动，后来也想方设法把画修复了回来，并以此向哀传达了“泼了颜料的话，修复回来就好了。同样的，撕裂的感情，重新修补回来就好了”这个道理。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>优人将画作为礼物送给了哀，哀也很高兴地收下了。&lt;/p>
+&lt;/blockquote>
+&lt;p>这件事情深刻地告诉了我们，外行在不了解行业的情况下擅自发表意见是没有好下场的（笑）&lt;/p>
+&lt;p>其实我觉得这段复合得有点莫名其妙，因为优人和哀都刻意回避了导致两人分手的原因——究竟是爱，还是罪，更容易让人铭记。&lt;/p>
+&lt;p>果然，接下来问题就出现了。&lt;/p>
+&lt;blockquote>
+&lt;p>优人仔细地思考了一下，觉得火不可能是哀放的。很简单的一个道理，如果要放火烧掉孤儿院，那完全不可能会用蜡烛去点，直接用打火机不就好了。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>同时，优人捕风捉影得获得了円来线后半所知道的关于父亲经营孤儿院困难的事情。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这时，一个非常不好的想法同时在优人和风香心里产生：该不会，父亲其实是自己点着了孤儿院，选择逃避这个世界，并让村人承受永远的怨恨吧？&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>后来真相大白，从村长口中道出的事情原委，证实了两人最坏的猜想。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>而哀知道不是自己放的火，但没想到优人父亲其实是自杀，于是邪恶的种子再度在其心中发芽：&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>故事，果然还是悲伤的好。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>因为悲伤，所以才能让人铭记。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>哀曾在优人的感化下一度放弃了自己的主张，觉得爱其实还是可以永恒的。但现在&lt;strong>マジやばくね&lt;/strong>，优人父亲站在哀那一边了，哀心中的红蜡烛又被点燃了。&lt;/p>
+&lt;p>这就是优人始终没有解决的问题，于是是时候做个了结了。（自信脸）&lt;/p>
+&lt;blockquote>
+&lt;p>哀在同样的地方再度提出了分手。这次男主没有逃避，而是敏锐得发现了一个事实：&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>哀其实很想和优人结下爱缘，但她始终在害怕，害怕哪天这种“不如罪连接的羁绊持久”的情感有一天会终结。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>于是这次轮到优人发威了。他对哀说：&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;blockquote>
+&lt;p>“你没有错。错的是这个到处充满悲伤的村子。”&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>“这样的话，我把这个村子烧掉就好了。”&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>优人也知道，一旦哀真的放任自己去烧村子的话，自己就会成为罪犯。但他始终坚信，哀会在自己这种行为下冲破恐惧的枷锁，好好表达自己的感情。&lt;/p>
+&lt;p>终于，哀彻底地知道了自己的想法会给心爱的人造成多大的痛苦，二人终归吹灭了烛火，选择了村口隧道那头所射入的光。&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>哀一直说，爱是没办法让人铭记的。只有罪可以。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>因为自己离开村子的几年后从村口隧道走出来时，优人并没有记得她。但是对那个“自己误认为放火烧掉孤儿院的小女孩”，他却始终记得。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>但她却没有注意到，那个让优人拿起画笔，并且在这十年的时光当中，从未放下的，&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>其实就是哀。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>我是一个把推Galgame当成看有声小说的人，因此对一部作品的剧情，会有最最直白的考量。&lt;/p>
+&lt;p>如果说要我对这部作品的剧情做个简要的评价的话，那就是&lt;/p>
+&lt;blockquote>
+&lt;p>有小感动，有小平和，但通篇的主线让人觉得莫名其妙&lt;/p>
+&lt;/blockquote>
+&lt;p>其实作品在其他地方真的很卖力，比如说动态背景啊，极为丰富的CG啊，H Scene表演的卖力啊（捂脸），&lt;/p>
+&lt;p>但可惜，我不是说对这些东西不关心，但还是剧情，是最为我所追崇的first point.&lt;/p>
+&lt;p>《罪之光》想要传递的中心思想极其简单：从科学和人性的层面来说，人们都喜欢悲剧，但爱依旧还是永恒的话题。&lt;/p>
+&lt;p>但，minori显然用了一种极其不简单，甚至可以说有些别扭的方式，去把这件事情讲出来。&lt;/p>
+&lt;p>说不定，比起大开大合的哀线剧情，我更喜欢円来线那种简单、平和的叙述方式，娓娓道来。&lt;/p>
+&lt;p>对于不像我这种对剧本偏执到爆炸的人来说，这部作品还是比较有吸引力的。音乐很好听，画面很柔美，小村的氛围渲染得也很到位。&lt;/p>
+&lt;p>But，如果很不幸你跟我一样，是个剧情first的人的话，对于这部有将近8G大小的巨型Gal，那我只能说，&lt;/p>
+&lt;p>&lt;strong>我不推荐。&lt;/strong>&lt;/p></description></item><item><title>“Galgame小评”板块开启</title><link>https://tinyadapter.com/post/galgame-review/galgame-review-block-opened/</link><pubDate>Wed, 08 Feb 2017 23:32:55 +0000</pubDate><guid>https://tinyadapter.com/post/galgame-review/galgame-review-block-opened/</guid><description>&lt;h3 id="说在前面的话">说在前面的话&lt;/h3>
+&lt;p>时隔四年，终于又开了这个“Galgame小评”板块。&lt;/p>
+&lt;p>为什么要说又呢，是因为四年前断断续续地写（chao）过一些Galgame评测的文章，至今依旧躺在QQ空间里。&lt;/p>
+&lt;p>没错，是QQ空间。。。&lt;/p>
+&lt;p>嘛，说起来自己推Gal的时间真是够长的了，没办法，我就是这么个喜欢听故事的人，嗯。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h3 id="具体想法">具体想法&lt;/h3>
+&lt;p>这里会不定期连载一些对自己推过的Gal的看法和评价。&lt;/p>
+&lt;p>说是评价，其实也就是一些自己在推Gal的过程中对于某段剧情走向自己当时产生的想法和思考。&lt;/p>
+&lt;p>同时，因为自己也在编一些游戏用的BGM，因此对音乐这部分也会涉及一点。&lt;/p>
+&lt;p>具体来说，就是剧情+音乐方面的感受，其他诸如人设啊系统啊什么的如果没什么提的必要就不谈了。&lt;/p>
+&lt;h3 id="关于剧透">关于剧透&lt;/h3>
+&lt;p>既然要写Galgame评测，一个逃不开的话题就是剧透。&lt;/p>
+&lt;p>我对剧透的看法是，如果一定有必要的话，需要在剧透前进行警告，并说明程度。&lt;/p>
+&lt;p>因此，本人所写的小评会将整篇文章分为“不剧透或少量剧透开端剧情”和“含剧透”两个部分。&lt;/p>
+&lt;p>对于没有玩过原作的朋友，看前一个部分就可以了。&lt;/p>
+&lt;p>想说的差不多都说完了，じゃ、始まるぞ！&lt;/p></description></item></channel></rss>
